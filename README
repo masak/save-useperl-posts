@@ -1,0 +1,10 @@
+So, I downloaded all the posts and all their comments from my use Perl blog.
+They're in this repo, in the posts/ and comments/ directories, respectively.
+They're *more or less* unchanged; I found a couple of HTML infelicities that
+made it harder to parse the HTML, so I fixed those manually.
+
+Then I wrote a script that converts all the posts to Markdown. It's the one
+called create-new-structure. Since this is a "finite problem", I focused on
+making my blog posts come out good, rather than to make a total, long-term
+solution. Which means things may or may not work if you try them on your
+use Perl blog posts.

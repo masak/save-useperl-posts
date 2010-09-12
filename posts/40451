@@ -1,0 +1,1270 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="shortcut icon" href="//use.perl.org/favicon.ico">
+
+<title>Journal of masak (6289)</title>
+
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/base.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/comments.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/useperl.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="print" href="//images.use.perl.org/print.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="handheld" href="//images.use.perl.org/handheld.css?T_2_5_0_235">
+
+<script src="//images.use.perl.org/jquery/jquery-1.2.6.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/jquery/jquery.metadata.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/slash.util.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/jquery/jquery.slashdot.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/yahoo.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/dom.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/event.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/dragdrop.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/animation.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/calendar.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/sd_calendar.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/slash.article-info.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/tag-ui.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/common.js?T_2_5_0_235" type="text/javascript"></script>
+
+<!-- start template: ID 121, header;misc;default -->
+
+<link rel="top"       title="All the Perl that's Practical to Extract and Report" href="//use.perl.org/" >
+<link rel="search"    title="Search use Perl" href="//use.perl.org/search.pl">
+<link rel="author"    title="masak" href="//use.perl.org/~masak/">
+<link rel="alternate" title="masak's Journal RSS" href="http://use.perl.org/~masak/journal/rss" type="application/rss+xml">
+<link rel="alternate" title="masak's Friends' Journals RSS" href="http://use.perl.org/~masak/journal/friends/rss" type="application/rss+xml">
+<link rel="alternate" title="Most Recent Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="Most Active Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;type=count&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="Most Befriended Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;type=friends&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="use Perl RSS" href="//use.perl.org/index.rss" type="application/rss+xml">
+</head>
+<body class="useperlorg">
+<div id="top_parent"></div>
+
+<div id="jump">
+	<a href="#main-articles">Stories</a>
+	<br>
+	<a href="#blocks">Slash Boxes</a>
+	<br>
+	<a href="#comments">Comments</a>
+</div>
+<div class="ad1">
+
+</div>
+<div id="frame">
+
+<!-- UsePerl Ad Start -->
+<div class="ad1"><!-- ad position 1 -->
+<div id="fad1" style="text-align:center">
+<!-- DoubleClick Ad Tag 1 -->
+<script type="text/javascript">
+	dfp_ord=Math.random()*10000000000000000;
+	dfp_tile = 1;
+
+	document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/ostg.useperl/mainpage_p1_leader;pg=index;logged_in=0;tile='+dfp_tile+';ord='+dfp_ord+'?"><\/script>');
+	dfp_tile++;
+</script>
+</div>
+<!-- End DoubleClick Ad Tag 1 --></div>
+<!-- UsePerl Ad End -->
+
+	<div id="topnav">
+		<div id="logo">
+			<h1>
+				<a href="//use.perl.org">use Perl</a>
+			</h1>
+		</div>
+                <div class="search">
+			<form method="get" action="//use.perl.org/search.pl">
+				<fieldset>
+					<legend></legend>
+					<label>Search <strong>use Perl</strong></label>
+					<input type="text" name="query" value="" size="20">
+					<input type="submit" value="Go" class="button">
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<div id="slogan">
+		<h2>
+			All the Perl that's Practical to Extract and Report
+		</h2>
+	</div>
+	<div id="journalnav">
+		<div id="links">
+			
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="navigation-title">
+		<h4>
+			Navigation
+		</h4>
+	</div>
+	<div class="content" id="navigation-content">
+		<ul>
+	<li class="begin">
+		<a href="//use.perl.org/faq.shtml">FAQ</a>
+	</li>
+	<li>
+		<a href="//use.perl.org/about.shtml">About</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/submit.pl">Submit Story</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/search.pl">Older Stories</a>
+        </li>
+        <li>	
+		<a href="//use.perl.org/topics.shtml">Topics</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/pollBooth.pl">Polls</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/journal.pl">Journals</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/authors.pl">Authors</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/modulelist/">New Modules</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/users.pl?op=edithome">Preferences</a>
+
+        </li>
+</ul>
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+		</div>
+	</div>
+	<div id="contents">
+		
+		<div id="journal">
+
+<!-- end template: ID 121, header;misc;default -->
+
+
+
+<!-- start template: ID 55, journalhead;journal;default -->
+
+<div id="slashboxes">
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="userlogin-title">
+		<h4>
+			use Perl Log In
+		</h4>
+	</div>
+	<div class="content" id="userlogin-content">
+		
+			<form action="//use.perl.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//use.perl.org/">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//use.perl.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+		
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="user-info-title">
+		<h4>
+			masak (6289)
+		</h4>
+	</div>
+	<div class="content" id="user-info-content">
+		<a href="//use.perl.org/~masak/">masak</a> <br>&nbsp;&nbsp;(email not shown publicly)<br><a href="http://masak.org/carl" rel="nofollow">http://masak.org/carl</a><br><hr>Been programming Perl since 2001. Found Perl 6 somewhere around 2004, and fell in love. Now developing November (a Perl 6 wiki), Druid (a Perl 6 board game), pls (a Perl 6 project installer), GGE (a regex engine), and Yapsi (a Perl 6 implementation). Heavy user of and irregular committer to Rakudo.
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+</div>
+<div id="users-blocks">
+
+
+<!-- start template: ID 376, tabbedmenu;misc;default -->
+
+
+
+<!-- end template: ID 376, tabbedmenu;misc;default -->
+
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			<a href="//use.perl.org/~masak/journal/">Journal</a> of <a href="//use.perl.org/~masak/">masak</a> (6289)
+			
+		</h3>
+	</div>
+</div>
+
+
+<div id="usermenu">
+<ul class="menu">
+<li><span class="begin"><a href="//use.perl.org/~masak/" class="begin">Info</a></span></li><li class="selected"><b><a href="//use.perl.org/~masak/journal/">Journal</a></b></li><li><a href="//use.perl.org/~masak/firehose/">Firehose</a></li><li><a href="//use.perl.org/~masak/friends/">Friends</a></li><li><a href="//use.perl.org/~masak/fans/">Fans</a></li><li><a href="//use.perl.org/~masak/foes/">Foes</a></li><li><a href="//use.perl.org/~masak/freaks/">Freaks</a></li><li><a href="//use.perl.org/~masak/tags/">Tags</a></li><li><a href="//use.perl.org/~masak/bookmarks/" class="end">Bookmarks</a></li>
+</ul>
+</div><div class="generalbody">
+
+<!-- start template: ID 376, tabbedmenu;misc;default -->
+
+<ul class="menu">
+<li><span class="begin"><a href="//use.perl.org/journal.pl?op=top" class="begin">Top&nbsp;10</a></span></li><li><a href="//use.perl.org/journal.pl?op=friends" class="end">Friend's&nbsp;Journals</a></li>
+</ul>
+
+<!-- end template: ID 376, tabbedmenu;misc;default -->
+
+<!-- end template: ID 55, journalhead;journal;default -->
+
+
+
+<!-- start template: ID 65, slashdot;journal;default -->
+
+<div id="journalslashdot">
+    
+	<div class="journaldate">Sunday July 18, 2010</div>
+	
+	<div class="details">03:34 PM</div>
+	<div class="title">
+		<h3>Happy 10th anniversary, Perl 6</h3>
+	</div>
+	<div class="adminoptions">
+		[
+
+			<a href="//use.perl.org/~masak/journal/40451">#40451</a>
+		]
+	</div>
+
+	<div class="intro"><p>On this date exactly 10 years ago, Jon Orwant threw coffee mugs against a wall
+during a meeting. Wikipedia chronicles the announcement of Perl 6 as being on
+July 19 ten years ago... but the throwing of mugs on the 18th can be said to
+spark the birth of Perl 6.</p><p>Why did he throw mugs? <a href="http://www.spidereyeballs.com/os5/set1/small_os5_r06_9705.html" rel="nofollow">Larry
+Wall's own explanation</a> covers it in sufficient detail:</p><div class="quote"><p>We spent the first hour gabbing about all sorts of political and
+organizational issues of a fairly boring and mundane nature. Partway through,
+Jon Orwant comes in, and stands there for a few minutes listening, and then he
+very calmly walks over to the coffee service table in the corner, and there
+were about 20 of us in the room, and he picks up a coffee mug and throws it
+against the other wall and he keeps throwing coffee mugs against the other
+wall, and he says "we are fucked unless we can come up with something that
+will excite the community, because everyone's getting bored and going off and
+doing other things".</p></div><div class="quote"><p>And he was right. His motivation was, perhaps, to make bigger Perl
+conferences, or he likes Perl doing well, or something like that. But in
+actual fact he was right, so that sort of galvanized the meeting. He said "I
+don't care what you do, but you gotta do something big." And then he went
+away.</p></div><div class="quote"><p>Don't misunderstand me. This was the most perfectly planned tantrum you
+have ever seen. If any of you know Jon, he likes control. This was a perfectly
+controlled tantrum. It was amazing to see. I was thinking, "should I get up
+and throw mugs too?"</p></div><p>When I thought up this blog post, I knew about the incident but wasn't sure
+when it had happened. I made some Internet research on my own, and couldn't
+really find a source mentioning the day of the mug throwing.</p><p>I did find <a href="http://www.nntp.perl.org/group/perl.packrats/2002/07/msg3.html" rel="nofollow">this
+email</a>, which outlines the participants and the number of mugs thrown.</p><p>In the end, I asked Larry Wall on IRC about the date. The ensuing pun-ridden
+discussion is quite typical of #perl6.</p><p> <code>&lt;TimToady&gt;&nbsp;masak:&nbsp;btw,&nbsp;the&nbsp;mugs&nbsp;were&nbsp;the&nbsp;day&nbsp;before<br>
+&lt;jnthn&gt;&nbsp;mugs?&nbsp;I&nbsp;thought&nbsp;it&nbsp;was&nbsp;just&nbsp;one&nbsp;mug!<br>
+&lt;masak&gt;&nbsp;jnthn:&nbsp;five.<br>
+&lt;masak&gt;&nbsp;jnthn:&nbsp;only&nbsp;one&nbsp;broke,&nbsp;though.<br>
+&lt;masak&gt;&nbsp;TimToady:&nbsp;thanks.&nbsp;still&nbsp;time&nbsp;to&nbsp;prepare&nbsp;for&nbsp;an&nbsp;anniversary&nbsp;blog&nbsp;post,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then.<br>
+&lt;jnthn&gt;&nbsp;masak:&nbsp;Smashing.<br>
+&lt;TimToady&gt;&nbsp;I&nbsp;wish&nbsp;I'd&nbsp;collected&nbsp;the&nbsp;broken&nbsp;mug<br>
+&lt;masak&gt;&nbsp;"Perl&nbsp;6:&nbsp;breaking&nbsp;mugs&nbsp;and&nbsp;backwards&nbsp;compat&nbsp;since&nbsp;2000"<br>
+*&nbsp;pmichaud&nbsp;fires&nbsp;up&nbsp;photoshop,&nbsp;looks&nbsp;to&nbsp;cafepress<br>
+&lt;masak&gt;&nbsp;pmichaud:&nbsp;"Perl&nbsp;6:&nbsp;the&nbsp;greatest&nbsp;language&nbsp;ever&nbsp;to&nbsp;emerge&nbsp;out&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;shards&nbsp;of&nbsp;a&nbsp;mug."<br>
+&lt;pmichaud&gt;&nbsp;"Break&nbsp;mug&nbsp;in&nbsp;case&nbsp;of&nbsp;language&nbsp;stagnation."<br>
+&lt;jnthn&gt;&nbsp;"Perl&nbsp;6.&nbsp;It's&nbsp;Perl&nbsp;5&nbsp;with&nbsp;a&nbsp;cupple&nbsp;of&nbsp;improvements."<br>
+&lt;pmichaud&gt;&nbsp;"Perl&nbsp;6&nbsp;mugs&nbsp;--&nbsp;another&nbsp;lucky&nbsp;break!"<br>
+&lt;masak&gt;&nbsp;"if&nbsp;$mug&nbsp;===&nbsp;all&nbsp;@shards&nbsp;{&nbsp;say&nbsp;'We&nbsp;need&nbsp;a&nbsp;break&nbsp;from&nbsp;all&nbsp;the&nbsp;mug&nbsp;puns!' }<br>
+&lt;jnthn&gt;&nbsp;Oh,&nbsp;you&nbsp;can&nbsp;handle&nbsp;it.&nbsp;:P<br>
+*&nbsp;masak	shatters&nbsp;from&nbsp;laughter<br>
+&lt;TimToady&gt;&nbsp;"Why's&nbsp;Jon&nbsp;throwing&nbsp;donuts?"&nbsp;&nbsp;--topologist<br>
+&lt;masak&gt;&nbsp;:P<br>
+&lt;TimToady&gt;&nbsp;"This&nbsp;is&nbsp;a&nbsp;broken&nbsp;mug.&nbsp;&nbsp;&lt;mug&gt;&nbsp;This&nbsp;is&nbsp;your&nbsp;brane&nbsp;on&nbsp;broken&nbsp;mugs.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;camelia&gt;&nbsp;Any&nbsp;questions?"<br>
+&lt;masak&gt;&nbsp;"Perl&nbsp;6:&nbsp;seeking&nbsp;the&nbsp;holy&nbsp;grail&nbsp;after&nbsp;accidentally&nbsp;smashing&nbsp;it&nbsp;ten<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;years&nbsp;ago."<br>
+&lt;jnthn&gt;&nbsp;"How&nbsp;is&nbsp;mug&nbsp;re-formed?"<br>
+&lt;masak&gt;&nbsp;They&nbsp;need&nbsp;to&nbsp;do&nbsp;way&nbsp;instain&nbsp;Jon&nbsp;Orwant.<br>
+&lt;jnthn&gt;&nbsp;Who&nbsp;harms&nbsp;5&nbsp;mugs&nbsp;that&nbsp;cannot&nbsp;frigth&nbsp;back!<br>
+&lt;masak&gt;&nbsp;My&nbsp;pary&nbsp;are&nbsp;with&nbsp;the&nbsp;cleaner.<br>
+&lt;masak&gt;&nbsp;"Perl&nbsp;6:&nbsp;poculum&nbsp;iacta&nbsp;est."</code> </p><p>By now, Perl 6 has a 10-year history. I thought I'd spend the rest of the blog
+post recounting it from (mostly) my perspective. With this I hope I will
+manage to convey not only the actual sequence of events, but also some of my
+enthusiasm about the project, and why I think Jon Orwant's broken mug kicked
+off one of the coolest projects in modern programming language history.</p><p> <b>The early years</b> </p><p>Perhaps you've heard about <strong>the RFC process</strong>. This was right at
+the beginning of Perl 6's life, when even Larry Wall wasn't sure which
+direction to take Perl 6, and a system was created wherein people could send
+in their proposals for language features. Something on the order of 20 or 30
+RFCs were excpected before the closing date.</p><p>361 RFCs were sent in.</p><p>Not only were they many more than expected; they were all over the map,
+mutually inconsistent, and overall each of them advocated one feature without
+much concern for the rest of the language. Had we somehow decided to go right
+ahead and just make a language of all those RFCs, we probably would have ended
+up with something very much like this famous <a href="http://www.axis-of-aevil.net/archives/img/2003_08/p6_cover.jpg" rel="nofollow">parody
+of Perl 6</a>.</p><p>There was also little concern for <em>how</em> the proposed features would be
+added. Mark-Jason Dominus wrote in his <a href="http://www.perl.com/pub/2000/11/perl6rfc.html" rel="nofollow">Critique of the Perl 6 RFC Process</a>
+how a large part of the RFCs neglected to consider the implementation of the
+proposed features:</p><div class="quote"><p>It leads to a who-will-bell-the-cat syndrome, in which people propose
+all sorts of impossible features and then have extensive discussions about the
+minutiae of these things that will never be implemented in any form. [...] It
+distracts attention from concrete implementation discussion about the real
+possible tradeoffs. [...] Finally, on a personal note, I found this flippancy
+annoying. There are a lot of people around who do have some understanding of
+the Perl internals.</p></div><p>Jarkko Hietaniemi countered with a <a href="http://www.perl.com/pub/2000/11/jarkko.html" rel="nofollow">more optimistic view</a> of the process:</p><div class="quote"><p>[...] now we have an idea of the kind of things (both language-wise and application/data-wise) people want to do in Perl and with Perl, or don't like about Perl. [...] Based on that feedback Larry can design Perl 6 to be more flexible, to accommodate as many as possible of those requests in some way. [...] Without the RFC process we wouldn't have had that feedback.</p></div><p>In the end, Larry Wall took on the work of triaging the RFCs and distilling
+them into a coherent whole. He did this in the form of
+<strong>Apocalypses</strong>, which collected the RFCs in different categories
+and commented on them one by one. The RFCs were either accepted with different
+amounts of caveats, or rejected. The Apocalypse numbers were based on
+different chapters in the Camel book; for example, chapter 3 of that book
+describes operators, so Apocalypse 3 talks about operators in Perl 6.</p><p>Here are all the Apocalypses that were published:</p><ul> <li>Apocalypse 1, May 2001</li><li>Apocalypse 2, May 2001</li><li>Apocalypse 3, Oct 2001</li><li>Apocalypse 4, Jan 2002</li><li>Apocalypse 5, Jun 2002</li><li>Apocalypse 6, Mar 2003</li><li>Apocalypse 12, Apr 2004</li></ul><p>In other words, the whole period 2001-2004 can be seen as the period when Perl
+6 was still being distilled from the various wishes people had about it.</p><p>Along with the Apocalypses were published same-numbered
+<strong>Exegeses</strong>, by Damian Conway who also had a central role in
+designing Perl 6. Where the Apocalypses were geared towards explaining
+language decisions for and against features, the Exegeses set out to showcase
+the new combinations of features, and to explain to Perl 5 programmers the
+improvements introduced in Perl 6.</p><p>Reading the Exegeses today, what's especially noticeable is the sense of Perl
+6 as a variant of Perl 5. Sure there are lots of little tweaks and changes,
+but as Damian notes after writing a rather elaborate script in E02, "In fact,
+that's only 40 characters (out of 1779) from being pure Perl 5. And almost all
+of those differences are @'s instead of $'s at the start of array element
+look-ups. 98% backwards compatibility even without an automatic p52p6
+translator...pretty slick!".</p><p>Not much remains of that idea today; if you'd step into the channel and ask
+"is Perl 6 like Perl 5?", we'd tell you that while the general goals and ideas
+can still be discerned, the syntax is so different that it's probably better
+to start learning it than try to code Perl 6 like one would code Perl 5.</p><p>In 2004, the Apocalypses were summarized down into <strong>Synopses</strong>,
+which contained the decisions from the Apocalypses without all the explanatory
+monologue. The Synopses would form a specification for Perl 6 the language,
+and were directed towards language implementors. They're fairly dense, but
+still a good read for anyone seriously interested in the language. The synopses
+are still normative and kept up-to-date. At the time of writing, I count 33
+synoptic documents at <a href="http://perlcabal.org/syn/" rel="nofollow">perlcabal.org</a>.
+Synopses 2 through 6 tend to be fairly stable, although changes still occur.
+The remainder of the synopses are still drafts for the most part, awaiting more
+feedback from implementations and language use.</p><p>During all this, efforts to start implementing Perl 6 were planned, started
+and abandoned. Already before the mug throwing and the RFCs, Chip Salzenberg
+started developing a project code-named <strong>Topaz</strong> in C++, which
+was slated to grow into Perl 6. The Topaz project, a rewrite of Perl 5
+internals, was eventually abandoned. <a href="http://irclog.perlgeek.de/perl6/2010-04-27#i_2270627" rel="nofollow">I asked Larry</a>
+why, and he replied that "reimplementing insanity is insane". (Meaning
+"don't try to extend the Perl 5 internals into Perl 6".)</p><p>There was also a one-week exploration project called
+<strong>Sapphire</strong>; another rewrite of Perl 5 internals in September
+2000, shortly after the announcement of Perl 6, Sapphire was mostly intended
+to be a sort of tracer bullet to learn things about an eventual real
+implementation.</p><p>Finally, <strong>Parrot</strong> was a fledgling virtual machine created with
+the express purpose to be good at running dynamic languages; especially Perl
+6, the dynamickest language of the bunch. <strong>Ponie</strong> was an
+attempt to drag the Perl 5 internals, kicking and screaming, into the Parrot
+Virtual Machine and have them run there. The Ponie project, as can be read <a href="http://www.nntp.perl.org/group/perl.ponie.dev/2006/08/msg487.html" rel="nofollow">here</a>
+suffered from a too-low bus number as well as Parrot's relative immaturity;
+Ponie was ultimately "put out to pasture" in 2006. An early implementation of Perl 6 on Parrot was also developed at this time, but by 2004 it had also <a href="https://svn.parrot.org/parrot/tags/RELEASE_0_3_1/languages/perl6/README" rel="nofollow">proved to be unworkable</a>.</p><p>As someone on the outside looking in, I knew of Parrot, but not of the other
+projects. I didn't know about the Perl 6 project that already existed on
+Parrot, only about the Apocalypses and the Exegeses, all of which I had read
+with interest. What happened now?  Would this programming language ever become
+a reality? No-one seemed to know.  And nothing exciting seemed to happen.</p><p>In early 2005, a certain A. Tang made an entrance, posting a short <a href="http://www.mail-archive.com/perl6-all@perl.org/msg45008.html" rel="nofollow">announcement</a>
+on the perl6-all list of a "side-effect-free subset of Perl6". (Notice the
+parallels between the tone of this email and Linus Torvald's famous "nothing
+serious like GNU" announcement.) Before I knew it, the side-effect-free subset
+of Perl 6 had mutated into something called <strong>Pugs</strong>, a
+full-fledged implementation.</p><p> <b>Pugs: The golden age</b> </p><p>I remember stumbling into the #perl6 channel on freenode, still fairly dazed
+by the fact that someone was taking the Synopses and implementing them. Add to
+this that Audrey Tang turned out to be a frighteningly productive hacker with a
+magnetic personality which drew other people into the project like nothing I
+or many others had ever seen. Being on the #perl6 channel was like standing
+close to the eye of a hurricane; things just magically happened, either
+because Audrey had just landed another set of commits, or because someone had
+started a cool side project and was hacking on that, all the while bringing
+interesting ideas and thoughts into the channel.</p><p>And we were all running (an early version of) Perl 6! Operators, subs,
+classes, operator overloading... one by one, the cool features we had
+anticipated started working. We introduced bots to be able to run Perl 6 code
+right in the channel. Audrey threw out commit rights to the Pugs repository to
+anyone who made as much as a peep about possible improvements. And it worked!
+Hundreds of people were given commit-bits, and rather than seeing a massive
+amount of vandalism like you would on a wiki, we saw a great number of these
+people contributing constructively to the project. The slogan at that time was
+to "trust the anarchy", a seriously scary notion. A happy Audrey stood in the
+middle of it all, guiding the various efforts along, blogging almost daily,
+contributing insane amounts of code herself, and injecting steam into an
+ever-more concrete Perl 6 community.</p><p>Pugs is written in Haskell, and many of the cultural traits at the beginning
+came from the Haskell culture. Pugs hackers went by the moniker
+"lambda-camels". There was an unusually high amount of references to
+comp.sci. papers, and books about Haskell, and esoteric books about
+programming in general. A representative list can still be found in Pugs' <a href="http://svn.pugscode.org/pugs/READTHEM" rel="nofollow">READTHEM</a> file. The humor was
+intelligent and often riffed off of some computer topic or other.</p><p> <code>&lt;audreyt&gt;&nbsp;Alias_:&nbsp;my&nbsp;eyeglasses&nbsp;has&nbsp;style="border:&nbsp;none"<br>
+&lt;Alias_&gt;&nbsp;doesn't&nbsp;matter<br>
+&lt;Alias_&gt;&nbsp;optical&nbsp;edge&nbsp;cases&nbsp;at&nbsp;the&nbsp;boundaries&nbsp;create&nbsp;border:&nbsp;solid&nbsp;1px&nbsp;#99999<br>
+&lt;audreyt&gt;&nbsp;true<br>
+&lt;audreyt&gt;&nbsp;though&nbsp;it's&nbsp;more&nbsp;like&nbsp;ridged&nbsp;in&nbsp;my&nbsp;case<br>
+*&nbsp;audreyt&nbsp;sighs&nbsp;at&nbsp;the&nbsp;general&nbsp;geekiness</code> </p><p> <code>&lt;audreyt&gt;&nbsp;apparently&nbsp;malaire++&nbsp;is&nbsp;to&nbsp;blame<br>
+&lt;audreyt&gt;&nbsp;I&nbsp;mean,&nbsp;to&nbsp;praise<br>
+&lt;audreyt&gt;&nbsp;or&nbsp;to&nbsp;annotate</code> </p><p>The predominant interjection was "woot!". The predominant user of the
+interjection "woot!" was Audrey. Karma points were the new currency, and bots
+roamed the channel keeping track of the karma points, or handing them out while
+emitting real-time commit messages.</p><p>Let me be clear about one thing: at that point on the #perl6 channel, I was a
+groupie. I didn't contribute significantly to Pugs, or to the discussion
+around the Synopses or the language itself. I did try my best to contribute to
+the jokes.</p><p>In March 2005, I had made enough silly noise to get a commit bit:</p><p> <code>&lt;autrijus&gt;&nbsp;welcome&nbsp;aboard!<br>
+&lt;masak&gt;&nbsp;thx.&nbsp;i&nbsp;could&nbsp;hardly&nbsp;sleep&nbsp;last&nbsp;night&nbsp;because&nbsp;of&nbsp;pugs&nbsp;:)<br>
+&lt;autrijus&gt;&nbsp;all&nbsp;excited?<br>
+&lt;masak&gt;&nbsp;overly&nbsp;so<br>
+&lt;autrijus&gt;&nbsp;I&nbsp;know&nbsp;that&nbsp;feeling&nbsp;:)))</code> </p><p>Audrey kept up a high development tempo, often leading to jokes about her productivity:</p><p> <code>&lt;autrijus&gt;&nbsp;I'll&nbsp;brb&nbsp;--&nbsp;shower&nbsp;&amp;<br>
+&lt;geoffb&gt;&nbsp;So&nbsp;the&nbsp;rumors&nbsp;of&nbsp;autrijus&nbsp;ircing&nbsp;in&nbsp;the&nbsp;shower&nbsp;appear&nbsp;to&nbsp;be<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;false&nbsp;.&nbsp;.&nbsp;.&nbsp;.<br>
+&lt;geoffb&gt;&nbsp;or&nbsp;maybe&nbsp;he&nbsp;just&nbsp;lurks,&nbsp;with&nbsp;the&nbsp;laptop&nbsp;right&nbsp;outside&nbsp;the&nbsp;curtain.<br>
+&lt;autrijus&gt;&nbsp;yup.<br>
+&lt;autrijus&gt;&nbsp;that's&nbsp;usually&nbsp;the&nbsp;case.<br>
+&lt;autrijus&gt;&nbsp;to&nbsp;avoid&nbsp;damaging&nbsp;the&nbsp;keyboard&nbsp;I&nbsp;usually&nbsp;type&nbsp;with&nbsp;a&nbsp;toothbrush<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;so.<br>
+&lt;geoffb&gt;&nbsp;LOL</code> </p><p> <code>&lt;Juerd&gt;&nbsp;Every&nbsp;*book*&nbsp;about&nbsp;Perl&nbsp;6&nbsp;is&nbsp;outdated.<br>
+&lt;Juerd&gt;&nbsp;They&nbsp;are&nbsp;outdated&nbsp;two&nbsp;hours&nbsp;after&nbsp;they&nbsp;are&nbsp;pressed.<br>
+&lt;Juerd&gt;&nbsp;By&nbsp;the&nbsp;time&nbsp;they&nbsp;are&nbsp;in&nbsp;stores,&nbsp;they&nbsp;are&nbsp;a&nbsp;month&nbsp;behind<br>
+&lt;Juerd&gt;&nbsp;And&nbsp;by&nbsp;the&nbsp;time&nbsp;you&nbsp;buy&nbsp;and&nbsp;read&nbsp;them,&nbsp;an&nbsp;entire&nbsp;perl&nbsp;6<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;interpreter&nbsp;was&nbsp;written&nbsp;by&nbsp;autrijus&nbsp;:)<br>
+&lt;mauke&gt;&nbsp;while&nbsp;he&nbsp;was&nbsp;sleeping!<br>
+&lt;castaway&gt;&nbsp;autrijus&nbsp;sleeps?<br>
+&lt;nothingmuch&gt;&nbsp;castaway:&nbsp;sometimes&nbsp;he&nbsp;claims&nbsp;that<br>
+*&nbsp;castaway&nbsp;doesnt&nbsp;believe&nbsp;it<br>
+&lt;mauke&gt;&nbsp;maybe&nbsp;his&nbsp;computer&nbsp;has&nbsp;a&nbsp;neural&nbsp;interface&nbsp;and&nbsp;he&nbsp;codes&nbsp;in&nbsp;his&nbsp;dreams<br>
+&lt;castaway&gt;&nbsp;this&nbsp;would&nbsp;not&nbsp;surprise&nbsp;me&nbsp;:)<br>
+&lt;Juerd&gt;&nbsp;castaway:&nbsp;Well,&nbsp;he&nbsp;sometimes&nbsp;says&nbsp;he's&nbsp;off&nbsp;to&nbsp;bed,&nbsp;and&nbsp;then&nbsp;after&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;few&nbsp;hours&nbsp;you&nbsp;see&nbsp;a&nbsp;huge&nbsp;commit&nbsp;in&nbsp;the&nbsp;logs.&nbsp;So&nbsp;I&nbsp;don't<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;believe&nbsp;it&nbsp;:)<br>
+&lt;castaway&gt;&nbsp;hehe<br>
+&lt;castaway&gt;&nbsp;from&nbsp;what&nbsp;I&nbsp;figure,&nbsp;he&nbsp;sleeps&nbsp;only&nbsp;in&nbsp;max.&nbsp;30&nbsp;min&nbsp;chunks,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;something<br>
+&lt;Juerd&gt;&nbsp;I&nbsp;think&nbsp;he&nbsp;hyperthreads</code> </p><p>Audrey was once found saying "People think I'm this awesomely great coder, but
+it's really Haskell and Parsec [a parser combinator library for Haskell] that
+do all the magic". I didn't see people stop commenting on Audrey's prolificacy
+because of that, however.</p><p>Somewhere in 2006, Larry Wall joined the channel. He never really left.</p><p> <code>&lt;avar&gt;&nbsp;?eval&nbsp;&lt;good&nbsp;fast&nbsp;cheap&gt;.pick(2)<br>
+&lt;evalbot_r16148&gt;&nbsp;("good",&nbsp;"cheap")<br>
+&lt;TimToady&gt;&nbsp;that's&nbsp;us&nbsp;all&nbsp;right...</code> </p><p>We did lose Audrey, however. After her <a href="http://pugs.blogs.com/audrey/2005/12/runtime_typecas.html" rel="nofollow">gender
+change</a>, she continued work at an unabated pace; but then she was hit by a
+serious hepatitis infection, and disappeared in 2007 in the middle of a tough
+refactor of Pugs, never to return. Pugs ground to a halt. The channel became a
+lot quieter after she was gone.</p><p>Pugs was (and is) still around, but it had stopped evolving, and it wasn't a
+full Perl 6 implementation yet. The community still existed, but the central
+person to hold it together was manifestly missing. Not knowing what the future
+would hold, I longed for more Pugs.</p><p>(The reason for Audrey's disappearance didn't surface until two years later,
+when she made a tentative <a href="http://pugs.blogs.com/audrey/2009/08/why-such-me.html" rel="nofollow">blog post</a>
+about it.)</p><p> <b>Rakudo: The silver age</b> </p><p>Pugs sort of let the genie out of the bottle. Once Audrey had created a "rogue"
+project that just took off and increasingly embodied the Perl 6 idea, several
+other people started making <strong>"little" implementations</strong>, too.
+Between 2005 and now, about a dozen "little" implementations sprang into
+existence, several of which are still active today. Their respective goals
+range from exploring to actually implementing the whole language. I call them
+"little" mainly because they have few developers and a small user base.</p><p>While Pugs arrived with a bang and went dark just as quickly, work continued on
+implementing Perl 6 on top of Parrot.  Progress came much more slowly here,
+because Parrot was an immature platform and needed a toolchain and compiler
+ecosystem in order to build Perl 6.  Starting in 2005, Patrick Michaud began
+writing a grammar engine (PGE) and compiler toolkit (PCT) for Parrot.  These
+eventually led to a fledgling Perl 6 implementation in 2007, which in early
+2008 was given the name "<strong>Rakudo</strong> Perl 6". To be honest, I didn't pay much
+attention to it before it got the Rakudo name.</p><p>Patrick had a vision that a Perl 6 implementation needs to have <a href="http://www.mail-archive.com/perl6-internals@perl.org/msg23564.html" rel="nofollow">a
+decent Perl 6 grammar engine</a> at its foundation, followed by a good
+compiler-building toolchain. Once those bits were in place, Patrick turned to
+the actual Perl 6 compiler and runtime. An intrepid guy named Jonathan
+Worthington had in an unguarded moment promised Patrick to implement junctions
+(only to realize that junctions required multi-dispatch, which required the
+type system, which required much of the OO system to work...).</p><p>Together, Patrick and Jonathan put in feature after feature during the first
+half of 2008.</p><p>Things were happening again. It didn't look playfully effortless like with
+Audrey and Pugs; the features I picked up and tried out invariably broke. But
+things were happening again. Between Pugs, a relatively featureful project
+which no longer responded to pings, and Rakudo, a slow-moving but active
+project which could one day be made to do the things Pugs did, I gradually
+turned my attention to Rakudo.</p><p>The summer of 2008 is a bit of a blur. We (viklund and I) wrote a wiki engine
+in the not-yet-housebroken Rakudo. It was just a wacky idea we had. If we
+succeeded in any sense of the word, we said, we'd go to YAPC::EU and present
+it all in a lightning talk.</p><p>Well, we eventually made it, and we went to YAPC::EU, and we thrilled at the
+audience reaction upon hearing the news of someone writing a web app in Perl
+6. But, um... the corners we cut on the way there. The workarounds for missing
+features we invented. The bugs we discovered. And it wasn't like we could just
+pop in on #perl6 and haul out some failing piece of code from our <em>secret
+project</em>. No; the code had to be scrubbed clean of all wiki-ness first. It
+was during this time I learned the value of golfing bug reports.</p><p>I submitted many bug reports that summer. All of them scrubbed. It became a
+bit of a thing, like when little kid starts collecting bottle caps. And it
+wasn't like Rakudo had a shortage of bugs. For a while, it felt like Rakudo
+was mostly <em>built</em> out of bugs. This is not meant to be a slight
+towards Patrick and Jonathan; they were, and are, doing an excellent job.
+But every project needs to be tested out in the field, and no-one had done
+that until viklund and I came along. I made field-testing and bug reporting
+into a sport, going round in a never-ending cycle of doing something new
+with Rakudo, seeing it break, and submitting a bug ticket about it.</p><p>It felt pretty good to be not so much of a groupie any more, and more of a
+contributor. Since then I've written a lot of Perl 6 code, and even gotten
+a Rakudo commit-bit... but I suspect I will remain "the guy who submits all
+the bugs" for a long time hence.</p><p>The current cultural references seem to lean heavily on lolcat references,
+exotic smilies, and other contemporary internet memes. Makes for a
+light-hearted atmosphere, and the contrast between lolcats and compiler guts is
+often quite refreshing.</p><p> <code>&lt;pmichaud&gt;&nbsp;good&nbsp;morning,&nbsp;#perl6<br>
+&lt;jnthn&gt;&nbsp;morning,&nbsp;pmichaud<br>
+&lt;PerlJam&gt;&nbsp;greetings&nbsp;pm<br>
+&lt;colomon&gt;&nbsp;o/<br>
+&lt;mathw&gt;&nbsp;o/&nbsp;pmichaud<br>
+&lt;moritz_&gt;&nbsp;/o/<br>
+&lt;mathw&gt;&nbsp;\o\<br>
+&lt;jnthn&gt;&nbsp;\o/&nbsp;|\o/|&nbsp;o&lt;&nbsp;/o\<br>
+&lt;jnthn&gt;&nbsp;;-)<br>
+&lt;mathw&gt;&nbsp;aaaaargh<br>
+*&nbsp;mathw	hides<br>
+&lt;okeCay&gt;&nbsp;o/\o&nbsp;!</code> </p><p>As Rakudo keeps maturing, the Synopses change with it. This is scary to some.
+How can one start learning a language that keeps changing?  Why won't the
+specification keep still? I can only speak for myself on this issue: I wouldn't
+want the specification to be "locked down" or "frozen", not as long as the
+changes going into it are ever-smaller adjustments, most of them responses to
+insights gained from implementations like Rakudo. On the one hand, the Perl 6
+specification changes more than for any other language I know; on the other
+hand, it's becoming more stable by the day. We call it a kind of "whirlpool
+development", where later steps in the process are allowed to affect earlier
+ones, but things are successively centering on one single point.</p><p>IRC can be quite a brusque and unforgiving place, but the #perl6 channel has
+a reputation as one of the kindest places on the Net. A huge amount of time
+is spent answering newcomers' questions, helping sort out people's syntax
+errors, clarifying language terms and design decisions to outsiders and to
+ourselves, reviewing code, reviewing each other's blog posts, and generally
+making people feel welcome and cared for on the channel. #perl6 almost never
+sleeps entirely nowadays, since it has active participants from all over
+the globe. While we do feel that we have a really cool language to showcase
+to the world, we're also quite proud over the quality of the Perl 6 culture.</p><p>The story with Rakudo since 2008 is that it's slowly established itself as the
+front-runner among implementations, even surpassing Pugs in most areas. Rakudo
+now has most of the operators and control structures in place, excellent
+regexes and grammars (thanks, Patrick!), excellent OO and multi dispatch (thanks, Jonathan!), and
+many other very solid features. There are many other smaller implementations
+which help drive the spec and scout the solution domain in various ways; but
+Rakudo is the one with the most person-tuits put into it by far nowadays. The
+list of contributors in the monthly release announcement usually lands at a
+couple dozen people. Perl 6 is again arriving a little more every day. Life is
+good. I'm still submitting about one rakudobug a day, but the things submitted
+are increasingly more high-level and less and less about glaring omissions.</p><p>The action in the past year has been a pretty huge refactor, first of the
+grammar subsystem, but then of various other subparts that needed ripping out
+and rewriting. Inwardly, this has been known as a number of smaller projects
+all being part of a big Rakudo refactor. Outwardly, it has been known as the
+imminent release of Rakudo Star.</p><p> <b>Rakudo Star: Perl 6 takes off</b> </p><p>Ok, so this part of history hasn't happened yet. But it's about to. On July
+29, the Rakudo team is releasing <strong>Rakudo Star</strong>, the first
+distribution of Rakudo Perl, a Perl 6 implementation. (Info links <a href="http://use.perl.org/~pmichaud/journal/39411" rel="nofollow">here</a>, <a href="http://use.perl.org/~pmichaud/journal/39424" rel="nofollow">here</a>, and <a href="http://use.perl.org/~pmichaud/journal/40407" rel="nofollow">here</a>.)</p><p>I find it quite fitting that 10 years and a couple of days after the Jon
+Orwant mug that started it all, the Perl 6 people come forth and say "Here. We
+made this, and it's at a first stage of ready. We've been tinkering with it
+for quite some time, fixed a lot of bugs and polished the pearl to a relative
+shine. We'd like you to try it out and make something cool with it."</p><p>I, and many people with me, have been excited about this porcelain descendant
+for many years now. It's time to let a bigger circle of people in, and let
+them get excited as well.</p></div>
+	
+    
+
+	<div class="journalpage">
+		
+		<br>
+		<a href="//use.perl.org/journal.pl?op=list&amp;uid=6289" class="all">List all Journal entries</a>
+	</div>
+</div>
+
+<!-- end template: ID 65, slashdot;journal;default -->
+
+</div></div>
+
+<!-- start template: ID 159, printCommentsMain;misc;default -->
+
+<a name="acomments"></a>
+<div class="commentwrap" id="commentwrap">
+
+<div class="commentBox" style="font-size: 120%">
+	<div>
+<span class="escape-link"><a href="//use.perl.org/~masak/journal/40451" title="Back to Article - Happy 10th anniversary, Perl 6">Happy 10th anniversary, Perl 6</a></span>
+<span class="commentBoxLinks"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_d"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=44971&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></span>
+	</div>
+</div>
+
+	<div class="commentBoxForm" id="commentControlBox">
+<div></div>
+	<div class="commentBox">
+		<small>
+		<b>The Fine Print:</b> The following comments are owned by whoever posted them.  We are not responsible for them in any way.
+		</small>
+<noscript><br><small>Without JavaScript enabled, you might want to
+use <a href="//use.perl.org/comments.pl?sid=44971&amp;threshold=0&amp;commentsort=0&amp;mode=thread&amp;no_d2=1">the classic discussion system</a> instead.  If you <a href="//use.perl.org/login.pl">login</a>, you can remember this preference.
+</small></noscript>
+	</div>
+	</div>
+	
+		<div id="d2out" class="horizontal">
+		<div id="d2act" class="hide">
+		<div class="loki" id="gods">
+		<div class="block">
+			<div class="title">
+
+				<h4>
+				
+					<span class="h-inline">
+					<a href="//use.perl.org/~masak/journal/40451" title="Back to Article - Happy 10th anniversary, Perl 6">Happy 10th anniversary, Perl 6</a></span>
+					<span class="titlecount"><a href="//use.perl.org/~masak/journal/40451#topcomment" title="Back to Top Comment - Happy 10th anniversary, Perl 6"><span id="titlecountnum">9</span>&nbsp;Comments</a></span>
+				
+		<span class="ccw-header-links"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_b"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=44971&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></span>
+		<span id="d2toggle" title="Toggle window location" onclick="D2.toggleDisplayOptions()" class="close">/</span>
+				</h4>
+			</div>
+		</div>
+<script type="text/javascript">
+gCommentControlWidget = null;
+
+YAHOO.slashdot.ThresholdApp = function() {
+  return {
+    init: function() {
+      gCommentControlWidget = new YAHOO.slashdot.ThresholdWidget('X');
+      gCommentControlWidget.setTHT(D2.user_threshold(), D2.user_highlightthresh());
+      D2.updateTotals();
+    }
+  };
+}();
+
+YAHOO.util.Event.addListener(window, "load", YAHOO.slashdot.ThresholdApp.init);
+</script>
+		<div id="bones">
+      <div id="ccw">
+        <div id="ccw-body" class="ccw-core">
+          <div id="ccw-panel-container" class="ccw-core">
+            <div id="ccw-full-panel" class="ccw-panel">
+              <div class="ccw-panel-border"></div>
+              <div id="ccw-full-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-full-count-text" class="ccw-count-text"><span id="currentFull"></span><span id="ccw-full-phrase">&nbsp;Full</span></span>
+              </div>
+            </div>
+            <div id="ccw-abbr-panel" class="ccw-panel">
+              <div class="ccw-panel-border"></div>
+              <div id="ccw-abbr-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-abbr-count-text" class="ccw-count-text"><span id="currentOneline"></span><span id="ccw-abbr-phrase">&nbsp;Abbreviated</span></span>
+              </div>
+            </div>
+            <div id="ccw-hide-panel" class="ccw-panel">
+              <div id="ccw-hide-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-hide-count-text" class="ccw-count-text"><span id="currentHidden"></span><span id="ccw-hide-phrase">&nbsp;Hidden</span></span>
+              </div>
+            </div>
+          </div>
+    
+          <div id="ccw-control" class="ccw-core">
+            <div id="ccw-centering-rail" class="ccw-core">
+              <div id="ccw-hide-bar-pos" class="ccw-core-pos">
+                <div id="ccw-hide-bar" class="ccw-bar">
+                  <div id="ccw-hide-bar-tab" class="ccw-bar-tab"></div>
+                  <div id="ccw-hide-bar-upzone" class="ccw-upzone" onclick="gCommentControlWidget.stepTHT(HIDE_BAR, +1)"></div>
+                  <div id="ccw-hide-bar-downzone" class="ccw-downzone" onclick="gCommentControlWidget.stepTHT(HIDE_BAR, -1)"></div>
+                </div>
+              </div>
+              <div id="ccw-abbr-bar-pos" class="ccw-core-pos">
+                <div id="ccw-abbr-bar" class="ccw-bar">
+                  <div id="ccw-abbr-bar-tab" class="ccw-bar-tab"></div>
+                  <div id="ccw-abbr-bar-upzone" class="ccw-upzone" onclick="gCommentControlWidget.stepTHT(ABBR_BAR, +1)"></div>
+                  <div id="ccw-abbr-bar-downzone" class="ccw-downzone" onclick="gCommentControlWidget.stepTHT(ABBR_BAR, -1)"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+		<div class="commentControlFooter"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_c"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=44971&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a><div id="login_cover" style="display:none" onclick="hide_login_box()"></div>
+<div id="login_box" style="display:none">
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			Please Log In to Continue<a href="#" onclick="hide_login_box(); return false" class="close" title="Close this box"><img id="login_box_close" src="//images.use.perl.org/sic_close.png" alt="Close"></a>
+			
+		</h3>
+	</div>
+</div>
+<div id="login_box_content">
+<form action="//use.perl.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//use.perl.org/comments.pl?sid=44971">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//use.perl.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+</div></div>
+<script type="text/javascript">logged_in = 0</script></div>
+		<div id="commentControlBoxStatus" class="hide"><b>Loading... please wait.</b></div>
+	</div>
+</div>
+		</div>
+	
+</div>
+<a name="topcomment"></a>
+
+<!-- end template: ID 159, printCommentsMain;misc;default -->
+
+
+
+<!-- start template: ID 157, printCommComments;misc;default -->
+
+<script src="//images.use.perl.org/comments.js?T_2_5_0_235" type="text/javascript"></script>
+	<script type="text/javascript">
+<!--
+	D2.d2_keybindings_disable()[191] = 1;
+	window.onscroll = D2.d2act;
+	D2.boxStatus(1);
+D2.comments({ 72191: { uid: 6654, pid: 72188, subject: "Re:Fan-damn-tastic", read: 0, points: 1, kids: [ 72192, 72194 ], opid: 72188 }, 72192: { uid: 5805, pid: 72191, subject: "Re:Fan-damn-tastic", read: 0, points: 1, kids: [ 72193 ], opid: 72191 }, 72181: { uid: 8218, pid: 72180, subject: "Re:Where the names came from?", read: 0, points: 1, kids: [  ], opid: 72180 }, 72194: { uid: 6289, pid: 72191, subject: "Re:Fan-damn-tastic", read: 0, points: 1, kids: [  ], opid: 72191 }, 72193: { uid: 6654, pid: 72192, subject: "Re:Fan-damn-tastic", read: 0, points: 1, kids: [  ], opid: 72192 }, 72180: { uid: 9333, pid: 0, read: 0, points: 1, kids: [ 72181 ], opid: 0 }, 72182: { uid: 276, pid: 0, read: 0, points: 2, kids: [  ], opid: 0 }, 72179: { uid: 9582, pid: 0, read: 0, points: 1, kids: [  ], opid: 0 }, 72188: { uid: 5805, pid: 0, read: 0, points: 1, kids: [ 72191 ], opid: 0 } });
+
+D2.thresh_totals({6:{6:{1:9,3:0,2:0}},4:{6:{1:9,3:0,2:0},4:{1:9,3:0,2:0},5:{1:9,3:0,2:0}},1:{6:{1:0,3:0,2:9},4:{1:0,3:0,2:9},1:{1:0,3:9,2:0},3:{1:0,3:1,2:8},2:{1:0,3:4,2:5},5:{1:0,3:0,2:9}},3:{6:{1:9,3:0,2:0},4:{1:9,3:0,2:0},3:{1:9,3:0,2:0},5:{1:9,3:0,2:0}},0:{6:{1:0,3:0,2:9},4:{1:0,3:0,2:9},1:{1:0,3:9,2:0},3:{1:0,3:1,2:8},0:{1:0,3:9,2:0},2:{1:0,3:4,2:5},5:{1:0,3:0,2:9}},2:{6:{1:8,3:0,2:1},4:{1:8,3:0,2:1},3:{1:8,3:1,2:0},2:{1:8,3:1,2:0},5:{1:8,3:0,2:1}},5:{6:{1:9,3:0,2:0},5:{1:9,3:0,2:0}},"-1":{6:{1:0,3:0,2:9},4:{1:0,3:0,2:9},1:{1:0,3:9,2:0},3:{1:0,3:1,2:8},0:{1:0,3:9,2:0},2:{1:0,3:4,2:5},5:{1:0,3:0,2:9},"-1":{1:0,3:9,2:0}}});
+
+D2.root_comment(0);
+D2.root_comments([72179,72180,72182,72188]);
+D2.root_comments_hash({72180:1,72182:1,72179:1,72188:1});
+
+D2.d2_comment_order(0);
+D2.user_uid(7);
+D2.user_is_anon(1);
+D2.user_is_admin(0);
+D2.user_is_subscriber(0);
+D2.user_threshold(0);
+D2.user_highlightthresh(4);
+D2.user_d2asp(0);
+
+D2.discussion_id(44971);
+
+D2.d2_seen('72179,1,1,1,6,3,1,1,1');
+D2.more_comments_num(0);
+
+
+//-->
+	</script>
+
+
+
+
+	
+	
+	
+	
+		<ul id="commentlisting" class="d2">
+			<li id="tree_72179" class="comment">
+<div id="comment_status_72179" class="commentstatus"></div>
+<div id="comment_72179" class="oneline">
+
+	<div id="comment_top_72179" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72179" name="comment_link_72179" href="//use.perl.org/comments.pl?sid=44971&amp;cid=72179" onclick="return D2.setFocusComment(72179)">Wonderful post</a>
+			
+			<span id="comment_score_72179" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72179); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~Illusori/">Illusori (9582)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72179"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72179"><p>Wonderful post.</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72179"></div>
+
+</div>
+
+
+<div id="replyto_72179"></div>
+
+<ul id="group_72179">
+	<li id="hiddens_72179" class="hide"></li>
+</ul></li><li id="tree_72180" class="comment">
+<div id="comment_status_72180" class="commentstatus"></div>
+<div id="comment_72180" class="oneline">
+
+	<div id="comment_top_72180" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72180" name="comment_link_72180" href="//use.perl.org/comments.pl?sid=44971&amp;cid=72180" onclick="return D2.setFocusComment(72180)">Where the names came from?</a>
+			
+			<span id="comment_score_72180" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72180); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~jnareb/">jnareb (9333)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72180"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72180">Very nice post!
+<p>
+Do you know perchance where the names came from:<br>
+* Parrot<br>
+* Rakudo<br>
+* Ponie<br>
+* Pugs</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72180"></div>
+
+</div>
+
+
+<div id="replyto_72180"></div>
+
+<ul id="group_72180">
+	<li id="hiddens_72180" class="hide"></li>
+</ul><ul id="commtree_72180"><li id="tree_72181" class="comment">
+<div id="comment_status_72181" class="commentstatus"></div>
+<div id="comment_72181" class="oneline">
+
+	<div id="comment_top_72181" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72181" name="comment_link_72181" href="//use.perl.org/comments.pl?sid=44971&amp;cid=72181" onclick="return D2.setFocusComment(72181)">Re:</a>
+			
+			<span id="comment_score_72181" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72181); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~daxim/">daxim (8218)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72181"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72181"><p> <a href="http://en.wikipedia.org/wiki/Parrot_virtual_machine#History" title="wikipedia.org" rel="nofollow">http://en.wikipedia.org/wiki/Parrot_virtual_machine#History</a> [wikipedia.org]
+
+</p><p> <a href="http://en.wikipedia.org/wiki/Rakudo_Perl#Name" title="wikipedia.org" rel="nofollow">http://en.wikipedia.org/wiki/Rakudo_Perl#Name</a> [wikipedia.org]
+
+</p><p>Ponies: a running gag. <a href="http://search.cpan.org/dist/Acme-POE-Knee/" title="cpan.org" rel="nofollow">Everybody wants one</a> [cpan.org], <a href="http://jifty.org/images/pony.jpg" title="jifty.org" rel="nofollow">but only Jifty comes with one</a> [jifty.org]. Let's best not get into the details of <a href="http://london.pm.org/about/faq.html#pony" title="pm.org" rel="nofollow">London.pm's</a> [pm.org] <a href="http://p3rl.org/Acme::EyeDrops#Shape_Reference" title="p3rl.org" rel="nofollow">weird</a> [p3rl.org] <a href="http://p3rl.org/Acme::Pony#DESCRIPTION" title="p3rl.org" rel="nofollow"> fetishes</a> [p3rl.org]&#8230;
+
+</p><p>Pugs is written in Haskell. <b>h</b>ugs is the name of a <b>H</b>askell compiler, <b>p</b>ugs is a <b>P</b>erl 6 compiler; my speculation is that name was chosen to be appealing to both camps, <a href="http://www.pugscode.org/images/pugs.small.png" title="pugscode.org" rel="nofollow">cute backronym</a> [pugscode.org] notwithstanding.</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72181"></div>
+
+</div>
+
+
+<div id="replyto_72181"></div>
+
+<ul id="group_72181">
+	<li id="hiddens_72181" class="hide"></li>
+</ul></li></ul></li><li id="tree_72182" class="comment">
+<div id="comment_status_72182" class="commentstatus"></div>
+<div id="comment_72182" class="oneline">
+
+	<div id="comment_top_72182" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72182" name="comment_link_72182" href="//use.perl.org/comments.pl?sid=44971&amp;cid=72182" onclick="return D2.setFocusComment(72182)">great article</a>
+			
+			<span id="comment_score_72182" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72182); return false">Score:2</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~jmm/">jmm (276)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72182"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72182"><tt>A wonderful article.&nbsp; At first, I thought that you were unaware of the Topaz incarnation of "Perl 6", but I agree that it is not really something to consider as part of Perl 6 as it became and should not affect the anniversary date.<br><span class="substr"> </span> <br>The mugs jokes had me expecting something that would refer to a broken mug being unable to hold java but could still hold something even more important.<br> <br>The pugs description brings back great memories of the 2005 YAPC::NA hackathon.&nbsp; I think it was the second or third ha</tt></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72182"></div>
+
+</div>
+
+
+<div id="replyto_72182"></div>
+
+<ul id="group_72182">
+	<li id="hiddens_72182" class="hide"></li>
+</ul></li><li id="tree_72188" class="comment">
+<div id="comment_status_72188" class="commentstatus"></div>
+<div id="comment_72188" class="oneline">
+
+	<div id="comment_top_72188" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72188" name="comment_link_72188" href="//use.perl.org/comments.pl?sid=44971&amp;cid=72188" onclick="return D2.setFocusComment(72188)">Fan-damn-tastic</a>
+			
+			<span id="comment_score_72188" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72188); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~thickas/">thickas (5805)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72188"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72188">Thanks !<p>
+I am really grateful for the link to Audreys note about the fate of Pugs.</p><p>
+It is good to remember that severe damage can come from  words.</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72188"></div>
+
+</div>
+
+
+<div id="replyto_72188"></div>
+
+<ul id="group_72188">
+	<li id="hiddens_72188" class="hide"></li>
+</ul><ul id="commtree_72188"><li id="tree_72191" class="comment">
+<div id="comment_status_72191" class="commentstatus"></div>
+<div id="comment_72191" class="oneline">
+
+	<div id="comment_top_72191" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72191" name="comment_link_72191" href="//use.perl.org/comments.pl?sid=44971&amp;cid=72191" onclick="return D2.setFocusComment(72191)">Re:</a>
+			
+			<span id="comment_score_72191" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72191); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~audreyt/">audreyt (6654)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72191"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72191"><p>
+Ah. But words can heal, too...
+</p><p>
+Translating this series to Chinese has been deeply therapeutic for myself, and I'd like to thank masak++ again for bringing me back to #perl6.<nobr> <wbr></nobr>:-)
+</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72191"></div>
+
+</div>
+
+
+<div id="replyto_72191"></div>
+
+<ul id="group_72191">
+	<li id="hiddens_72191" class="hide"></li>
+</ul><ul id="commtree_72191"><li id="tree_72192" class="comment">
+<div id="comment_status_72192" class="commentstatus"></div>
+<div id="comment_72192" class="oneline">
+
+	<div id="comment_top_72192" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72192" name="comment_link_72192" href="//use.perl.org/comments.pl?sid=44971&amp;cid=72192" onclick="return D2.setFocusComment(72192)">Re:</a>
+			
+			<span id="comment_score_72192" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72192); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~thickas/">thickas (5805)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72192"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72192">God bless you Audrey.<p>
+
+Pugs made this non contributor (except in a limited financial sense) v happy. Living for me in 05 was reading the Pugs blog and watching things happen.</p><p>
+
+Audrey++</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72192"></div>
+
+</div>
+
+
+<div id="replyto_72192"></div>
+
+<ul id="group_72192">
+	<li id="hiddens_72192" class="hide"></li>
+</ul><ul id="commtree_72192"><li id="tree_72193" class="comment">
+<div id="comment_status_72193" class="commentstatus"></div>
+<div id="comment_72193" class="oneline">
+
+	<div id="comment_top_72193" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72193" name="comment_link_72193" href="//use.perl.org/comments.pl?sid=44971&amp;cid=72193" onclick="return D2.setFocusComment(72193)">Re:</a>
+			
+			<span id="comment_score_72193" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72193); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~audreyt/">audreyt (6654)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72193"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72193">Thank you for your kind words. It means a lot to me.
+<p>
+#perl6 is even more active today than it was before; things are happening there very smoothly and pleasantly... The lambda-butterflies are so adorable nowadays.
+</p><p>
+Ah, this must be how a proud grandparent feel like.<nobr> <wbr></nobr>:-)</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72193"></div>
+
+</div>
+
+
+<div id="replyto_72193"></div>
+
+<ul id="group_72193">
+	<li id="hiddens_72193" class="hide"></li>
+</ul></li></ul></li><li id="tree_72194" class="comment">
+<div id="comment_status_72194" class="commentstatus"></div>
+<div id="comment_72194" class="oneline">
+
+	<div id="comment_top_72194" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72194" name="comment_link_72194" href="//use.perl.org/comments.pl?sid=44971&amp;cid=72194" onclick="return D2.setFocusComment(72194)">Re:</a>
+			
+			<span id="comment_score_72194" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72194); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~masak/">masak (6289)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72194"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72194"><p><div class="quote"><p>I'd like to thank masak++ again for bringing me back to #perl6.<nobr> <wbr></nobr>:-)</p></div><p>Oh, I did, didn't I?<nobr> <wbr></nobr>:-)</p><p> <em>* masak rejoices</em> </p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72194"></div>
+
+</div>
+
+
+<div id="replyto_72194"></div>
+
+<ul id="group_72194">
+	<li id="hiddens_72194" class="hide"></li>
+</ul></li></ul></li></ul></li>
+			<li id="roothiddens" class="hide"></li>
+		</ul>
+	
+	
+	
+	
+
+
+<div id="replyto_0"></div>
+
+
+<div id="discussion_buttons">
+
+
+<span class="nbutton"><p><b><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_a" class="hide">Get More Comments</span></a></b></p></span>
+
+
+
+<span class="nbutton"><p><b><a href="//use.perl.org/comments.pl?sid=44971&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></b></p></span>
+
+
+
+
+
+
+
+</div>
+
+
+
+	<script type="text/javascript">
+<!--
+		D2.currents()['hidden']   = 0;
+		D2.currents()['full']     = 0;
+		D2.currents()['oneline']  = 9;
+		// D2.currents_total(9);
+
+		D2.abbrev_comments({72182:245});
+		D2.noshow_comments([]);
+		D2.pieces_comments([72179,72180,72181,72182,72188,72191,72192,72193,72194]);
+		D2.init_hiddens([]);
+
+		D2.finishLoading();
+
+
+		if (D2.thresh_totals()[6][6][1] == 0) {
+			D2.replyTo(0, 1);
+		}
+
+
+//-->
+	</script>
+
+<!-- end template: ID 157, printCommComments;misc;default -->
+
+
+
+<!-- start template: ID 112, footer;misc;default -->
+
+</div>
+                </div>
+                <div id="footer">
+			<div class="download">
+                                <!-- START DOWNLOAD PERL -->
+                                <!-- Perl Mongers, Inc.  web@perlmongers.org -->
+                                <a href="http://www.cpan.org/ports/index.html"><img src="http://www.perl.org/Images/download_perl.gif" width="102" height="42" alt="Download Perl Now!"></a>
+                                <!-- END DOWNLOAD PERL -->
+                        </div>	
+			<div class="sitelogo">
+				<a href="//use.perl.org/">
+					<img src="http://images.use.perl.org/topics/useperl.gif" alt="useperl">
+				</a>
+			</div>
+                        <em>
+				&nbsp; &nbsp; &gt; This made me wonder, suddenly: can telnet be written in perl?<BR>
+&nbsp; &nbsp; Of course it can be written in Perl.&nbsp; Now if you'd said nroff,<BR>
+&nbsp; &nbsp; that would be more challenging...&nbsp;  --Larry Wall
+			</em>
+		</div>
+		<div class="copyright">
+			Stories, comments, journals, and other submissions on use Perl; are Copyright 1998-2006, their respective owners.
+		</div>
+		<div class="btmnav">
+			<ul>
+	<li class="begin">
+		<a href="//use.perl.org/faq.shtml">FAQ</a>
+	</li>
+	<li>
+		<a href="//use.perl.org/about.shtml">About</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/submit.pl">Submit Story</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/search.pl">Older Stories</a>
+        </li>
+        <li>	
+		<a href="//use.perl.org/topics.shtml">Topics</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/pollBooth.pl">Polls</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/journal.pl">Journals</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/authors.pl">Authors</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/modulelist/">New Modules</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/users.pl?op=edithome">Preferences</a>
+
+        </li>
+</ul>
+		</div>
+        </div>
+<div id="modal_cover" style="display:none" onclick="hide_modal_box()"></div>
+<div id="modal_box" style="display:none">
+        <div class="generaltitle" >
+                <div class="title"><h3><span id="preference_title"></span> <a href="#" onclick="hide_modal_box(); return false"><img src="//images.use.perl.org/sic_close.png" alt="Close"></a></h3></div>
+        </div>
+        <div id="modal_box_content"></div>
+</div>
+
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		_uacct = "UA-32013-15";
+		urchinTracker();
+	</script>
+
+</body>
+</html>
+
+<!-- end template: ID 112, footer;misc;default -->
+

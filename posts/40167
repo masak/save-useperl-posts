@@ -1,0 +1,851 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="shortcut icon" href="//use.perl.org/favicon.ico">
+
+<title>Journal of masak (6289)</title>
+
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/base.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/comments.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/useperl.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="print" href="//images.use.perl.org/print.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="handheld" href="//images.use.perl.org/handheld.css?T_2_5_0_235">
+
+<script src="//images.use.perl.org/jquery/jquery-1.2.6.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/jquery/jquery.metadata.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/slash.util.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/jquery/jquery.slashdot.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/yahoo.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/dom.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/event.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/dragdrop.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/animation.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/calendar.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/sd_calendar.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/slash.article-info.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/tag-ui.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/common.js?T_2_5_0_235" type="text/javascript"></script>
+
+<!-- start template: ID 121, header;misc;default -->
+
+<link rel="top"       title="All the Perl that's Practical to Extract and Report" href="//use.perl.org/" >
+<link rel="search"    title="Search use Perl" href="//use.perl.org/search.pl">
+<link rel="author"    title="masak" href="//use.perl.org/~masak/">
+<link rel="alternate" title="masak's Journal RSS" href="http://use.perl.org/~masak/journal/rss" type="application/rss+xml">
+<link rel="alternate" title="masak's Friends' Journals RSS" href="http://use.perl.org/~masak/journal/friends/rss" type="application/rss+xml">
+<link rel="alternate" title="Most Recent Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="Most Active Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;type=count&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="Most Befriended Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;type=friends&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="use Perl RSS" href="//use.perl.org/index.rss" type="application/rss+xml">
+</head>
+<body class="useperlorg">
+<div id="top_parent"></div>
+
+<div id="jump">
+	<a href="#main-articles">Stories</a>
+	<br>
+	<a href="#blocks">Slash Boxes</a>
+	<br>
+	<a href="#comments">Comments</a>
+</div>
+<div class="ad1">
+
+</div>
+<div id="frame">
+
+<!-- UsePerl Ad Start -->
+<div class="ad1"><!-- ad position 1 -->
+<div id="fad1" style="text-align:center">
+<!-- DoubleClick Ad Tag 1 -->
+<script type="text/javascript">
+	dfp_ord=Math.random()*10000000000000000;
+	dfp_tile = 1;
+
+	document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/ostg.useperl/mainpage_p1_leader;pg=index;logged_in=0;tile='+dfp_tile+';ord='+dfp_ord+'?"><\/script>');
+	dfp_tile++;
+</script>
+</div>
+<!-- End DoubleClick Ad Tag 1 --></div>
+<!-- UsePerl Ad End -->
+
+	<div id="topnav">
+		<div id="logo">
+			<h1>
+				<a href="//use.perl.org">use Perl</a>
+			</h1>
+		</div>
+                <div class="search">
+			<form method="get" action="//use.perl.org/search.pl">
+				<fieldset>
+					<legend></legend>
+					<label>Search <strong>use Perl</strong></label>
+					<input type="text" name="query" value="" size="20">
+					<input type="submit" value="Go" class="button">
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<div id="slogan">
+		<h2>
+			All the Perl that's Practical to Extract and Report
+		</h2>
+	</div>
+	<div id="journalnav">
+		<div id="links">
+			
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="navigation-title">
+		<h4>
+			Navigation
+		</h4>
+	</div>
+	<div class="content" id="navigation-content">
+		<ul>
+	<li class="begin">
+		<a href="//use.perl.org/faq.shtml">FAQ</a>
+	</li>
+	<li>
+		<a href="//use.perl.org/about.shtml">About</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/submit.pl">Submit Story</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/search.pl">Older Stories</a>
+        </li>
+        <li>	
+		<a href="//use.perl.org/topics.shtml">Topics</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/pollBooth.pl">Polls</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/journal.pl">Journals</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/authors.pl">Authors</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/modulelist/">New Modules</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/users.pl?op=edithome">Preferences</a>
+
+        </li>
+</ul>
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+		</div>
+	</div>
+	<div id="contents">
+		
+		<div id="journal">
+
+<!-- end template: ID 121, header;misc;default -->
+
+
+
+<!-- start template: ID 55, journalhead;journal;default -->
+
+<div id="slashboxes">
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="userlogin-title">
+		<h4>
+			use Perl Log In
+		</h4>
+	</div>
+	<div class="content" id="userlogin-content">
+		
+			<form action="//use.perl.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//use.perl.org/">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//use.perl.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+		
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="user-info-title">
+		<h4>
+			masak (6289)
+		</h4>
+	</div>
+	<div class="content" id="user-info-content">
+		<a href="//use.perl.org/~masak/">masak</a> <br>&nbsp;&nbsp;(email not shown publicly)<br><a href="http://masak.org/carl" rel="nofollow">http://masak.org/carl</a><br><hr>Been programming Perl since 2001. Found Perl 6 somewhere around 2004, and fell in love. Now developing November (a Perl 6 wiki), Druid (a Perl 6 board game), pls (a Perl 6 project installer), GGE (a regex engine), and Yapsi (a Perl 6 implementation). Heavy user of and irregular committer to Rakudo.
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+</div>
+<div id="users-blocks">
+
+
+<!-- start template: ID 376, tabbedmenu;misc;default -->
+
+
+
+<!-- end template: ID 376, tabbedmenu;misc;default -->
+
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			<a href="//use.perl.org/~masak/journal/">Journal</a> of <a href="//use.perl.org/~masak/">masak</a> (6289)
+			
+		</h3>
+	</div>
+</div>
+
+
+<div id="usermenu">
+<ul class="menu">
+<li><span class="begin"><a href="//use.perl.org/~masak/" class="begin">Info</a></span></li><li class="selected"><b><a href="//use.perl.org/~masak/journal/">Journal</a></b></li><li><a href="//use.perl.org/~masak/firehose/">Firehose</a></li><li><a href="//use.perl.org/~masak/friends/">Friends</a></li><li><a href="//use.perl.org/~masak/fans/">Fans</a></li><li><a href="//use.perl.org/~masak/foes/">Foes</a></li><li><a href="//use.perl.org/~masak/freaks/">Freaks</a></li><li><a href="//use.perl.org/~masak/tags/">Tags</a></li><li><a href="//use.perl.org/~masak/bookmarks/" class="end">Bookmarks</a></li>
+</ul>
+</div><div class="generalbody">
+
+<!-- start template: ID 376, tabbedmenu;misc;default -->
+
+<ul class="menu">
+<li><span class="begin"><a href="//use.perl.org/journal.pl?op=top" class="begin">Top&nbsp;10</a></span></li><li><a href="//use.perl.org/journal.pl?op=friends" class="end">Friend's&nbsp;Journals</a></li>
+</ul>
+
+<!-- end template: ID 376, tabbedmenu;misc;default -->
+
+<!-- end template: ID 55, journalhead;journal;default -->
+
+
+
+<!-- start template: ID 65, slashdot;journal;default -->
+
+<div id="journalslashdot">
+    
+	<div class="journaldate">Monday February 08, 2010</div>
+	
+	<div class="details">08:54 AM</div>
+	<div class="title">
+		<h3>The typo trap: a farcical FAQ</h3>
+	</div>
+	<div class="adminoptions">
+		[
+
+			<a href="//use.perl.org/~masak/journal/40167">#40167</a>
+		]
+	</div>
+
+	<div class="intro"><p> <em>[Update 2010-04-03: The below post is about <a href="http://rt.perl.org/rt3/Ticket/Display.html?id=62732" rel="nofollow">a bug</a> which jnthn++ just <a href="http://github.com/rakudo/rakudo/commit/9a20634ae6cf444b432d5b8dce40688a78b461fa" rel="nofollow">fixed</a> in Rakudo master. That means that the cause for the main complaint of the post &#8212; not getting any sensible error diagnostics whatsoever &#8212; has been removed. Yay!]</em> </p><p> <b>Help! I'm getting the error "invoke() not implemented in class 'Undef'" in my large application. What did I do wrong?</b> </p><p>You've mistyped a class name which sits inside a namespace.</p><p> <b>How am I supposed to figure that out?</b> </p><p>I didn't say it was a particularly good error message.</p><p>It's like this: if you mistype a class name which is not in a namespace, you'll get an informative error message:</p><p> <code>$ perl6 -e 'A.foo'<br>
+Could not find non-existent sub A<br>
+in Main (file src/gen_setting.pm, line 324)</code> </p><p>However, if you mistype a class name which <em>is</em> in a namespace, you will get an <em>un</em>informative error message:</p><p> <code>$ perl6 -e 'A::B.foo'<br>
+invoke() not implemented in class 'Undef'<br>
+in Main (file &lt;unknown&gt;, line &lt;unknown&gt;)</code> </p><p>So there's your error message. Linking it to the actual cause is something which you'll learn by experience.</p><p> <b>So in that case, I don't get the name of the class which was mistyped in my program?</b> </p><p>Correct.</p><p> <b>And I don't get the line number of my typo?</b> </p><p>Indeed not.</p><p> <b>Or the file?</b> </p><p>Right. You'll get no information about the location of the typo.</p><p> <b>Is that intentional?</b> </p><p>Well, no. As you see from the error message above, the information is meant to be printed, but it comes out as <code>(file &lt;unknown&gt;, line &lt;unknown&gt;)</code> instead.</p><p> <b>Why?</b> </p><p>Rakudo is built on top of Parrot. Usually, Rakudo generates its own error messages, but in some cases, Parrot will also generate an error. The error <code>invoke() not implemented in class 'Undef'</code> is such a case. When a Parrot-internal error like this one occurs, Rakudo will not be able to extract the annotation information required to provide a sensible line number and file.</p><p> <b>I... I see.</b> </p><p>Yeah. Sorry about that.</p><p> <b>Are you able to pick up the irony in the fact that when I use namespaces to help mitigate the complexity of my project, I end up with an error message that in fact makes it harder for me to manage the complexity of my project?</b> </p><p>Hold on.</p><p>Yes. We are able to pick up the irony in that. Quite easily, in fact.</p><p>Consider not using namespaces at the present juncture. They are very useful, but they are also known as a frequent source of annoyances like this.</p><p> <b>By the way, I couldn't help but note that the line number and file information in your first example doesn't make any sense either. What the heck is <code>src/gen_setting.pm</code> and <code>line 324</code>?</b> </p><p>Well, uh, that's the last line of internal Rakudo code that actually has a working line-and-file annotation. It's nothing that should reach the user, really.</p><p> <b>So that's kinda broken, too?</b> </p><p>Annotations are currently broken, yes. Apologies.</p><p> <b>Back to my mistyped type name. My program is distributed over fifteen modules and ten thousand lines of code. How do you propose I find my typo?</b> </p><p>First off, we recommend that you compile often. That way, the diff from the last working code will not be too large, and you will not have to visually scan so much text hunting for your typo.</p><p>Secondly, it's often useful to have your project in a version tracker such as Git, so that you can do <code>git diff</code> to see the changes against the index, or against the latest commit.</p><p>Thirdly, when all else fails, you can always insert print statements into your code, to try to bisect the origin of the error.</p><p> <b>So in other words, Rakudo is no help whatsoever when this occurs?</b> </p><p>Now, that's not quite fair. Rakudo tells you <em>that</em> the error occurs. That's actually useful information.</p><p> <b>And you consider that adequate?</b> </p><p>No, I didn't say that! No-one is happy about this situation. It's just the way things are.</p><p> <b>So it can't be fixed?</b> </p><p>Theoretically, yes. But not easily. Remember that the error occurs in Parrot.</p><p> <b>Don't Rakudo and Parrot developers confer with each other?</b> </p><p>Oh, sure we do. Do not assume that we're deliberately causing this situation. It's just that the current way Rakudo and Parrot are welded together makes the situation non-trivial to rectify.</p><p> <b>So this problem is going to go away with the advent of the new <code>ng</code> branch?</b> </p><p>There's nothing to indicate that this would be the case. In <code>ng</code>, you currently get a Null PMC access:</p><p> <code>$<nobr> <wbr></nobr>./perl6 -e 'A::B.foo' # ng branch<br>
+Null PMC access in invoke()<br>
+current instr.: '_block14' pc 29 (EVAL_1:0)<br>
+called from Sub '!UNIT_START' pc 984 (src/glue/run.pir:17)<br>
+called from Sub 'perl6;PCT;HLLCompiler;eval' pc -1 ((unknown file):-1)<br>
+called from Sub 'perl6;PCT;HLLCompiler;command_line' pc 1489 (src/PCT/HLLCompiler.pir:794)<br>
+called from Sub 'perl6;Perl6;Compiler;main' pc -1 ((unknown file):-1)</code> </p><p>To its credit, Rakudo <code>ng</code> does provide more information in this case, but unfortunately the information is of a kind which was concealed from the user in Rakudo <code>master</code> about a year ago (because it tended to be very uninformative).</p><p> <b>Just to summarize: this all sucks, right?</b> </p><p>That would be a succinct description of the state of this particular error message, yes.</p><p> <b>I heard that the Perl 6 community has adopted very high standards with respect to error messages. There's talk about "awesome error messages", and last summer I was in the audience when Larry Wall demonstrated how good Perl 6 was at reporting error messages to the user. How does this error message square with all of that?</b> </p><p>The awesome error messages are like a platonic ideal towards which all implementations aspire. Rakudo, being rooted in our imperfect physical world, doesn't always get all the way. Yet.</p><p> <b>I'm about to go visually scan ten thousand lines of code, looking for where my error message might have originated. Any last words?</b> </p><p>We value your efforts as an early adopter of Rakudo. Your feedback is important to us. Have a nice day.</p></div>
+	
+    
+
+	<div class="journalpage">
+		
+		<br>
+		<a href="//use.perl.org/journal.pl?op=list&amp;uid=6289" class="all">List all Journal entries</a>
+	</div>
+</div>
+
+<!-- end template: ID 65, slashdot;journal;default -->
+
+</div></div>
+
+<!-- start template: ID 159, printCommentsMain;misc;default -->
+
+<a name="acomments"></a>
+<div class="commentwrap" id="commentwrap">
+
+<div class="commentBox" style="font-size: 120%">
+	<div>
+<span class="escape-link"><a href="//use.perl.org/~masak/journal/40167" title="Back to Article - The typo trap: a farcical FAQ">The typo trap: a farcical FAQ</a></span>
+<span class="commentBoxLinks"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_d"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=44507&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></span>
+	</div>
+</div>
+
+	<div class="commentBoxForm" id="commentControlBox">
+<div></div>
+	<div class="commentBox">
+		<small>
+		<b>The Fine Print:</b> The following comments are owned by whoever posted them.  We are not responsible for them in any way.
+		</small>
+<noscript><br><small>Without JavaScript enabled, you might want to
+use <a href="//use.perl.org/comments.pl?sid=44507&amp;threshold=0&amp;commentsort=0&amp;mode=thread&amp;no_d2=1">the classic discussion system</a> instead.  If you <a href="//use.perl.org/login.pl">login</a>, you can remember this preference.
+</small></noscript>
+	</div>
+	</div>
+	
+		<div id="d2out" class="horizontal">
+		<div id="d2act" class="hide">
+		<div class="loki" id="gods">
+		<div class="block">
+			<div class="title">
+
+				<h4>
+				
+					<span class="h-inline">
+					<a href="//use.perl.org/~masak/journal/40167" title="Back to Article - The typo trap: a farcical FAQ">The typo trap: a farcical FAQ</a></span>
+					<span class="titlecount"><a href="//use.perl.org/~masak/journal/40167#topcomment" title="Back to Top Comment - The typo trap: a farcical FAQ"><span id="titlecountnum">6</span>&nbsp;Comments</a></span>
+				
+		<span class="ccw-header-links"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_b"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=44507&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></span>
+		<span id="d2toggle" title="Toggle window location" onclick="D2.toggleDisplayOptions()" class="close">/</span>
+				</h4>
+			</div>
+		</div>
+<script type="text/javascript">
+gCommentControlWidget = null;
+
+YAHOO.slashdot.ThresholdApp = function() {
+  return {
+    init: function() {
+      gCommentControlWidget = new YAHOO.slashdot.ThresholdWidget('X');
+      gCommentControlWidget.setTHT(D2.user_threshold(), D2.user_highlightthresh());
+      D2.updateTotals();
+    }
+  };
+}();
+
+YAHOO.util.Event.addListener(window, "load", YAHOO.slashdot.ThresholdApp.init);
+</script>
+		<div id="bones">
+      <div id="ccw">
+        <div id="ccw-body" class="ccw-core">
+          <div id="ccw-panel-container" class="ccw-core">
+            <div id="ccw-full-panel" class="ccw-panel">
+              <div class="ccw-panel-border"></div>
+              <div id="ccw-full-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-full-count-text" class="ccw-count-text"><span id="currentFull"></span><span id="ccw-full-phrase">&nbsp;Full</span></span>
+              </div>
+            </div>
+            <div id="ccw-abbr-panel" class="ccw-panel">
+              <div class="ccw-panel-border"></div>
+              <div id="ccw-abbr-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-abbr-count-text" class="ccw-count-text"><span id="currentOneline"></span><span id="ccw-abbr-phrase">&nbsp;Abbreviated</span></span>
+              </div>
+            </div>
+            <div id="ccw-hide-panel" class="ccw-panel">
+              <div id="ccw-hide-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-hide-count-text" class="ccw-count-text"><span id="currentHidden"></span><span id="ccw-hide-phrase">&nbsp;Hidden</span></span>
+              </div>
+            </div>
+          </div>
+    
+          <div id="ccw-control" class="ccw-core">
+            <div id="ccw-centering-rail" class="ccw-core">
+              <div id="ccw-hide-bar-pos" class="ccw-core-pos">
+                <div id="ccw-hide-bar" class="ccw-bar">
+                  <div id="ccw-hide-bar-tab" class="ccw-bar-tab"></div>
+                  <div id="ccw-hide-bar-upzone" class="ccw-upzone" onclick="gCommentControlWidget.stepTHT(HIDE_BAR, +1)"></div>
+                  <div id="ccw-hide-bar-downzone" class="ccw-downzone" onclick="gCommentControlWidget.stepTHT(HIDE_BAR, -1)"></div>
+                </div>
+              </div>
+              <div id="ccw-abbr-bar-pos" class="ccw-core-pos">
+                <div id="ccw-abbr-bar" class="ccw-bar">
+                  <div id="ccw-abbr-bar-tab" class="ccw-bar-tab"></div>
+                  <div id="ccw-abbr-bar-upzone" class="ccw-upzone" onclick="gCommentControlWidget.stepTHT(ABBR_BAR, +1)"></div>
+                  <div id="ccw-abbr-bar-downzone" class="ccw-downzone" onclick="gCommentControlWidget.stepTHT(ABBR_BAR, -1)"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+		<div class="commentControlFooter"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_c"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=44507&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a><div id="login_cover" style="display:none" onclick="hide_login_box()"></div>
+<div id="login_box" style="display:none">
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			Please Log In to Continue<a href="#" onclick="hide_login_box(); return false" class="close" title="Close this box"><img id="login_box_close" src="//images.use.perl.org/sic_close.png" alt="Close"></a>
+			
+		</h3>
+	</div>
+</div>
+<div id="login_box_content">
+<form action="//use.perl.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//use.perl.org/comments.pl?sid=44507">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//use.perl.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+</div></div>
+<script type="text/javascript">logged_in = 0</script></div>
+		<div id="commentControlBoxStatus" class="hide"><b>Loading... please wait.</b></div>
+	</div>
+</div>
+		</div>
+	
+</div>
+<a name="topcomment"></a>
+
+<!-- end template: ID 159, printCommentsMain;misc;default -->
+
+
+
+<!-- start template: ID 157, printCommComments;misc;default -->
+
+<script src="//images.use.perl.org/comments.js?T_2_5_0_235" type="text/javascript"></script>
+	<script type="text/javascript">
+<!--
+	D2.d2_keybindings_disable()[191] = 1;
+	window.onscroll = D2.d2act;
+	D2.boxStatus(1);
+D2.comments({ 71671: { uid: 8594, pid: 71640, subject: "Re:heh", read: 0, points: 1, kids: [ 71675 ], opid: 71640 }, 71710: { uid: 6747, pid: 71675, read: 0, points: 1, kids: [ 71711 ], opid: 71675 }, 71626: { uid: 8594, pid: 0, read: 0, points: 1, kids: [ 71640 ], opid: 0 }, 71675: { uid: 6289, pid: 71671, subject: "Re:heh", read: 0, points: 1, kids: [ 71710 ], opid: 71671 }, 71711: { uid: 6289, pid: 71710, subject: "Re: since Michael Dorn...", read: 0, points: 1, kids: [  ], opid: 71710 }, 71640: { uid: 6289, pid: 71626, subject: "Re:heh", read: 0, points: 1, kids: [ 71671 ], opid: 71626 } });
+
+D2.thresh_totals({6:{6:{1:6,3:0,2:0}},4:{6:{1:6,3:0,2:0},4:{1:6,3:0,2:0},5:{1:6,3:0,2:0}},1:{6:{1:0,3:0,2:6},4:{1:0,3:0,2:6},1:{1:0,3:6,2:0},3:{1:0,3:0,2:6},2:{1:0,3:1,2:5},5:{1:0,3:0,2:6}},3:{6:{1:6,3:0,2:0},4:{1:6,3:0,2:0},3:{1:6,3:0,2:0},5:{1:6,3:0,2:0}},0:{6:{1:0,3:0,2:6},4:{1:0,3:0,2:6},1:{1:0,3:6,2:0},3:{1:0,3:0,2:6},0:{1:0,3:6,2:0},2:{1:0,3:1,2:5},5:{1:0,3:0,2:6}},2:{6:{1:6,3:0,2:0},4:{1:6,3:0,2:0},3:{1:6,3:0,2:0},2:{1:6,3:0,2:0},5:{1:6,3:0,2:0}},5:{6:{1:6,3:0,2:0},5:{1:6,3:0,2:0}},"-1":{6:{1:0,3:0,2:6},4:{1:0,3:0,2:6},1:{1:0,3:6,2:0},3:{1:0,3:0,2:6},0:{1:0,3:6,2:0},2:{1:0,3:1,2:5},5:{1:0,3:0,2:6},"-1":{1:0,3:6,2:0}}});
+
+D2.root_comment(0);
+D2.root_comments([71626]);
+D2.root_comments_hash({71626:1});
+
+D2.d2_comment_order(0);
+D2.user_uid(7);
+D2.user_is_anon(1);
+D2.user_is_admin(0);
+D2.user_is_subscriber(0);
+D2.user_threshold(0);
+D2.user_highlightthresh(4);
+D2.user_d2asp(0);
+
+D2.discussion_id(44507);
+
+D2.d2_seen('71626,14,31,4,35,1');
+D2.more_comments_num(0);
+
+
+//-->
+	</script>
+
+
+
+
+	
+	
+	
+	
+		<ul id="commentlisting" class="d2">
+			<li id="tree_71626" class="comment">
+<div id="comment_status_71626" class="commentstatus"></div>
+<div id="comment_71626" class="oneline">
+
+	<div id="comment_top_71626" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71626" name="comment_link_71626" href="//use.perl.org/comments.pl?sid=44507&amp;cid=71626" onclick="return D2.setFocusComment(71626)">heh</a>
+			
+			<span id="comment_score_71626" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71626); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~patspam/">patspam (8594)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71626"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71626">Good to see that people building something as awesome as Perl6 are still able to take the piss out of themselves<nobr> <wbr></nobr>:)</div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71626"></div>
+
+</div>
+
+
+<div id="replyto_71626"></div>
+
+<ul id="group_71626">
+	<li id="hiddens_71626" class="hide"></li>
+</ul><ul id="commtree_71626"><li id="tree_71640" class="comment">
+<div id="comment_status_71640" class="commentstatus"></div>
+<div id="comment_71640" class="oneline">
+
+	<div id="comment_top_71640" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71640" name="comment_link_71640" href="//use.perl.org/comments.pl?sid=44507&amp;cid=71640" onclick="return D2.setFocusComment(71640)">Re:</a>
+			
+			<span id="comment_score_71640" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71640); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~masak/">masak (6289)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71640"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71640"><p>Every once in a while, I stumble on the strange and unfounded view that the Perl 6 community has walked into the mist of just specifying features and crystallizing paradigms without actually <em>producing</em> anything. (See, for example, <span class="substr"> </span><a href="http://lwn.net/Articles/368633/" title="lwn.net" rel="nofollow">here</a> [lwn.net].)</p><p>That view, perhaps reasonable when coming from an outsider, still surprises and saddens me. The FAQ post shows what it's <em>really</em> like to be an early-adopter Perl 6 application developer today. It's very concrete, sometimes painfully so.</p><p>Sure, the class-typo error message is one</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71640"></div>
+
+</div>
+
+
+<div id="replyto_71640"></div>
+
+<ul id="group_71640">
+	<li id="hiddens_71640" class="hide"></li>
+</ul><ul id="commtree_71640"><li id="tree_71671" class="comment">
+<div id="comment_status_71671" class="commentstatus"></div>
+<div id="comment_71671" class="oneline">
+
+	<div id="comment_top_71671" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71671" name="comment_link_71671" href="//use.perl.org/comments.pl?sid=44507&amp;cid=71671" onclick="return D2.setFocusComment(71671)">Re:</a>
+			
+			<span id="comment_score_71671" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71671); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~patspam/">patspam (8594)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71671"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71671">I hope my reply didn't imply that..!
+
+I'm just one of the (I assume) many who read  Rakudo/Parrot related blog posts with a palpable sense of excitement - and in this case enjoyed the humour<nobr> <wbr></nobr>:)</div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71671"></div>
+
+</div>
+
+
+<div id="replyto_71671"></div>
+
+<ul id="group_71671">
+	<li id="hiddens_71671" class="hide"></li>
+</ul><ul id="commtree_71671"><li id="tree_71675" class="comment">
+<div id="comment_status_71675" class="commentstatus"></div>
+<div id="comment_71675" class="oneline">
+
+	<div id="comment_top_71675" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71675" name="comment_link_71675" href="//use.perl.org/comments.pl?sid=44507&amp;cid=71675" onclick="return D2.setFocusComment(71675)">Re:</a>
+			
+			<span id="comment_score_71675" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71675); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~masak/">masak (6289)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71675"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71675"><p>Right, your reply didn't imply that. And I'm glad to hear there are people following Parrot/Rakudo progress with a sense of excitement. One sometimes forgets that, what with detractors being louder and all.</p><p>The fact is that many things <em>are</em> amazing. Just using the subset of Perl 6 that Rakudo provides... it's quite an experience. At the same time, it's not all roses either. If I were some kind of brainless sycophantic groupie, I would perhaps sweep the bad parts under the carpet, and wail "Rakudo is the most<span class="substr"> </span></p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71675"></div>
+
+</div>
+
+
+<div id="replyto_71675"></div>
+
+<ul id="group_71675">
+	<li id="hiddens_71675" class="hide"></li>
+</ul><ul id="commtree_71675"><li id="tree_71710" class="comment">
+<div id="comment_status_71710" class="commentstatus"></div>
+<div id="comment_71710" class="oneline">
+
+	<div id="comment_top_71710" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71710" name="comment_link_71710" href="//use.perl.org/comments.pl?sid=44507&amp;cid=71710" onclick="return D2.setFocusComment(71710)">Re: since Michael Dorn...</a>
+			
+			<span id="comment_score_71710" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71710); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~spinclad/">spinclad (6747)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71710"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71710">But<nobr> <wbr></nobr>.. but<nobr> <wbr></nobr>... oh, yes, you're right.  That was proto, and Austria, of course.  A grateful nation still applauds.</div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71710"></div>
+
+</div>
+
+
+<div id="replyto_71710"></div>
+
+<ul id="group_71710">
+	<li id="hiddens_71710" class="hide"></li>
+</ul><ul id="commtree_71710"><li id="tree_71711" class="comment">
+<div id="comment_status_71711" class="commentstatus"></div>
+<div id="comment_71711" class="oneline">
+
+	<div id="comment_top_71711" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71711" name="comment_link_71711" href="//use.perl.org/comments.pl?sid=44507&amp;cid=71711" onclick="return D2.setFocusComment(71711)">Re:</a>
+			
+			<span id="comment_score_71711" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71711); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~masak/">masak (6289)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71711"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71711"><p>I want to come out and publicly defend the Nobel Peace prize committee by saying that they have seen the error of their ways after the proto nomination. That's why last year, they decided to give the prize to the president of the very peaceful United States.</p><p>I hear this year, the committee will give the prize either to Bruce Willis, or to the kind of lint one sometimes find in one's navel.</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71711"></div>
+
+</div>
+
+
+<div id="replyto_71711"></div>
+
+<ul id="group_71711">
+	<li id="hiddens_71711" class="hide"></li>
+</ul></li></ul></li></ul></li></ul></li></ul></li></ul></li>
+			<li id="roothiddens" class="hide"></li>
+		</ul>
+	
+	
+	
+	
+
+
+<div id="replyto_0"></div>
+
+
+<div id="discussion_buttons">
+
+
+<span class="nbutton"><p><b><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_a" class="hide">Get More Comments</span></a></b></p></span>
+
+
+
+<span class="nbutton"><p><b><a href="//use.perl.org/comments.pl?sid=44507&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></b></p></span>
+
+
+
+
+
+
+
+</div>
+
+
+
+	<script type="text/javascript">
+<!--
+		D2.currents()['hidden']   = 0;
+		D2.currents()['full']     = 0;
+		D2.currents()['oneline']  = 6;
+		// D2.currents_total(6);
+
+		D2.abbrev_comments({71675:530,71640:242});
+		D2.noshow_comments([]);
+		D2.pieces_comments([71626,71640,71671,71675,71710,71711]);
+		D2.init_hiddens([]);
+
+		D2.finishLoading();
+
+
+		if (D2.thresh_totals()[6][6][1] == 0) {
+			D2.replyTo(0, 1);
+		}
+
+
+//-->
+	</script>
+
+<!-- end template: ID 157, printCommComments;misc;default -->
+
+
+
+<!-- start template: ID 112, footer;misc;default -->
+
+</div>
+                </div>
+                <div id="footer">
+			<div class="download">
+                                <!-- START DOWNLOAD PERL -->
+                                <!-- Perl Mongers, Inc.  web@perlmongers.org -->
+                                <a href="http://www.cpan.org/ports/index.html"><img src="http://www.perl.org/Images/download_perl.gif" width="102" height="42" alt="Download Perl Now!"></a>
+                                <!-- END DOWNLOAD PERL -->
+                        </div>	
+			<div class="sitelogo">
+				<a href="//use.perl.org/">
+					<img src="http://images.use.perl.org/topics/useperl.gif" alt="useperl">
+				</a>
+			</div>
+                        <em>
+				And don't tell me there isn't one bit of difference between null and space,<BR>
+because that's exactly how much difference there is.&nbsp; :-)<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --Larry Wall in &lt;10209@jpl-devvax.JPL.NASA.GOV&gt;
+			</em>
+		</div>
+		<div class="copyright">
+			Stories, comments, journals, and other submissions on use Perl; are Copyright 1998-2006, their respective owners.
+		</div>
+		<div class="btmnav">
+			<ul>
+	<li class="begin">
+		<a href="//use.perl.org/faq.shtml">FAQ</a>
+	</li>
+	<li>
+		<a href="//use.perl.org/about.shtml">About</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/submit.pl">Submit Story</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/search.pl">Older Stories</a>
+        </li>
+        <li>	
+		<a href="//use.perl.org/topics.shtml">Topics</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/pollBooth.pl">Polls</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/journal.pl">Journals</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/authors.pl">Authors</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/modulelist/">New Modules</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/users.pl?op=edithome">Preferences</a>
+
+        </li>
+</ul>
+		</div>
+        </div>
+<div id="modal_cover" style="display:none" onclick="hide_modal_box()"></div>
+<div id="modal_box" style="display:none">
+        <div class="generaltitle" >
+                <div class="title"><h3><span id="preference_title"></span> <a href="#" onclick="hide_modal_box(); return false"><img src="//images.use.perl.org/sic_close.png" alt="Close"></a></h3></div>
+        </div>
+        <div id="modal_box_content"></div>
+</div>
+
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		_uacct = "UA-32013-15";
+		urchinTracker();
+	</script>
+
+</body>
+</html>
+
+<!-- end template: ID 112, footer;misc;default -->
+

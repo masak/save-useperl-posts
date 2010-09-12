@@ -1,0 +1,940 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="shortcut icon" href="//use.perl.org/favicon.ico">
+
+<title>Journal of masak (6289)</title>
+
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/base.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/comments.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/useperl.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="print" href="//images.use.perl.org/print.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="handheld" href="//images.use.perl.org/handheld.css?T_2_5_0_235">
+
+<script src="//images.use.perl.org/jquery/jquery-1.2.6.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/jquery/jquery.metadata.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/slash.util.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/jquery/jquery.slashdot.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/yahoo.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/dom.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/event.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/dragdrop.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/animation.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/calendar.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/sd_calendar.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/slash.article-info.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/tag-ui.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/common.js?T_2_5_0_235" type="text/javascript"></script>
+
+<!-- start template: ID 121, header;misc;default -->
+
+<link rel="top"       title="All the Perl that's Practical to Extract and Report" href="//use.perl.org/" >
+<link rel="search"    title="Search use Perl" href="//use.perl.org/search.pl">
+<link rel="author"    title="masak" href="//use.perl.org/~masak/">
+<link rel="alternate" title="masak's Journal RSS" href="http://use.perl.org/~masak/journal/rss" type="application/rss+xml">
+<link rel="alternate" title="masak's Friends' Journals RSS" href="http://use.perl.org/~masak/journal/friends/rss" type="application/rss+xml">
+<link rel="alternate" title="Most Recent Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="Most Active Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;type=count&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="Most Befriended Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;type=friends&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="use Perl RSS" href="//use.perl.org/index.rss" type="application/rss+xml">
+</head>
+<body class="useperlorg">
+<div id="top_parent"></div>
+
+<div id="jump">
+	<a href="#main-articles">Stories</a>
+	<br>
+	<a href="#blocks">Slash Boxes</a>
+	<br>
+	<a href="#comments">Comments</a>
+</div>
+<div class="ad1">
+
+</div>
+<div id="frame">
+
+<!-- UsePerl Ad Start -->
+<div class="ad1"><!-- ad position 1 -->
+<div id="fad1" style="text-align:center">
+<!-- DoubleClick Ad Tag 1 -->
+<script type="text/javascript">
+	dfp_ord=Math.random()*10000000000000000;
+	dfp_tile = 1;
+
+	document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/ostg.useperl/mainpage_p1_leader;pg=index;logged_in=0;tile='+dfp_tile+';ord='+dfp_ord+'?"><\/script>');
+	dfp_tile++;
+</script>
+</div>
+<!-- End DoubleClick Ad Tag 1 --></div>
+<!-- UsePerl Ad End -->
+
+	<div id="topnav">
+		<div id="logo">
+			<h1>
+				<a href="//use.perl.org">use Perl</a>
+			</h1>
+		</div>
+                <div class="search">
+			<form method="get" action="//use.perl.org/search.pl">
+				<fieldset>
+					<legend></legend>
+					<label>Search <strong>use Perl</strong></label>
+					<input type="text" name="query" value="" size="20">
+					<input type="submit" value="Go" class="button">
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<div id="slogan">
+		<h2>
+			All the Perl that's Practical to Extract and Report
+		</h2>
+	</div>
+	<div id="journalnav">
+		<div id="links">
+			
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="navigation-title">
+		<h4>
+			Navigation
+		</h4>
+	</div>
+	<div class="content" id="navigation-content">
+		<ul>
+	<li class="begin">
+		<a href="//use.perl.org/faq.shtml">FAQ</a>
+	</li>
+	<li>
+		<a href="//use.perl.org/about.shtml">About</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/submit.pl">Submit Story</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/search.pl">Older Stories</a>
+        </li>
+        <li>	
+		<a href="//use.perl.org/topics.shtml">Topics</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/pollBooth.pl">Polls</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/journal.pl">Journals</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/authors.pl">Authors</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/modulelist/">New Modules</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/users.pl?op=edithome">Preferences</a>
+
+        </li>
+</ul>
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+		</div>
+	</div>
+	<div id="contents">
+		
+		<div id="journal">
+
+<!-- end template: ID 121, header;misc;default -->
+
+
+
+<!-- start template: ID 55, journalhead;journal;default -->
+
+<div id="slashboxes">
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="userlogin-title">
+		<h4>
+			use Perl Log In
+		</h4>
+	</div>
+	<div class="content" id="userlogin-content">
+		
+			<form action="//use.perl.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//use.perl.org/">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//use.perl.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+		
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="user-info-title">
+		<h4>
+			masak (6289)
+		</h4>
+	</div>
+	<div class="content" id="user-info-content">
+		<a href="//use.perl.org/~masak/">masak</a> <br>&nbsp;&nbsp;(email not shown publicly)<br><a href="http://masak.org/carl" rel="nofollow">http://masak.org/carl</a><br><hr>Been programming Perl since 2001. Found Perl 6 somewhere around 2004, and fell in love. Now developing November (a Perl 6 wiki), Druid (a Perl 6 board game), pls (a Perl 6 project installer), GGE (a regex engine), and Yapsi (a Perl 6 implementation). Heavy user of and irregular committer to Rakudo.
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+</div>
+<div id="users-blocks">
+
+
+<!-- start template: ID 376, tabbedmenu;misc;default -->
+
+
+
+<!-- end template: ID 376, tabbedmenu;misc;default -->
+
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			<a href="//use.perl.org/~masak/journal/">Journal</a> of <a href="//use.perl.org/~masak/">masak</a> (6289)
+			
+		</h3>
+	</div>
+</div>
+
+
+<div id="usermenu">
+<ul class="menu">
+<li><span class="begin"><a href="//use.perl.org/~masak/" class="begin">Info</a></span></li><li class="selected"><b><a href="//use.perl.org/~masak/journal/">Journal</a></b></li><li><a href="//use.perl.org/~masak/firehose/">Firehose</a></li><li><a href="//use.perl.org/~masak/friends/">Friends</a></li><li><a href="//use.perl.org/~masak/fans/">Fans</a></li><li><a href="//use.perl.org/~masak/foes/">Foes</a></li><li><a href="//use.perl.org/~masak/freaks/">Freaks</a></li><li><a href="//use.perl.org/~masak/tags/">Tags</a></li><li><a href="//use.perl.org/~masak/bookmarks/" class="end">Bookmarks</a></li>
+</ul>
+</div><div class="generalbody">
+
+<!-- start template: ID 376, tabbedmenu;misc;default -->
+
+<ul class="menu">
+<li><span class="begin"><a href="//use.perl.org/journal.pl?op=top" class="begin">Top&nbsp;10</a></span></li><li><a href="//use.perl.org/journal.pl?op=friends" class="end">Friend's&nbsp;Journals</a></li>
+</ul>
+
+<!-- end template: ID 376, tabbedmenu;misc;default -->
+
+<!-- end template: ID 55, journalhead;journal;default -->
+
+
+
+<!-- start template: ID 65, slashdot;journal;default -->
+
+<div id="journalslashdot">
+    
+	<div class="journaldate">Saturday December 20, 2008</div>
+	
+	<div class="details">02:34 PM</div>
+	<div class="title">
+		<h3>Fun with code blocks in Perl 6</h3>
+	</div>
+	<div class="adminoptions">
+		[
+
+			<a href="//use.perl.org/~masak/journal/38123">#38123</a>
+		]
+	</div>
+
+	<div class="intro"><p>Here's a little pattern I've discovered while hacking away at <a href="http://use.perl.org/~masak/journal/37885" rel="nofollow">a board game implementation</a> in Perl 6.</p><p>I had a subroutine called <code>input_valid_move</code>, whose job it was to read a move from <code>$*IN</code>, and return the move <em>if it was valid</em> according to the rules of the game. Easy enough.</p><blockquote><div><p> <tt>repeat {<br>&nbsp; &nbsp; print "\n", $player, ': ';<br>} until my $move = input_valid_move(...);</tt></p></div> </blockquote><p>Now, there are several ways a move can be illegal, and I found myself printing and returning a lot from the sub:</p><blockquote><div><p> <tt>unless $row_diff == 2 &amp;&amp; $column_diff == 0<br>&nbsp; &nbsp; || $row_diff == 0 &amp;&amp; $column_diff == 2 {<br> <br>&nbsp; &nbsp; say 'Must be exactly two cells apart';<br>&nbsp; &nbsp; return;<br>}<br> <br>unless @heights[$row_1][$column_1]<br>&nbsp; &nbsp; == @heights[$row_2][$column_2] {<br> <br>&nbsp; &nbsp; say 'Must be supported at both ends';<br>&nbsp; &nbsp; return;<br>}</tt></p></div> </blockquote><p>Notice the repetition? There were many (7) such tests for move correctness, and all of them made a boolean test, printed something and then returned from the sub:</p><blockquote><div><p> <tt>if (<nobr> <wbr></nobr>... ) { # or 'unless'; depends<br>&nbsp; &nbsp; say '...';<br>&nbsp; &nbsp; return;<br>}</tt></p></div> </blockquote><p>Repetition is a sign that there there is an abstraction just waiting to be created. I wanted to make an abstraction <code>flunk_move</code> that closed over the <code>say '...'; return</code> part of the above pattern, parametrizing the message printed. That way, I could just write this instead:</p><blockquote><div><p> <tt>&nbsp; &nbsp; flunk_move 'Must be exactly two cells apart'<br>&nbsp; &nbsp; &nbsp; &nbsp; unless $row_diff == 2 &amp;&amp; $column_diff == 0<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; || $row_diff == 0 &amp;&amp; $column_diff == 2;<br> <br>&nbsp; &nbsp; flunk_move 'Must be supported at both ends'<br>&nbsp; &nbsp; &nbsp; &nbsp; unless @heights[$row_1][$column_1]<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; == @heights[$row_2][$column_2];</tt></p></div> </blockquote><p>Each move correctness test now became a single statement, instead of an <code>if/unless</code> statement containing two statements. As an added bonus, the most important part of the statement (the disqualification of the move) is now leftmost in the statement, something Damian Conway talks about in his book "Perl Best Practices".</p><p>But a new subroutine would not do as a repetition-reducing abstraction. The <code>return</code> statement in such a new sub, having moved from its original environment would be a no-op. I wanted to eat the cake and have it, too.</p><p>S06 states that the <code>return</code> function <a href="http://perlcabal.org/syn/S06.html#The_return_function" rel="nofollow">throws a control exception that is caught by the current lexically enclosing <code>Routine</code>,</a> and this fact turned out to be just what I needed. To decipher the Perl 6 designese, the <code>return</code> in a <code>sub</code> returns from that <code>sub</code>, but the <code>return</code> in a bare block returns from the <code>sub</code> (or whatever) it was called from.</p><blockquote><div><p> <tt>&nbsp; # not what I want -- the return does nothing<br>&nbsp; sub flunk_move($reason) { say $reason; return };<br> <br>&nbsp; # what I want, using pointy block<br>&nbsp; -&gt; $reason { say $reason; return };<br> <br>&nbsp; # what I want, using placeholder variables<br>&nbsp; { say $^reason; return };</tt></p></div> </blockquote><p>Think of it in biological terms: a <code>sub</code> is like a <a href="http://en.wikipedia.org/wiki/Eukaryote" rel="nofollow">eukaryote</a>: a little more complex, handles advanced things like <code>return</code> when necessary. A bare block doesn't have all that advanced piping, and has to delegate its <code>return</code> calls to its surrounding host cell. In other words, a bare block is a bit like an <a href="http://en.wikipedia.org/wiki/Endosymbiont" rel="nofollow">endosymbiont</a> <a href="http://en.wikipedia.org/wiki/Prokaryote" rel="nofollow">prokaryote</a>, a simple organism that in the course of evolutionary history ended up in a symbiotic relationship inside a larger eukaryotic cell.</p><p>Biological analogies aside, what it meant to me was that I could do this in my <code>sub input_valid_move</code>:</p><blockquote><div><p> <tt>my &amp;flunk_move = { say $^reason; return };</tt></p></div> </blockquote><p>(There's the endosymbiont, right there! It can't return from itself, because it's just a humble code block, so it returns from its surrounding subroutine instead, which happens to be <code>input_valid_move</code>.)
+
+</p><p>After that, I could use <code>&amp;flunk_move</code> just as I wanted, as if it were a <code>return</code> statement with side effects. (Same code as above.)</p><blockquote><div><p> <tt>&nbsp; &nbsp; flunk_move 'Must be exactly two cells apart'<br>&nbsp; &nbsp; &nbsp; &nbsp; unless $row_diff == 2 &amp;&amp; $column_diff == 0<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; || $row_diff == 0 &amp;&amp; $column_diff == 2;<br> <br>&nbsp; &nbsp; flunk_move 'Must be supported at both ends'<br>&nbsp; &nbsp; &nbsp; &nbsp; unless @heights[$row_1][$column_1]<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; == @heights[$row_2][$column_2];</tt></p></div> </blockquote><p>Some Smalltalk people extol the power in being able to define things like <a href="http://pozorvlak.livejournal.com/94558.html" rel="nofollow">the if statement</a> from within the language, without any magical trickery to make it work. The pattern I discovered above uses the same kind of strengths, the ability to define my own slightly fancy return statement, and have it look like a built-in in subsequent code.</p><p>That kind of power is what makes Perl 6 a joy to use.</p></div>
+	
+    
+
+	<div class="journalpage">
+		
+		<br>
+		<a href="//use.perl.org/journal.pl?op=list&amp;uid=6289" class="all">List all Journal entries</a>
+	</div>
+</div>
+
+<!-- end template: ID 65, slashdot;journal;default -->
+
+</div></div>
+
+<!-- start template: ID 159, printCommentsMain;misc;default -->
+
+<a name="acomments"></a>
+<div class="commentwrap" id="commentwrap">
+
+<div class="commentBox" style="font-size: 120%">
+	<div>
+<span class="escape-link"><a href="//use.perl.org/~masak/journal/38123" title="Back to Article - Fun with code blocks in Perl 6">Fun with code blocks in Perl 6</a></span>
+<span class="commentBoxLinks"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_d"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=41880&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></span>
+	</div>
+</div>
+
+	<div class="commentBoxForm" id="commentControlBox">
+<div></div>
+	<div class="commentBox">
+		<small>
+		<b>The Fine Print:</b> The following comments are owned by whoever posted them.  We are not responsible for them in any way.
+		</small>
+<noscript><br><small>Without JavaScript enabled, you might want to
+use <a href="//use.perl.org/comments.pl?sid=41880&amp;threshold=0&amp;commentsort=0&amp;mode=thread&amp;no_d2=1">the classic discussion system</a> instead.  If you <a href="//use.perl.org/login.pl">login</a>, you can remember this preference.
+</small></noscript>
+	</div>
+	</div>
+	
+		<div id="d2out" class="horizontal">
+		<div id="d2act" class="hide">
+		<div class="loki" id="gods">
+		<div class="block">
+			<div class="title">
+
+				<h4>
+				
+					<span class="h-inline">
+					<a href="//use.perl.org/~masak/journal/38123" title="Back to Article - Fun with code blocks in Perl 6">Fun with code blocks in Perl 6</a></span>
+					<span class="titlecount"><a href="//use.perl.org/~masak/journal/38123#topcomment" title="Back to Top Comment - Fun with code blocks in Perl 6"><span id="titlecountnum">9</span>&nbsp;Comments</a></span>
+				
+		<span class="ccw-header-links"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_b"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=41880&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></span>
+		<span id="d2toggle" title="Toggle window location" onclick="D2.toggleDisplayOptions()" class="close">/</span>
+				</h4>
+			</div>
+		</div>
+<script type="text/javascript">
+gCommentControlWidget = null;
+
+YAHOO.slashdot.ThresholdApp = function() {
+  return {
+    init: function() {
+      gCommentControlWidget = new YAHOO.slashdot.ThresholdWidget('X');
+      gCommentControlWidget.setTHT(D2.user_threshold(), D2.user_highlightthresh());
+      D2.updateTotals();
+    }
+  };
+}();
+
+YAHOO.util.Event.addListener(window, "load", YAHOO.slashdot.ThresholdApp.init);
+</script>
+		<div id="bones">
+      <div id="ccw">
+        <div id="ccw-body" class="ccw-core">
+          <div id="ccw-panel-container" class="ccw-core">
+            <div id="ccw-full-panel" class="ccw-panel">
+              <div class="ccw-panel-border"></div>
+              <div id="ccw-full-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-full-count-text" class="ccw-count-text"><span id="currentFull"></span><span id="ccw-full-phrase">&nbsp;Full</span></span>
+              </div>
+            </div>
+            <div id="ccw-abbr-panel" class="ccw-panel">
+              <div class="ccw-panel-border"></div>
+              <div id="ccw-abbr-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-abbr-count-text" class="ccw-count-text"><span id="currentOneline"></span><span id="ccw-abbr-phrase">&nbsp;Abbreviated</span></span>
+              </div>
+            </div>
+            <div id="ccw-hide-panel" class="ccw-panel">
+              <div id="ccw-hide-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-hide-count-text" class="ccw-count-text"><span id="currentHidden"></span><span id="ccw-hide-phrase">&nbsp;Hidden</span></span>
+              </div>
+            </div>
+          </div>
+    
+          <div id="ccw-control" class="ccw-core">
+            <div id="ccw-centering-rail" class="ccw-core">
+              <div id="ccw-hide-bar-pos" class="ccw-core-pos">
+                <div id="ccw-hide-bar" class="ccw-bar">
+                  <div id="ccw-hide-bar-tab" class="ccw-bar-tab"></div>
+                  <div id="ccw-hide-bar-upzone" class="ccw-upzone" onclick="gCommentControlWidget.stepTHT(HIDE_BAR, +1)"></div>
+                  <div id="ccw-hide-bar-downzone" class="ccw-downzone" onclick="gCommentControlWidget.stepTHT(HIDE_BAR, -1)"></div>
+                </div>
+              </div>
+              <div id="ccw-abbr-bar-pos" class="ccw-core-pos">
+                <div id="ccw-abbr-bar" class="ccw-bar">
+                  <div id="ccw-abbr-bar-tab" class="ccw-bar-tab"></div>
+                  <div id="ccw-abbr-bar-upzone" class="ccw-upzone" onclick="gCommentControlWidget.stepTHT(ABBR_BAR, +1)"></div>
+                  <div id="ccw-abbr-bar-downzone" class="ccw-downzone" onclick="gCommentControlWidget.stepTHT(ABBR_BAR, -1)"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+		<div class="commentControlFooter"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_c"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=41880&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a><div id="login_cover" style="display:none" onclick="hide_login_box()"></div>
+<div id="login_box" style="display:none">
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			Please Log In to Continue<a href="#" onclick="hide_login_box(); return false" class="close" title="Close this box"><img id="login_box_close" src="//images.use.perl.org/sic_close.png" alt="Close"></a>
+			
+		</h3>
+	</div>
+</div>
+<div id="login_box_content">
+<form action="//use.perl.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//use.perl.org/comments.pl?sid=41880">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//use.perl.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+</div></div>
+<script type="text/javascript">logged_in = 0</script></div>
+		<div id="commentControlBoxStatus" class="hide"><b>Loading... please wait.</b></div>
+	</div>
+</div>
+		</div>
+	
+</div>
+<a name="topcomment"></a>
+
+<!-- end template: ID 159, printCommentsMain;misc;default -->
+
+
+
+<!-- start template: ID 157, printCommComments;misc;default -->
+
+<script src="//images.use.perl.org/comments.js?T_2_5_0_235" type="text/javascript"></script>
+	<script type="text/javascript">
+<!--
+	D2.d2_keybindings_disable()[191] = 1;
+	window.onscroll = D2.d2act;
+	D2.boxStatus(1);
+D2.comments({ 66572: { uid: 983, pid: 66569, subject: "Re:Obscure", read: 0, points: 1, kids: [ 66573 ], opid: 66569 }, 66559: { uid: 5224, pid: 0, read: 0, points: 1, kids: [ 66561 ], opid: 0 }, 66569: { uid: 2855, pid: 0, read: 0, points: 1, kids: [ 66570, 66572, 66583 ], opid: 0 }, 66583: { uid: 5147, pid: 66569, subject: "Re:Obscure", read: 0, points: 1, kids: [ 66584 ], opid: 66569 }, 66562: { uid: 6289, pid: 66561, subject: "Re:\"As an added bonus...\"", read: 0, points: 1, kids: [  ], opid: 66561 }, 66570: { uid: 6289, pid: 66569, subject: "Re:Obscure", read: 0, points: 1, kids: [  ], opid: 66569 }, 66573: { uid: 2855, pid: 66572, subject: "Re:Obscure", read: 0, points: 1, kids: [  ], opid: 66572 }, 66561: { uid: 983, pid: 66559, subject: "Re:\"As an added bonus...\"", read: 0, points: 1, kids: [ 66562 ], opid: 66559 }, 66584: { uid: 2855, pid: 66583, subject: "Re:Obscure", read: 0, points: 1, kids: [  ], opid: 66583 } });
+
+D2.thresh_totals({6:{6:{1:9,3:0,2:0}},4:{6:{1:9,3:0,2:0},4:{1:9,3:0,2:0},5:{1:9,3:0,2:0}},1:{6:{1:0,3:0,2:9},4:{1:0,3:0,2:9},1:{1:0,3:9,2:0},3:{1:0,3:0,2:9},2:{1:0,3:2,2:7},5:{1:0,3:0,2:9}},3:{6:{1:9,3:0,2:0},4:{1:9,3:0,2:0},3:{1:9,3:0,2:0},5:{1:9,3:0,2:0}},0:{6:{1:0,3:0,2:9},4:{1:0,3:0,2:9},1:{1:0,3:9,2:0},3:{1:0,3:0,2:9},0:{1:0,3:9,2:0},2:{1:0,3:2,2:7},5:{1:0,3:0,2:9}},2:{6:{1:9,3:0,2:0},4:{1:9,3:0,2:0},3:{1:9,3:0,2:0},2:{1:9,3:0,2:0},5:{1:9,3:0,2:0}},5:{6:{1:9,3:0,2:0},5:{1:9,3:0,2:0}},"-1":{6:{1:0,3:0,2:9},4:{1:0,3:0,2:9},1:{1:0,3:9,2:0},3:{1:0,3:0,2:9},0:{1:0,3:9,2:0},2:{1:0,3:2,2:7},5:{1:0,3:0,2:9},"-1":{1:0,3:9,2:0}}});
+
+D2.root_comment(0);
+D2.root_comments([66559,66569]);
+D2.root_comments_hash({66559:1,66569:1});
+
+D2.d2_comment_order(0);
+D2.user_uid(7);
+D2.user_is_anon(1);
+D2.user_is_admin(0);
+D2.user_is_subscriber(0);
+D2.user_threshold(0);
+D2.user_highlightthresh(4);
+D2.user_d2asp(0);
+
+D2.discussion_id(41880);
+
+D2.d2_seen('66559,2,1,7,1,2,1,10,1');
+D2.more_comments_num(0);
+
+
+//-->
+	</script>
+
+
+
+
+	
+	
+	
+	
+		<ul id="commentlisting" class="d2">
+			<li id="tree_66559" class="comment">
+<div id="comment_status_66559" class="commentstatus"></div>
+<div id="comment_66559" class="oneline">
+
+	<div id="comment_top_66559" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_66559" name="comment_link_66559" href="//use.perl.org/comments.pl?sid=41880&amp;cid=66559" onclick="return D2.setFocusComment(66559)">"As an added bonus..."</a>
+			
+			<span id="comment_score_66559" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 66559); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~Ron+Savage/">Ron Savage (5224)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_66559"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_66559"><p>Hi. Where you talk about Damian's recommendation, I think you've got it backwards. On p 93 of his book he says 'avoid using the postfix form of if'. But that's exactly what you're doing!<br>Cheers</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_66559"></div>
+
+</div>
+
+
+<div id="replyto_66559"></div>
+
+<ul id="group_66559">
+	<li id="hiddens_66559" class="hide"></li>
+</ul><ul id="commtree_66559"><li id="tree_66561" class="comment">
+<div id="comment_status_66561" class="commentstatus"></div>
+<div id="comment_66561" class="oneline">
+
+	<div id="comment_top_66561" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_66561" name="comment_link_66561" href="//use.perl.org/comments.pl?sid=41880&amp;cid=66561" onclick="return D2.setFocusComment(66561)">Re:</a>
+			
+			<span id="comment_score_66561" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 66561); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~chromatic/">chromatic (983)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_66561"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_66561"><p>Page 94 says "Reserve postfix <code>if</code> for flow-of-control statements."  It's his only exception to the previous guideline.</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_66561"></div>
+
+</div>
+
+
+<div id="replyto_66561"></div>
+
+<ul id="group_66561">
+	<li id="hiddens_66561" class="hide"></li>
+</ul><ul id="commtree_66561"><li id="tree_66562" class="comment">
+<div id="comment_status_66562" class="commentstatus"></div>
+<div id="comment_66562" class="oneline">
+
+	<div id="comment_top_66562" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_66562" name="comment_link_66562" href="//use.perl.org/comments.pl?sid=41880&amp;cid=66562" onclick="return D2.setFocusComment(66562)">Re:</a>
+			
+			<span id="comment_score_66562" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 66562); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~masak/">masak (6289)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_66562"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_66562"><p>Right, and this is a fancy <code>return</code>, hence control flow. I forgot to clarify that.</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_66562"></div>
+
+</div>
+
+
+<div id="replyto_66562"></div>
+
+<ul id="group_66562">
+	<li id="hiddens_66562" class="hide"></li>
+</ul></li></ul></li></ul></li><li id="tree_66569" class="comment">
+<div id="comment_status_66569" class="commentstatus"></div>
+<div id="comment_66569" class="oneline">
+
+	<div id="comment_top_66569" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_66569" name="comment_link_66569" href="//use.perl.org/comments.pl?sid=41880&amp;cid=66569" onclick="return D2.setFocusComment(66569)">Obscure</a>
+			
+			<span id="comment_score_66569" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 66569); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~ChrisDolan/">ChrisDolan (2855)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_66569"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_66569"><p>While clever, I think you've harmed readability rather than helped it by hiding the return in the block. As a reader, I want the flow control statements to be as explicit and obvious as possible so I don't miss them. That's the reason why PBP makes an exception for them in end-of-line conditionals and loops.</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_66569"></div>
+
+</div>
+
+
+<div id="replyto_66569"></div>
+
+<ul id="group_66569">
+	<li id="hiddens_66569" class="hide"></li>
+</ul><ul id="commtree_66569"><li id="tree_66570" class="comment">
+<div id="comment_status_66570" class="commentstatus"></div>
+<div id="comment_66570" class="oneline">
+
+	<div id="comment_top_66570" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_66570" name="comment_link_66570" href="//use.perl.org/comments.pl?sid=41880&amp;cid=66570" onclick="return D2.setFocusComment(66570)">Re:</a>
+			
+			<span id="comment_score_66570" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 66570); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~masak/">masak (6289)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_66570"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_66570"><p>I can certainly understand that objection. Readability is important, and inventing new control flow "builtins" is a risky business.</p><p>However, it's also possible to reason the other way: I expect any conscientious reader to familiarize themselves with all the local variables in my sub before trying to understand what it does. <code>&amp;flunk_move</code> is one of those local variables; and it happens to be a code block controlling the program flow. Making use of PBP's rule for putting control flow on the left, serves to m<span class="substr"> </span></p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_66570"></div>
+
+</div>
+
+
+<div id="replyto_66570"></div>
+
+<ul id="group_66570">
+	<li id="hiddens_66570" class="hide"></li>
+</ul></li><li id="tree_66572" class="comment">
+<div id="comment_status_66572" class="commentstatus"></div>
+<div id="comment_66572" class="oneline">
+
+	<div id="comment_top_66572" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_66572" name="comment_link_66572" href="//use.perl.org/comments.pl?sid=41880&amp;cid=66572" onclick="return D2.setFocusComment(66572)">Re:</a>
+			
+			<span id="comment_score_66572" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 66572); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~chromatic/">chromatic (983)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_66572"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_66572"><p>This technique is open to abuse, but consider a function with several potential exit points, each of which need to release acquired resources.  This technique offers a cleaner approach than a local-<code>goto</code> or cut-and-past resource release blocks.</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_66572"></div>
+
+</div>
+
+
+<div id="replyto_66572"></div>
+
+<ul id="group_66572">
+	<li id="hiddens_66572" class="hide"></li>
+</ul><ul id="commtree_66572"><li id="tree_66573" class="comment">
+<div id="comment_status_66573" class="commentstatus"></div>
+<div id="comment_66573" class="oneline">
+
+	<div id="comment_top_66573" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_66573" name="comment_link_66573" href="//use.perl.org/comments.pl?sid=41880&amp;cid=66573" onclick="return D2.setFocusComment(66573)">Re:</a>
+			
+			<span id="comment_score_66573" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 66573); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~ChrisDolan/">ChrisDolan (2855)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_66573"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_66573"><p>Agreed, to a degree. Carl is trading clarity of control flow for a consistent level of abstraction. As long as the technique is used sparingly and locally, I think it can be a net win.</p><p>But I'll wager that someone will write a Perl6::Critic policy about it in the future, maybe to say that pointy blocks with far-reaching control statements should be simple or not exported beyond the lexical scope.</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_66573"></div>
+
+</div>
+
+
+<div id="replyto_66573"></div>
+
+<ul id="group_66573">
+	<li id="hiddens_66573" class="hide"></li>
+</ul></li></ul></li><li id="tree_66583" class="comment">
+<div id="comment_status_66583" class="commentstatus"></div>
+<div id="comment_66583" class="oneline">
+
+	<div id="comment_top_66583" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_66583" name="comment_link_66583" href="//use.perl.org/comments.pl?sid=41880&amp;cid=66583" onclick="return D2.setFocusComment(66583)">Re:</a>
+			
+			<span id="comment_score_66583" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 66583); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~Aristotle/">Aristotle (5147)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_66583"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_66583"><p>That seems like an odd attitude coming from someone programming in Perl. I know Python programmers who think <em>statement modifiers</em> are a terrible idea in any and all cases on principle. Where did we lose the idea of giving people enough rope to hang themselves if they so desire? Just because this particular abstraction facility is new to you does not make it dangerous. All abstraction facilities have abuse potential &#8211; practice shows which ones are very dangerous and which ones can offer enough potential<span class="substr"> </span></p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_66583"></div>
+
+</div>
+
+
+<div id="replyto_66583"></div>
+
+<ul id="group_66583">
+	<li id="hiddens_66583" class="hide"></li>
+</ul><ul id="commtree_66583"><li id="tree_66584" class="comment">
+<div id="comment_status_66584" class="commentstatus"></div>
+<div id="comment_66584" class="oneline">
+
+	<div id="comment_top_66584" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_66584" name="comment_link_66584" href="//use.perl.org/comments.pl?sid=41880&amp;cid=66584" onclick="return D2.setFocusComment(66584)">Re:</a>
+			
+			<span id="comment_score_66584" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 66584); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~ChrisDolan/">ChrisDolan (2855)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_66584"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_66584"><p>You're preaching to the choir.  I'm just on the other end of the style continuum from you, I guess.  I work with enough less-experienced programmers to prefer simple solutions, all else being (roughly) equal.</p><p>I'm not saying the practice should be *banned* from the language.  I just don't want to see it in any code I must maintain.  Action at a distance is the problem -- if the distance is small enough, then it's probably fine. On first read, I personally didn't think the solution was beneficial enough to jus<span class="substr"> </span></p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_66584"></div>
+
+</div>
+
+
+<div id="replyto_66584"></div>
+
+<ul id="group_66584">
+	<li id="hiddens_66584" class="hide"></li>
+</ul></li></ul></li></ul></li>
+			<li id="roothiddens" class="hide"></li>
+		</ul>
+	
+	
+	
+	
+
+
+<div id="replyto_0"></div>
+
+
+<div id="discussion_buttons">
+
+
+<span class="nbutton"><p><b><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_a" class="hide">Get More Comments</span></a></b></p></span>
+
+
+
+<span class="nbutton"><p><b><a href="//use.perl.org/comments.pl?sid=41880&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></b></p></span>
+
+
+
+
+
+
+
+</div>
+
+
+
+	<script type="text/javascript">
+<!--
+		D2.currents()['hidden']   = 0;
+		D2.currents()['full']     = 0;
+		D2.currents()['oneline']  = 9;
+		// D2.currents_total(9);
+
+		D2.abbrev_comments({66583:524,66570:535,66584:522});
+		D2.noshow_comments([]);
+		D2.pieces_comments([66559,66561,66562,66569,66570,66572,66573,66583,66584]);
+		D2.init_hiddens([]);
+
+		D2.finishLoading();
+
+
+		if (D2.thresh_totals()[6][6][1] == 0) {
+			D2.replyTo(0, 1);
+		}
+
+
+//-->
+	</script>
+
+<!-- end template: ID 157, printCommComments;misc;default -->
+
+
+
+<!-- start template: ID 112, footer;misc;default -->
+
+</div>
+                </div>
+                <div id="footer">
+			<div class="download">
+                                <!-- START DOWNLOAD PERL -->
+                                <!-- Perl Mongers, Inc.  web@perlmongers.org -->
+                                <a href="http://www.cpan.org/ports/index.html"><img src="http://www.perl.org/Images/download_perl.gif" width="102" height="42" alt="Download Perl Now!"></a>
+                                <!-- END DOWNLOAD PERL -->
+                        </div>	
+			<div class="sitelogo">
+				<a href="//use.perl.org/">
+					<img src="http://images.use.perl.org/topics/useperl.gif" alt="useperl">
+				</a>
+			</div>
+                        <em>
+				&nbsp; &nbsp; &gt; This made me wonder, suddenly: can telnet be written in perl?<BR>
+&nbsp; &nbsp; Of course it can be written in Perl.&nbsp; Now if you'd said nroff,<BR>
+&nbsp; &nbsp; that would be more challenging...&nbsp;  --Larry Wall
+			</em>
+		</div>
+		<div class="copyright">
+			Stories, comments, journals, and other submissions on use Perl; are Copyright 1998-2006, their respective owners.
+		</div>
+		<div class="btmnav">
+			<ul>
+	<li class="begin">
+		<a href="//use.perl.org/faq.shtml">FAQ</a>
+	</li>
+	<li>
+		<a href="//use.perl.org/about.shtml">About</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/submit.pl">Submit Story</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/search.pl">Older Stories</a>
+        </li>
+        <li>	
+		<a href="//use.perl.org/topics.shtml">Topics</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/pollBooth.pl">Polls</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/journal.pl">Journals</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/authors.pl">Authors</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/modulelist/">New Modules</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/users.pl?op=edithome">Preferences</a>
+
+        </li>
+</ul>
+		</div>
+        </div>
+<div id="modal_cover" style="display:none" onclick="hide_modal_box()"></div>
+<div id="modal_box" style="display:none">
+        <div class="generaltitle" >
+                <div class="title"><h3><span id="preference_title"></span> <a href="#" onclick="hide_modal_box(); return false"><img src="//images.use.perl.org/sic_close.png" alt="Close"></a></h3></div>
+        </div>
+        <div id="modal_box_content"></div>
+</div>
+
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		_uacct = "UA-32013-15";
+		urchinTracker();
+	</script>
+
+</body>
+</html>
+
+<!-- end template: ID 112, footer;misc;default -->
+

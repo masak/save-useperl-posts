@@ -1,0 +1,785 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="shortcut icon" href="//use.perl.org/favicon.ico">
+
+<title>Journal of masak (6289)</title>
+
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/base.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/comments.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/useperl.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="print" href="//images.use.perl.org/print.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="handheld" href="//images.use.perl.org/handheld.css?T_2_5_0_235">
+
+<script src="//images.use.perl.org/jquery/jquery-1.2.6.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/jquery/jquery.metadata.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/slash.util.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/jquery/jquery.slashdot.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/yahoo.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/dom.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/event.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/dragdrop.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/animation.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/calendar.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/sd_calendar.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/slash.article-info.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/tag-ui.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/common.js?T_2_5_0_235" type="text/javascript"></script>
+
+<!-- start template: ID 121, header;misc;default -->
+
+<link rel="top"       title="All the Perl that's Practical to Extract and Report" href="//use.perl.org/" >
+<link rel="search"    title="Search use Perl" href="//use.perl.org/search.pl">
+<link rel="author"    title="masak" href="//use.perl.org/~masak/">
+<link rel="alternate" title="masak's Journal RSS" href="http://use.perl.org/~masak/journal/rss" type="application/rss+xml">
+<link rel="alternate" title="masak's Friends' Journals RSS" href="http://use.perl.org/~masak/journal/friends/rss" type="application/rss+xml">
+<link rel="alternate" title="Most Recent Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="Most Active Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;type=count&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="Most Befriended Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;type=friends&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="use Perl RSS" href="//use.perl.org/index.rss" type="application/rss+xml">
+</head>
+<body class="useperlorg">
+<div id="top_parent"></div>
+
+<div id="jump">
+	<a href="#main-articles">Stories</a>
+	<br>
+	<a href="#blocks">Slash Boxes</a>
+	<br>
+	<a href="#comments">Comments</a>
+</div>
+<div class="ad1">
+
+</div>
+<div id="frame">
+
+<!-- UsePerl Ad Start -->
+<div class="ad1"><!-- ad position 1 -->
+<div id="fad1" style="text-align:center">
+<!-- DoubleClick Ad Tag 1 -->
+<script type="text/javascript">
+	dfp_ord=Math.random()*10000000000000000;
+	dfp_tile = 1;
+
+	document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/ostg.useperl/mainpage_p1_leader;pg=index;logged_in=0;tile='+dfp_tile+';ord='+dfp_ord+'?"><\/script>');
+	dfp_tile++;
+</script>
+</div>
+<!-- End DoubleClick Ad Tag 1 --></div>
+<!-- UsePerl Ad End -->
+
+	<div id="topnav">
+		<div id="logo">
+			<h1>
+				<a href="//use.perl.org">use Perl</a>
+			</h1>
+		</div>
+                <div class="search">
+			<form method="get" action="//use.perl.org/search.pl">
+				<fieldset>
+					<legend></legend>
+					<label>Search <strong>use Perl</strong></label>
+					<input type="text" name="query" value="" size="20">
+					<input type="submit" value="Go" class="button">
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<div id="slogan">
+		<h2>
+			All the Perl that's Practical to Extract and Report
+		</h2>
+	</div>
+	<div id="journalnav">
+		<div id="links">
+			
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="navigation-title">
+		<h4>
+			Navigation
+		</h4>
+	</div>
+	<div class="content" id="navigation-content">
+		<ul>
+	<li class="begin">
+		<a href="//use.perl.org/faq.shtml">FAQ</a>
+	</li>
+	<li>
+		<a href="//use.perl.org/about.shtml">About</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/submit.pl">Submit Story</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/search.pl">Older Stories</a>
+        </li>
+        <li>	
+		<a href="//use.perl.org/topics.shtml">Topics</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/pollBooth.pl">Polls</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/journal.pl">Journals</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/authors.pl">Authors</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/modulelist/">New Modules</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/users.pl?op=edithome">Preferences</a>
+
+        </li>
+</ul>
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+		</div>
+	</div>
+	<div id="contents">
+		
+		<div id="journal">
+
+<!-- end template: ID 121, header;misc;default -->
+
+
+
+<!-- start template: ID 55, journalhead;journal;default -->
+
+<div id="slashboxes">
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="userlogin-title">
+		<h4>
+			use Perl Log In
+		</h4>
+	</div>
+	<div class="content" id="userlogin-content">
+		
+			<form action="//use.perl.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//use.perl.org/">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//use.perl.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+		
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="user-info-title">
+		<h4>
+			masak (6289)
+		</h4>
+	</div>
+	<div class="content" id="user-info-content">
+		<a href="//use.perl.org/~masak/">masak</a> <br>&nbsp;&nbsp;(email not shown publicly)<br><a href="http://masak.org/carl" rel="nofollow">http://masak.org/carl</a><br><hr>Been programming Perl since 2001. Found Perl 6 somewhere around 2004, and fell in love. Now developing November (a Perl 6 wiki), Druid (a Perl 6 board game), pls (a Perl 6 project installer), GGE (a regex engine), and Yapsi (a Perl 6 implementation). Heavy user of and irregular committer to Rakudo.
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+</div>
+<div id="users-blocks">
+
+
+<!-- start template: ID 376, tabbedmenu;misc;default -->
+
+
+
+<!-- end template: ID 376, tabbedmenu;misc;default -->
+
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			<a href="//use.perl.org/~masak/journal/">Journal</a> of <a href="//use.perl.org/~masak/">masak</a> (6289)
+			
+		</h3>
+	</div>
+</div>
+
+
+<div id="usermenu">
+<ul class="menu">
+<li><span class="begin"><a href="//use.perl.org/~masak/" class="begin">Info</a></span></li><li class="selected"><b><a href="//use.perl.org/~masak/journal/">Journal</a></b></li><li><a href="//use.perl.org/~masak/firehose/">Firehose</a></li><li><a href="//use.perl.org/~masak/friends/">Friends</a></li><li><a href="//use.perl.org/~masak/fans/">Fans</a></li><li><a href="//use.perl.org/~masak/foes/">Foes</a></li><li><a href="//use.perl.org/~masak/freaks/">Freaks</a></li><li><a href="//use.perl.org/~masak/tags/">Tags</a></li><li><a href="//use.perl.org/~masak/bookmarks/" class="end">Bookmarks</a></li>
+</ul>
+</div><div class="generalbody">
+
+<!-- start template: ID 376, tabbedmenu;misc;default -->
+
+<ul class="menu">
+<li><span class="begin"><a href="//use.perl.org/journal.pl?op=top" class="begin">Top&nbsp;10</a></span></li><li><a href="//use.perl.org/journal.pl?op=friends" class="end">Friend's&nbsp;Journals</a></li>
+</ul>
+
+<!-- end template: ID 376, tabbedmenu;misc;default -->
+
+<!-- end template: ID 55, journalhead;journal;default -->
+
+
+
+<!-- start template: ID 65, slashdot;journal;default -->
+
+<div id="journalslashdot">
+    
+	<div class="journaldate">Saturday March 14, 2009</div>
+	
+	<div class="details">07:51 PM</div>
+	<div class="title">
+		<h3>A code review of Pod::Parser, written by mberends</h3>
+	</div>
+	<div class="adminoptions">
+		[
+
+			<a href="//use.perl.org/~masak/journal/38644">#38644</a>
+		]
+	</div>
+
+	<div class="intro"><p>In October 2006, Damian Conway released an alpha draft of <a href="http://perlcabal.org/syn/S26.html" rel="nofollow">S26</a>, the Perl 6 synopsis about
+Pod documentation. That email begins <a href="http://www.nntp.perl.org/group/perl.perl6.language/2006/10/msg26469.html" rel="nofollow">"Before Christmas, as promised!"</a>. The draft is large, but
+even for an alpha, it's a good read.</p><p>The release of the draft spurred a whole lot of discussion on the
+perl6-language mailing list. People seem to care a lot about these
+things. Late November the same year, Damian <a href="http://www.nntp.perl.org/group/perl.perl6.language/2006/11/msg26746.html" rel="nofollow">posted</a> a version of S26 without
+the 'alpha' in its version number. He also promised to release a Pod-to-XHTML
+module. (He eventually <a href="http://search.cpan.org/~dconway/Perl6-Perldoc-v0.0.5/" rel="nofollow">did</a>, in
+December 2007.)</p><p>The discussion following the release of these documents was intense and at
+times harsh. Damian eventually declared <a href="http://www.nntp.perl.org/group/perl.perl6.language/2007/06/msg27757.html" rel="nofollow">"I'm not going to argue about the
+design of Pod 6 any more."</a> This was in June 2007. What was the debate about?
+Browsing through the many emails on the matter, I find it was mainly about the
+exact relation between Perl 6 code and its Pod comments. The vocal opposition,
+headed (in some sense) by Mark Overmeer, argued for greater connectivity
+between Perl 6 code and Pod comments. It's the old configurability-vs-defaults
+discussion again, with Damian representing the configurability camp and Mark
+the defaults camp. Damian challenged Mark to write his own S26, which Mark
+did. Damian <a href="http://www.nntp.perl.org/group/perl.perl6.language/2007/07/msg27899.html" rel="nofollow">wrote back</a> that he was "thinking very carefully about what Mark
+suggested", and that he would "reply properly as soon as I am able."</p><p>That was in July 2007. Since then Damian has made a few cameos on the
+perl6-language mailing list, but on matters other than Perl 6 Pod. S26 remains
+in the state it was released in 2006, but nowadays with this message (<a href="http://perlcabal.org/syn/S26.html" rel="nofollow">here</a>):</p><blockquote><div><p> <tt>The information that is in this file is a draft specification that is known to be<br>out of date and likely to undergo some substantial revision. Until the<br>document is updated, look at STD.pm<br>(http://svn.pugscode.org/pugs/src/perl6/STD.pm)<br>for the valid POD syntax.</tt></p></div> </blockquote><p>Beware of the leopard. (<b>Update 2010-05-01:</b> Time has passed, and since this post was written Damian has made one more sweeping change to S26, and then graciously declared it to be of the same status as the other synopses, i.e. changeable wiki-like by anyone who cares.)</p><p>Good thing about that reference to <a href="http://svn.pugscode.org/pugs/src/perl6/STD.pm" rel="nofollow">STD.pm</a> as an
+up-to-date source of information. Unfortunately, when you read STD.pm, what
+you find is this, and <em>only</em> this:</p><blockquote><div><p> <tt># XXX We need to parse the pod eventually to support $= variables.</tt></p></div> </blockquote><p>Essentially, S26 and Perl 6 Pod are in limbo since 2007, waiting for the
+return of Damian (or some other heroic soul) to the scene.</p><p>Against this backdrop, this happened in January 2008:</p><blockquote><div><p> <tt>mberends: finally pushed my first draft of perldoc pod2text pod2man Pod::Parser<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Pod::to::text Pod::to::man to http://github.com/eric256/perl6-examples/tree/master<br>mberends: please try to run it, there's more to follow (xhtml and a test suite)<br>masak: mberends: whoa! did you write that?<br>mberends: yes! over the last 3! months</tt></p></div> </blockquote><p>You have to admire the courage of someone who implements a spec that's about
+to change, in Perl 6 whose spec is also in flux, on top of Rakudo, which is
+still being written.</p><p>I just asked mberends about a status report on his Pod suite. He said
+this:</p><blockquote><div><p> <tt>mberends: masak: the low hanging fruit of common Pod is complete, including Pod5<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; upconverter. Format codes about 50% in text, man, xhtml, pod5 and pod6<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; emitters. =table and =use not even started.</tt></p></div> </blockquote><p>What follows is my review of his Pod suite.</p><p>&#10086;</p><p>The Pod suite can be found <a href="http://github.com/eric256/perl6-examples/tree/master/lib/Pod" rel="nofollow">here</a>. It
+consists, for my purposes, of four parts: a test suite, the module
+Pod::Parser, emitters to various serialization formats, and build scripts. I
+will review them in that order.</p><p> <b>The tests</b> </p><p>The tests are somewhat awkwardly situated inside a <code>t</code> directory
+in <code>lib/Pod</code> in the repository <a href="http://github.com/eric256/perl6-examples/" rel="nofollow">perl6-examples</a>. This is
+somewhat of a deviation from common Perl practice, but the reason is most
+likely that the perl6-example repository hosts many different things, and a
+<code>t</code> directory outside of <code>lib</code> might simply get lost in
+the general commotion.</p><p>The test files make use of <code>Test::Differences</code>, also found in
+<code>perl6-examples</code>, which provides a method that extends the
+diagnostics from the standard <code>Test</code> module to include "got" and
+"expected" output.</p><p>All the test files begin with a class that mocks the class being tested in
+that file by deriving it. That particular code is repetitive, with the
+exception of the base class, and the name of the class itself, which
+alternately gets the names <code>Test::Parser</code> and
+<code>TestParser</code>. This would be an excellent place for a role, putting
+all the mocking code in one module, and just mixing it in with a one-line
+declaration.</p><p>We also find the same comment in all these derived classes:</p><blockquote><div><p> <tt># Possible Rakudo bug: calling a base class method ignores other<br># overrides in derived class, such as the above emit() redefine.<br># workaround: redundantly copy base class method here, fails too!</tt></p></div> </blockquote><p>This, after trying various one-liners, I find not to be the case. Rakudo
+works perfectly in this case. The comment is probably stale and should be
+removed. (This, by the way, is why I've taken to write <code>RAKUDO</code>
+comments which reference RT ticket numbers whenever possible. This makes it
+easy to see whether the comment has grown stale, and whether the workaround
+can be removed.)</p><p>The initialization of these classes is also a bit mysterious.</p><blockquote><div><p> <tt>my Test::Parser $p<nobr> <wbr></nobr>.= new; $p.parse_file('/dev/null'); # warming up</tt></p></div> </blockquote><p>Why do we parse <code>'/dev/null'</code> here? The comment appears to want to
+explain, but only serves to heighten the mystery. Whence the need to warm up a
+mock object? And must we really introduce a Unix shibboleth into an otherwise
+platform-independent test file to do it?</p><p>Beyond that, everything else looks fairly good and normal. The tests
+basically throw different inputs at the modules, and check that they get the
+right output. Perhaps a module such as <code> <a href="http://use.perl.org/~masak/journal/37976" rel="nofollow">Test::InputOutput</a> </code>
+could alleviate some of the repetition here, but not by much, and only at the
+cost of another dependency.</p><p>I have the impression that the test coverage is actually pretty good; the 37
+tests do get to exercise much of the code written so far. Keep up the good
+TDD, mberends++.</p><p> <b>Pod::Parser</b> </p><p>We now get to the centerpiece of the module suite, at this writing weighing
+in at 33121 characters. The general structure is this: it starts with an
+awe-inspiring grammar <code>Pod6</code>, followed by a few smaller grammars,
+enums, and classes. After that, the class <code>Pod::Parser</code> takes up
+the bulk of the file, followed (very appropriately) by excellent Pod
+documentation.</p><blockquote><div><p> <tt>mberends: I wish the rest of you would bother to write more comments and POD</tt></p></div> </blockquote><p>The <code>Pod6</code> grammar is exquisite. Care has been taken to align
+regexes and their parts vertically so as to bring out structure. There are no
+empty lines, but there are one-line comments grouping the regexes into logical
+units.</p><p>Two comments about the class <code>PodBlock</code>, which seems to
+effectively be a simple C-like struct (not that there's anything wrong with
+that): first, since all of the attributes are marked <code>is rw</code>, it
+would probably make sense to put the <code>is rw</code> declaration on the
+class itself, as in <a href="http://perlcabal.org/syn/S12.html#line_98" rel="nofollow">this
+example</a> from S12. However, Rakudo <a href="http://rt.perl.org/rt3/Ticket/Display.html?id=60636" rel="nofollow">doesn't yet
+implement this</a>, which might be considered a reasonable excuse.</p><p>Second, this:</p><blockquote><div><p> <tt>my Str $typename = defined $.typename ?? $.typename !! 'undef';<br>my Str $style&nbsp; &nbsp; = defined $.style&nbsp; &nbsp; ?? $.style&nbsp; &nbsp; !! 'undef';</tt></p></div> </blockquote><p>...should be written thus...</p><blockquote><div><p> <tt>my Str $typename = $.typename<nobr> <wbr></nobr>// 'undef';<br>my Str $style&nbsp; &nbsp; = $.style&nbsp; &nbsp;<nobr> <wbr></nobr>// 'undef';</tt></p></div> </blockquote><p>Now for the main class <code>Pod::Parser</code>. We are greeted by a longish
+list of attributes, alphabetically sorted, each with a half-line comment after
+it. Such details warm the heart of a reviewer, I can tell you. The one
+comment I couldn't get my head around is this:</p><blockquote><div><p> <tt>has&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $!context is Context;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # not (yet) in Rakudo r35960</tt></p></div> </blockquote><p>After thinking for a minute, I realize that <code>Context</code> is a
+previously-declared enum, and that the comment probably refers to enums and
+attributes not working properly, or some such. (Once again, a reference to an
+RT ticket would have helped here.) Trying out enums in attributes in bleeding
+Rakudo (commit 1dea76), I find that it works well, so the comment should go
+away. Also, there's no need to put the type after the attribute, when all the
+other types are written before. The line should look like this:</p><blockquote><div><p> <tt>has Context&nbsp; $!context;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# which state is the parser in?</tt></p></div> </blockquote><p>On the bright side, here's a comment before another attribute:</p><blockquote><div><p> <tt># $*OUT broke in r35311, reported in RT#62540</tt></p></div> </blockquote><p>Yes! That's what I'm talking about.</p><p>Here comes my favorite method:</p><blockquote><div><p> <tt>method parse_line { # from parse_file<br>&nbsp; &nbsp; given $!line {<br>&nbsp; &nbsp; &nbsp; &nbsp; when<nobr> <wbr></nobr>/&lt;Pod6::directive&gt;/ { self.parse_directive; } # '=xx<nobr> <wbr></nobr>:cc'&nbsp;<nobr> <wbr></nobr>/<br>&nbsp; &nbsp; &nbsp; &nbsp; when<nobr> <wbr></nobr>/&lt;Pod6::extra&gt;/&nbsp; &nbsp; &nbsp;{ self.parse_extra; }&nbsp; &nbsp; &nbsp;# '=&nbsp; &nbsp;<nobr> <wbr></nobr>:cc'<nobr> <wbr></nobr>/<br>&nbsp; &nbsp; &nbsp; &nbsp; when<nobr> <wbr></nobr>/&lt;Pod6::blank&gt;/&nbsp; &nbsp; &nbsp;{ self.parse_blank; }&nbsp; &nbsp; &nbsp;# '' or ' '&nbsp;<nobr> <wbr></nobr>/<br>&nbsp; &nbsp; &nbsp; &nbsp; default { if @!podblocks { self.parse_content; }&nbsp; &nbsp;# 'xx' or ' xx'<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ self.ambient($!line); } # outside pod<br>&nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; }<br>}</tt></p></div> </blockquote><p>See what happens here? Yes, all the logic, all the grunt work, is made by the
+<code>Pod6</code> grammar; the method basically lists the cases, and that's
+it. It's obvious in retrospect, but I wouldn't really have thought of using
+given/when in this case. There's even some room left to document what the
+cases look like. Cute!</p><p>The method <code>parse_directive</code> seems to be a close relative of
+<code>parse_line</code>. It would be interesting to investigate whether these
+methods, and the methods they called, could be fit into an action class, and
+called automatically through <code>{*}</code> directives in the grammar. Only
+direct experimentation would answer that question.</p><p>An nice practice: all the methods called from <code>parse_line</code> and
+<code>parse_directive</code> have a comment saying so. This gives some piece
+of context, almost like declaring pre- and postconditions of a method. Since
+these methods <em>are</em> only called from <code>parse_line</code> and
+<code>parse_directive</code>, however, I wonder if they could not be made into
+submethods instead.</p><p>In a cozy little method called <code>buf_flush</code>, we find this:</p><blockquote><div><p> <tt>self.emit( ~ ( $!buf_out_line eq "\n" ?? "" !! $!buf_out_line ) );<br># why is the ~ necessary?</tt></p></div> </blockquote><p>Now, the attribute <code>$!buf_out_line</code>, in case you are wondering, is
+declared as a <code>Str</code>, and is set to the empty string before every
+parse. So the question about a stringifying <code>~</code> being necessary is
+reasonable: why isn't the expression from the trinary always a
+<code>Str</code>? Someone should remove that <code>~</code>, find a case where
+the trinary doesn't give a <code>Str</code>, put that case in quarantine and
+have it sent to the good people over at RT for further classification.</p><p>The Pod documentation at the end of the file, as I wrote earlier, is
+excellent. It has everything one would expect from the POD of a mature CPAN
+module. I'm not just saying this because the Pod ends by praising me (and the
+other November devs); it really does go an extra mile. It even contains a
+section about how to build your own Pod serializer. It also quotes <a href="http://en.wikipedia.org/wiki/Helmuth_von_Moltke_the_Elder" rel="nofollow">General
+Helmuth von Moltke</a>, and has expansive TODO and BUGS sections. The only
+thing I find missing is that the <code>METHODS</code> section only lists the
+most important methods, it doesn't describe them.</p><p>Among the <code>BUGS</code>, I find this gem:</p><blockquote><div><p> <tt>Long or complex documents randomly suffer segmentation faults.</tt></p></div> </blockquote><p>As a Rakudo-using Perl 6 developer, I can empathize with that. However, I
+believe that a few of those might actually have disappeared with the recent
+fixes from jonathan++.</p><p> <b>The emitters</b> </p><p>The emitters, or "Podlators", all subclass <code>Pod::Parser</code>. I get
+really good vibes from <code>Pod::to::text</code>, <code>Pod::to::pod5</code>
+and <code>Pod::to::pod6</code>. The <code>pod6</code> emitter, however,
+contains this:</p><blockquote><div><p> <tt>&nbsp; $!needspace = $!needspace and (substr($content,0,1) ne " ");<br># $!needspace &amp;&amp;= (substr($content,0,1) ne " "); # crashes</tt></p></div> </blockquote><p>Those parentheses are not necessary, and as far as I can tell, this statement
+no longer crashes.</p><p>Now, out of the four existing emitters, <code>Pod::to::xhtml</code> is the
+most complicated one. That's perhaps not too surprising. I have two comments
+on this code, one minor and one major: first, a few emit cases are commented
+out with no reason given. The <code>BUGS</code> section seems to give
+indications as to why, but the connection is not overly clear. This seems to
+be a case where unit tests for the particular problems encountered would help.</p><p>Second, and more alarming, is the way the XML is serialized. Sure, the
+content is properly escaped, but the mechanism is still fully text-based,
+which can introduce subtle nesting bugs. It would perhaps be advisable to use
+a serialization technique similar to the one in the Perl 6 <a href="https://github.com/masak/svg" rel="nofollow">SVG</a> module. For a quick introduction
+to the pitfalls of XML generation, see <a href="http://hsivonen.iki.fi/producing-xml/" rel="nofollow">this article</a>. Many of the
+tips therein could probably be directly applied to the XHTML emitter, making
+it more robust in the process.</p><p> <b>The build scripts</b> </p><p>mberends wrote his own <code>Configure.pm</code> in Perl 6. There are deep
+coolness points in that; the rest of us are stuck with lame
+<code>Makefile.PL</code> files written in Perl 5. The
+<code>Configure.pm</code> solutions are a bit Unix-specific (for example a
+<code>qx</code> workaround that presupposes<nobr> <wbr></nobr><code>/tmp</code>), but there's
+hardly any room to do better in Rakudo right now. Windows users haven't shown
+up in great amounts to work on our Perl 6 projects anyway. (Funny, that. Are
+people still using Windows these days?)</p><p>Here's a cutie:</p><blockquote><div><p> <tt># The opposite of slurp<br>sub squirt( Str $filename, Str $text ) {<br>&nbsp; &nbsp; my $handle = open( $filename,<nobr> <wbr></nobr>:w );&nbsp; &nbsp; # should check for success<br>&nbsp; &nbsp; $handle.print: $text;<br>&nbsp; &nbsp; $handle.close;<br>}</tt></p></div> </blockquote><p>Let me provide that check for success, free of charge:</p><blockquote><div><p> <tt>&nbsp; &nbsp; my $handle = open( $filename,<nobr> <wbr></nobr>:w )<br>&nbsp; &nbsp; &nbsp; &nbsp; or die $!;</tt></p></div> </blockquote><p>(A more interesting question might be what the sub should do if the file
+already exits. At present it simply overwrites files, which might or might not
+be the desired behaviour.)</p><p>The <code>Makefile.in</code>, finally, shouldn't be remarkable in any way,
+but it is. It contains friendly instructions how to get started with
+downloading, reading the documentation (using, of course, the Pod tools
+themselves), how to contact the author, and how to contribute.</p><p> <b>In conclusion</b> </p><p>All in all, this is a set of modules that mberends has put a lot of effort
+into, and it shows. When we wrote November, we hoped that our code could serve
+as inspiration for others -- mberends has in many cases taken our ideas and
+run with them. His work on this suite of modules puts it on the second place
+in complexity (after November) among the Perl 6 projects out there. As someone
+who always delights in new Perl 6 code, I'm very happy about these modules.</p><p>The future of Perl 6 Pod is uncertain. By that I don't mean that I don't
+believe it <em>has</em> a future; it's just that it's been left in the limbo
+described in the beginning of the post. (<b>Update 2010-05-01:</b> Though not anymore, as also described above.) One day, Damian might return and
+completely Change Everything. We can only hope. If and when that happens,
+mberends++ has already given us a head start in parsing the Pod of tomorrow,
+by providing modules that do it today.</p><p> <em>In the spirit of the <a href="http://use.perl.org/~masak/journal/38643" rel="nofollow">Reviewer's Manifesto</a>, I
+have contributed patches to most of the things I found worth changing during
+this review.</em> </p></div>
+	
+    
+
+	<div class="journalpage">
+		
+		<br>
+		<a href="//use.perl.org/journal.pl?op=list&amp;uid=6289" class="all">List all Journal entries</a>
+	</div>
+</div>
+
+<!-- end template: ID 65, slashdot;journal;default -->
+
+</div></div>
+
+<!-- start template: ID 159, printCommentsMain;misc;default -->
+
+<a name="acomments"></a>
+<div class="commentwrap" id="commentwrap">
+
+<div class="commentBox" style="font-size: 120%">
+	<div>
+<span class="escape-link"><a href="//use.perl.org/~masak/journal/38644" title="Back to Article - A code review of Pod::Parser, written by mberends">A code review of Pod::Parser, written by mberends</a></span>
+<span class="commentBoxLinks"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_d"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=42549&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></span>
+	</div>
+</div>
+
+	<div class="commentBoxForm" id="commentControlBox">
+<div></div>
+	<div class="commentBox">
+		<small>
+		<b>The Fine Print:</b> The following comments are owned by whoever posted them.  We are not responsible for them in any way.
+		</small>
+<noscript><br><small>Without JavaScript enabled, you might want to
+use <a href="//use.perl.org/comments.pl?sid=42549&amp;threshold=0&amp;commentsort=0&amp;mode=thread&amp;no_d2=1">the classic discussion system</a> instead.  If you <a href="//use.perl.org/login.pl">login</a>, you can remember this preference.
+</small></noscript>
+	</div>
+	</div>
+	
+		<div id="d2out" class="horizontal">
+		<div id="d2act" class="hide">
+		<div class="loki" id="gods">
+		<div class="block">
+			<div class="title">
+
+				<h4>
+				
+					<span class="h-inline">
+					<a href="//use.perl.org/~masak/journal/38644" title="Back to Article - A code review of Pod::Parser, written by mberends">A code review of Pod::Parser, written by mberends</a></span>
+					<span class="titlecount"><a href="//use.perl.org/~masak/journal/38644#topcomment" title="Back to Top Comment - A code review of Pod::Parser, written by mberends"><span id="titlecountnum">0</span>&nbsp;Comments</a></span>
+				
+		<span class="ccw-header-links"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_b"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=42549&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></span>
+		<span id="d2toggle" title="Toggle window location" onclick="D2.toggleDisplayOptions()" class="close">/</span>
+				</h4>
+			</div>
+		</div>
+<script type="text/javascript">
+gCommentControlWidget = null;
+
+YAHOO.slashdot.ThresholdApp = function() {
+  return {
+    init: function() {
+      gCommentControlWidget = new YAHOO.slashdot.ThresholdWidget('X');
+      gCommentControlWidget.setTHT(D2.user_threshold(), D2.user_highlightthresh());
+      D2.updateTotals();
+    }
+  };
+}();
+
+YAHOO.util.Event.addListener(window, "load", YAHOO.slashdot.ThresholdApp.init);
+</script>
+		<div id="bones">
+      <div id="ccw">
+        <div id="ccw-body" class="ccw-core">
+          <div id="ccw-panel-container" class="ccw-core">
+            <div id="ccw-full-panel" class="ccw-panel">
+              <div class="ccw-panel-border"></div>
+              <div id="ccw-full-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-full-count-text" class="ccw-count-text"><span id="currentFull"></span><span id="ccw-full-phrase">&nbsp;Full</span></span>
+              </div>
+            </div>
+            <div id="ccw-abbr-panel" class="ccw-panel">
+              <div class="ccw-panel-border"></div>
+              <div id="ccw-abbr-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-abbr-count-text" class="ccw-count-text"><span id="currentOneline"></span><span id="ccw-abbr-phrase">&nbsp;Abbreviated</span></span>
+              </div>
+            </div>
+            <div id="ccw-hide-panel" class="ccw-panel">
+              <div id="ccw-hide-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-hide-count-text" class="ccw-count-text"><span id="currentHidden"></span><span id="ccw-hide-phrase">&nbsp;Hidden</span></span>
+              </div>
+            </div>
+          </div>
+    
+          <div id="ccw-control" class="ccw-core">
+            <div id="ccw-centering-rail" class="ccw-core">
+              <div id="ccw-hide-bar-pos" class="ccw-core-pos">
+                <div id="ccw-hide-bar" class="ccw-bar">
+                  <div id="ccw-hide-bar-tab" class="ccw-bar-tab"></div>
+                  <div id="ccw-hide-bar-upzone" class="ccw-upzone" onclick="gCommentControlWidget.stepTHT(HIDE_BAR, +1)"></div>
+                  <div id="ccw-hide-bar-downzone" class="ccw-downzone" onclick="gCommentControlWidget.stepTHT(HIDE_BAR, -1)"></div>
+                </div>
+              </div>
+              <div id="ccw-abbr-bar-pos" class="ccw-core-pos">
+                <div id="ccw-abbr-bar" class="ccw-bar">
+                  <div id="ccw-abbr-bar-tab" class="ccw-bar-tab"></div>
+                  <div id="ccw-abbr-bar-upzone" class="ccw-upzone" onclick="gCommentControlWidget.stepTHT(ABBR_BAR, +1)"></div>
+                  <div id="ccw-abbr-bar-downzone" class="ccw-downzone" onclick="gCommentControlWidget.stepTHT(ABBR_BAR, -1)"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+		<div class="commentControlFooter"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_c"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=42549&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a><div id="login_cover" style="display:none" onclick="hide_login_box()"></div>
+<div id="login_box" style="display:none">
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			Please Log In to Continue<a href="#" onclick="hide_login_box(); return false" class="close" title="Close this box"><img id="login_box_close" src="//images.use.perl.org/sic_close.png" alt="Close"></a>
+			
+		</h3>
+	</div>
+</div>
+<div id="login_box_content">
+<form action="//use.perl.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//use.perl.org/comments.pl?sid=42549">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//use.perl.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+</div></div>
+<script type="text/javascript">logged_in = 0</script></div>
+		<div id="commentControlBoxStatus" class="hide"><b>Loading... please wait.</b></div>
+	</div>
+</div>
+		</div>
+	
+</div>
+<a name="topcomment"></a>
+
+<!-- end template: ID 159, printCommentsMain;misc;default -->
+
+
+
+<!-- start template: ID 157, printCommComments;misc;default -->
+
+<script src="//images.use.perl.org/comments.js?T_2_5_0_235" type="text/javascript"></script>
+	<script type="text/javascript">
+<!--
+	D2.d2_keybindings_disable()[191] = 1;
+	window.onscroll = D2.d2act;
+	D2.boxStatus(1);
+D2.comments(undefined);
+
+D2.thresh_totals({6:{6:{1:0,3:0,2:0}},4:{6:{1:0,3:0,2:0},4:{1:0,3:0,2:0},5:{1:0,3:0,2:0}},1:{6:{1:0,3:0,2:0},4:{1:0,3:0,2:0},1:{1:0,3:0,2:0},3:{1:0,3:0,2:0},2:{1:0,3:0,2:0},5:{1:0,3:0,2:0}},3:{6:{1:0,3:0,2:0},4:{1:0,3:0,2:0},3:{1:0,3:0,2:0},5:{1:0,3:0,2:0}},0:{6:{1:0,3:0,2:0},4:{1:0,3:0,2:0},1:{1:0,3:0,2:0},3:{1:0,3:0,2:0},0:{1:0,3:0,2:0},2:{1:0,3:0,2:0},5:{1:0,3:0,2:0}},2:{6:{1:0,3:0,2:0},4:{1:0,3:0,2:0},3:{1:0,3:0,2:0},2:{1:0,3:0,2:0},5:{1:0,3:0,2:0}},5:{6:{1:0,3:0,2:0},5:{1:0,3:0,2:0}},"-1":{6:{1:0,3:0,2:0},4:{1:0,3:0,2:0},1:{1:0,3:0,2:0},3:{1:0,3:0,2:0},0:{1:0,3:0,2:0},2:{1:0,3:0,2:0},5:{1:0,3:0,2:0},"-1":{1:0,3:0,2:0}}});
+
+D2.root_comment(0);
+D2.root_comments([]);
+D2.root_comments_hash({});
+
+D2.d2_comment_order(0);
+D2.user_uid(7);
+D2.user_is_anon(1);
+D2.user_is_admin(0);
+D2.user_is_subscriber(0);
+D2.user_threshold(0);
+D2.user_highlightthresh(4);
+D2.user_d2asp(0);
+
+D2.discussion_id(42549);
+
+
+
+//-->
+	</script>
+
+
+
+
+	
+	
+	
+	
+		<ul id="commentlisting" class="d2">
+			
+			<li id="roothiddens" class="hide"></li>
+		</ul>
+	
+	
+	
+	
+
+
+<div id="replyto_0"></div>
+
+
+<div id="discussion_buttons">
+
+
+<span class="nbutton"><p><b><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_a" class="hide">Get More Comments</span></a></b></p></span>
+
+
+
+<span class="nbutton"><p><b><a href="//use.perl.org/comments.pl?sid=42549&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></b></p></span>
+
+
+
+
+
+
+
+</div>
+
+
+
+	<script type="text/javascript">
+<!--
+		D2.currents()['hidden']   = 0;
+		D2.currents()['full']     = 0;
+		D2.currents()['oneline']  = 0;
+		// D2.currents_total(0);
+
+		D2.abbrev_comments({});
+		D2.noshow_comments([]);
+		D2.pieces_comments([]);
+		D2.init_hiddens([]);
+
+		D2.finishLoading();
+
+
+		if (D2.thresh_totals()[6][6][1] == 0) {
+			D2.replyTo(0, 1);
+		}
+
+
+//-->
+	</script>
+
+<!-- end template: ID 157, printCommComments;misc;default -->
+
+
+
+<!-- start template: ID 112, footer;misc;default -->
+
+</div>
+                </div>
+                <div id="footer">
+			<div class="download">
+                                <!-- START DOWNLOAD PERL -->
+                                <!-- Perl Mongers, Inc.  web@perlmongers.org -->
+                                <a href="http://www.cpan.org/ports/index.html"><img src="http://www.perl.org/Images/download_perl.gif" width="102" height="42" alt="Download Perl Now!"></a>
+                                <!-- END DOWNLOAD PERL -->
+                        </div>	
+			<div class="sitelogo">
+				<a href="//use.perl.org/">
+					<img src="http://images.use.perl.org/topics/useperl.gif" alt="useperl">
+				</a>
+			</div>
+                        <em>
+				&nbsp; &nbsp; &gt; This made me wonder, suddenly: can telnet be written in perl?<BR>
+&nbsp; &nbsp; Of course it can be written in Perl.&nbsp; Now if you'd said nroff,<BR>
+&nbsp; &nbsp; that would be more challenging...&nbsp;  --Larry Wall
+			</em>
+		</div>
+		<div class="copyright">
+			Stories, comments, journals, and other submissions on use Perl; are Copyright 1998-2006, their respective owners.
+		</div>
+		<div class="btmnav">
+			<ul>
+	<li class="begin">
+		<a href="//use.perl.org/faq.shtml">FAQ</a>
+	</li>
+	<li>
+		<a href="//use.perl.org/about.shtml">About</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/submit.pl">Submit Story</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/search.pl">Older Stories</a>
+        </li>
+        <li>	
+		<a href="//use.perl.org/topics.shtml">Topics</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/pollBooth.pl">Polls</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/journal.pl">Journals</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/authors.pl">Authors</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/modulelist/">New Modules</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/users.pl?op=edithome">Preferences</a>
+
+        </li>
+</ul>
+		</div>
+        </div>
+<div id="modal_cover" style="display:none" onclick="hide_modal_box()"></div>
+<div id="modal_box" style="display:none">
+        <div class="generaltitle" >
+                <div class="title"><h3><span id="preference_title"></span> <a href="#" onclick="hide_modal_box(); return false"><img src="//images.use.perl.org/sic_close.png" alt="Close"></a></h3></div>
+        </div>
+        <div id="modal_box_content"></div>
+</div>
+
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		_uacct = "UA-32013-15";
+		urchinTracker();
+	</script>
+
+</body>
+</html>
+
+<!-- end template: ID 112, footer;misc;default -->
+

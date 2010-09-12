@@ -1,0 +1,321 @@
+#! /usr/bin/env perl -w
+use 5.010;
+use strict;
+use Data::Dumper;
+
+sub titlify {
+    my ($old_title) = @_;
+    my $title = $old_title;
+    $title = lc($title);
+    $title =~ s/[,:'\-!"?#;]//g;
+    $title =~ s/\.(?!\w)//g;
+    $title =~ s/ +/-/g;
+    $title =~ s/\[|\]|\(|\)//g;
+    die $old_title
+        if $title !~ /^[\w\-.]+$/;
+    return $title;
+}
+
+sub markdownify {
+    my ($text, $filename) = @_;
+    my $dom = { name => 'root', children => [] };
+    my @stack = ($dom);
+    my $oldpos = 0;
+    while ($text =~ m[ (< (/?) (\w+)
+                       ((?: \s+ \w+ \s* = \s* (?: ' [^']* '
+                                                | " [^"]* " ) )*) >) ]xg) {
+        my $current = $stack[-1];
+        my $content = substr($text, $oldpos, pos($text) - $oldpos - length($1));
+        if ($content ne '') {
+            push @{$current->{'children'}}, $content;
+        }
+        $oldpos = pos($text);
+        if ($2 eq '/') {
+            if ($3 ne $current->{'name'}) {
+                for (@stack) { say $_->{'name'} }
+                die "$1 doesn't match ", $current->{'name'};
+            }
+            pop @stack;
+            if ($stack[-1]->{'children'}[-1]{'name'} eq 'nobr') {
+                # kill with fire
+                pop @{$stack[-1]->{'children'}};
+            }
+        }
+        else {
+            my %attrs;
+            my $name = $3;
+            my $attr_string = $4;
+            while ($attr_string =~ m[ \s+ (\w+) \s*
+                                      = \s* (?: ' ([^']*) '
+                                              | " ([^"]*) " ) ]xg) {
+                $attrs{$1} = $2 // $3 // '';
+            }
+            my $new_node = { name => $name, children => [], attrs => {%attrs} };
+            push @{$current->{'children'}}, $new_node;
+            unless ($name eq 'wbr' || $name eq 'br') { # self-closing
+                push @stack, $new_node;
+            }
+        }
+    }
+    if (@stack > 1) {
+        for (@stack) { say $_->{'name'} }
+        die "There were unclosed elements in $filename";
+    }
+    my $content = substr($text, $oldpos, length($text) - $oldpos);
+    if ($content ne '') {
+        push @{$dom->{'children'}}, $content;
+    }
+    my $markdown = handle_divs($dom->{'children'});
+    return $markdown;
+}
+
+sub handle_divs {
+    my ($childrenref) = @_;
+    my @children = @{$childrenref};
+    my $result = '';
+    if (@children && !ref $children[0]) {
+        # Probably a rogue paragraph, put it in a <p> by force
+        my @really_p;
+        while (@children && (!ref $children[0]
+                             || $children[0]->{'name'} eq 'a')) {
+            push @really_p, shift @children;
+        }
+        die $children[0]->{'name'} if @children && $children[0]->{'name'} ne 'blockquote';
+        unshift @children, { name => 'p', children => [@really_p] };
+    }
+    for my $node (@children) {
+        if (ref $node eq 'HASH') {
+            given ($node->{'name'}) {
+                when ('p') {
+                    my @p_children = @{$node->{'children'}};
+                    shift @p_children while $p_children[0] =~ /^\s*$/;
+                    pop @p_children while $p_children[-1] =~ /^\s*$/;
+                    if (@p_children == 1
+                        && ref($p_children[0]) eq 'HASH'
+                        && ($p_children[0]->{'name'} eq 'strong'
+                            || $p_children[0]->{'name'} eq 'b')) {
+                        $result .= '## '
+                                .  handle_spans($p_children[0]->{'children'}) 
+                                . "\n\n";
+                    }
+                    elsif (@p_children == 1
+                           && ref($p_children[0]) eq 'HASH'
+                           && ($p_children[0]->{'name'} eq 'code'
+                            || $p_children[0]->{'name'} eq 'tt')) {
+                        my @fragments = @{$p_children[0]->{'children'}};
+                        my $line = '';
+                        my @lines;
+                        for my $fragment (@fragments) {
+                            if (!ref $fragment) {
+                                $fragment =~ s/&nbsp;/ /g;
+                                $fragment =~ s/&lt;/</g;
+                                $fragment =~ s/&gt;/>/g;
+                                $line .= $fragment;
+                            }
+                            elsif ($fragment->{'name'} eq 'br') {
+                                push @lines, $line;
+                                $line = '';
+                            }
+                        }
+                        if ($line ne '') {
+                            push @lines, $line;
+                        }
+                        $result .= "    $_\n"
+                            for @lines;
+                        $result .= "\n";
+                    }
+                    elsif (@p_children == 1
+                           && ref($p_children[0]) eq 'HASH'
+                           && $p_children[0]->{'name'} eq 'div') {
+                        if ($p_children[0]->{'children'}[0] eq 'p') {
+                            $result .= handle_spans($p_children[0]->{'children'}[0]{'children'});
+                        }
+                        else {
+                            $result .= handle_spans($p_children[0]->{'children'});
+                        }
+                    }
+                    else {
+                        $result .= handle_spans(\@p_children)
+                                .  "\n\n";
+                    }
+                }
+                when ('ul') {
+                    for my $elem (@{$node->{'children'}}) {
+                        next if $elem =~ /^\s*$/;
+                        die unless $elem->{'name'} eq 'li';
+                        my @li_children = @{$elem->{'children'}};
+                        shift @li_children while $li_children[0] =~ /^\s*$/;
+                        pop @li_children while $li_children[-1] =~ /^\s*$/;
+                        if (@li_children == 1
+                            && ref($li_children[0]) eq 'HASH'
+                            && $li_children[0]->{'name'} eq 'dl') {
+
+                            my $dl = $li_children[0];
+                            $result .= "- <dl>";
+                            for my $dl_elem (@{$dl->{'children'}}) {
+                                if (!ref $dl_elem) {
+                                    if ($dl_elem !~ /^\s*$/ms) {
+                                        $result .= $dl_elem;
+                                    }
+                                }
+                                elsif ($dl_elem->{'name'} eq 'dt') {
+                                    $result .= "<dt>" . handle_spans($dl_elem->{'children'}) . "</dt>";
+                                }
+                                elsif ($dl_elem->{'name'} eq 'dd') {
+                                    $result .= "<dd>" . handle_spans($dl_elem->{'children'}) .  "</dd>";
+                                }
+                                else {
+                                    die "Unknown ", $dl_elem->{'name'}, " in dl in li", Dumper($elem);
+                                }
+                                $result .= "\n";
+                            }
+                            $result .= "</dl>\n\n";
+                        }
+                        else {
+                            $result .= '- ' . handle_spans($elem->{'children'})
+                                    .  "\n";
+                        }
+                    }
+                    $result .= "\n";
+                }
+                when ('ol') {
+                    my $index = 0;
+                    for my $elem (@{$node->{'children'}}) {
+                        next if $elem =~ /^\s*$/;
+                        die unless $elem->{'name'} eq 'li';
+                        $index++;
+                        $result .= "$index. "
+                                .  handle_spans($elem->{'children'})
+                                .  "\n";
+                    }
+                    $result .= "\n";
+                }
+                when ('dl') {
+                    $result .= "<dl>";
+                    for my $elem (@{$node->{'children'}}) {
+                        if (!ref $elem) {
+                            if ($elem !~ /^\s*$/ms) {
+                                $result .= $elem;
+                            }
+                        }
+                        elsif ($elem->{'name'} eq 'dt') {
+                            $result .= "<dt>" . handle_spans($elem->{'children'}) . "</dt>";
+                        }
+                        elsif ($elem->{'name'} eq 'dd') {
+                            $result .= "<dd>" . handle_spans($elem->{'children'}) .  "</dd>";
+                        }
+                        else {
+                            die "Unknown ", $elem->{'name'}, " in dl";
+                        }
+                        $result .= "\n";
+                    }
+                    $result .= "</dl>\n\n";
+                }
+                when ('div') {
+                    $result .= handle_divs($node->{'children'});
+                }
+                when ('blockquote') {
+                    $result .= handle_divs($node->{'children'});
+                }
+                default {
+                    die "Encountered a $_, don't know how to handle", Dumper($childrenref);
+                }
+            }
+        }
+        else {
+            next if $node =~ /^\s*$/;
+            die "Bare text encountered: $node";
+        }
+    }
+    return $result;
+}
+
+sub handle_spans {
+    my ($childrenref) = @_;
+    my @children = @{$childrenref};
+    my $result = '';
+    for my $node (@children) {
+        if (ref $node eq 'HASH') {
+            next if $node->{'name'} eq 'nobr';
+            given ($node->{'name'}) {
+                when ('a') {
+                    $result .= '[' . handle_spans($node->{'children'}) . '](' . $node->{'attrs'}{'href'} . ')';
+                }
+                when (['em', 'i']) {
+                    $result .= '*' . handle_spans($node->{'children'}) . '*';
+                }
+                when (['strong', 'b']) {
+                    $result .= '**' . handle_spans($node->{'children'}) . '**';
+                }
+                when (['code', 'tt']) {
+                    $result .= '`'
+                            .  handle_spans($node->{'children'})
+                            .  '`';
+                }
+                when ('br') {
+                    $result .= "<br>\n";
+                }
+                default {
+                    die "Found ", $node->{'name'},
+                        " in handle_spans, don't know how to.\n\n\n",
+                        Dumper($childrenref);
+                }
+            }
+        }
+        else {
+            my $text = $node;
+            $text =~ s/\s+/ /g;
+            $text =~ s/&nbsp;/ /g;
+            $result .= $text;
+        }
+    }
+    return $result;
+}
+
+my @months = qw<January February March April May June July
+                August September October November December>;
+my %month_number_of = map { $months[$_] => $_ + 1 } 0..@months-1;
+
+my @filenames = @ARGV ? @ARGV : glob 'posts/*';
+
+for my $filename (@filenames) {
+    open my $INFILE, '<', $filename or die $!;
+    my @lines = <$INFILE>;
+
+    1 while shift(@lines) !~ /<div class="journaldate">\w+ (\w+) (\d+), (\d+)<\/div>/;
+    my $month = sprintf "%02d", $month_number_of{$1} || die $1;
+    my $day_of_month = sprintf "%02d", $2;
+    my $year = $3;
+    my $date = "$year-$month-$day_of_month";
+
+    1 while shift(@lines) !~ /<h3>([^<]+)<\/h3>/;
+    my $title = $1;
+    my $new_filename = 'new-structure/' . titlify($title);
+
+    1 while shift(@lines) !~ /<div class="intro">(.*)/;
+    my $content = $1;
+    my @postlines;
+    while (1) {
+        my $line = shift(@lines);
+        last if $line =~ /<div class="journalpage">/;
+        push @postlines, $line;
+    }
+    pop @postlines while defined($postlines[-1]) && $postlines[-1] =~ /^\s+$/;
+    $content .= join "", @postlines;
+    $content =~ s/<\/div>\s*$//;
+    $content = markdownify($content, $filename);
+
+    die "$new_filename already exists"
+        if !@ARGV && -e $new_filename;
+
+    open my $OUTFILE, '>', $new_filename or die $!;
+    print $OUTFILE <<"EOF";
+---
+title: $title
+author: Carl Mäsak
+date: $date
+---
+$content
+EOF
+    close $OUTFILE;
+}

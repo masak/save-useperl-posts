@@ -1,0 +1,836 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="shortcut icon" href="//use.perl.org/favicon.ico">
+
+<title>The ghost of Algol 68</title>
+
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/base.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/comments.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/useperl.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="print" href="//images.use.perl.org/print.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="handheld" href="//images.use.perl.org/handheld.css?T_2_5_0_235">
+
+<script src="//images.use.perl.org/jquery/jquery-1.2.6.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/jquery/jquery.metadata.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/slash.util.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/jquery/jquery.slashdot.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/yahoo.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/dom.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/event.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/dragdrop.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/animation.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/calendar.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/sd_calendar.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/slash.article-info.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/tag-ui.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/common.js?T_2_5_0_235" type="text/javascript"></script>
+
+<!-- start template: ID 121, header;misc;default -->
+
+<link rel="top"       title="All the Perl that's Practical to Extract and Report" href="//use.perl.org/" >
+<link rel="search"    title="Search use Perl" href="//use.perl.org/search.pl">
+<link rel="alternate" title="use Perl RSS" href="//use.perl.org/index.rss" type="application/rss+xml">
+</head>
+<body class="useperlorg">
+<div id="top_parent"></div>
+
+<div id="jump">
+	<a href="#main-articles">Stories</a>
+	<br>
+	<a href="#blocks">Slash Boxes</a>
+	<br>
+	<a href="#comments">Comments</a>
+</div>
+<div class="ad1">
+
+</div>
+<div id="frame">
+
+<!-- UsePerl Ad Start -->
+<div class="ad1"><!-- ad position 1 -->
+<div id="fad1" style="text-align:center">
+<!-- DoubleClick Ad Tag 1 -->
+<script type="text/javascript">
+	dfp_ord=Math.random()*10000000000000000;
+	dfp_tile = 1;
+
+	document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/ostg.useperl/mainpage_p1_leader;pg=index;logged_in=0;tile='+dfp_tile+';ord='+dfp_ord+'?"><\/script>');
+	dfp_tile++;
+</script>
+</div>
+<!-- End DoubleClick Ad Tag 1 --></div>
+<!-- UsePerl Ad End -->
+
+	<div id="topnav">
+		<div id="logo">
+			<h1>
+				<a href="//use.perl.org">use Perl</a>
+			</h1>
+		</div>
+                <div class="search">
+			<form method="get" action="//use.perl.org/search.pl">
+				<fieldset>
+					<legend></legend>
+					<label>Search <strong>use Perl</strong></label>
+					<input type="text" name="query" value="" size="20">
+					<input type="submit" value="Go" class="button">
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<div id="slogan">
+		<h2>
+			All the Perl that's Practical to Extract and Report
+		</h2>
+	</div>
+	<div id="commentsnav">
+		<div id="links">
+			
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="navigation-title">
+		<h4>
+			Navigation
+		</h4>
+	</div>
+	<div class="content" id="navigation-content">
+		<ul>
+	<li class="begin">
+		<a href="//use.perl.org/faq.shtml">FAQ</a>
+	</li>
+	<li>
+		<a href="//use.perl.org/about.shtml">About</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/submit.pl">Submit Story</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/search.pl">Older Stories</a>
+        </li>
+        <li>	
+		<a href="//use.perl.org/topics.shtml">Topics</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/pollBooth.pl">Polls</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/journal.pl">Journals</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/authors.pl">Authors</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/modulelist/">New Modules</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/users.pl?op=edithome">Preferences</a>
+
+        </li>
+</ul>
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+		</div>
+	</div>
+	<div id="contents">
+		
+		<div id="comments">
+
+<!-- end template: ID 121, header;misc;default -->
+
+
+
+<!-- start template: ID 159, printCommentsMain;misc;default -->
+
+<a name="acomments"></a>
+<div class="commentwrap" id="commentwrap">
+
+<div class="commentBox" style="font-size: 120%">
+	<div>
+<span class="escape-link"><a href="//use.perl.org/~masak/journal/40232" title="Back to Article - The ghost of Algol 68">The ghost of Algol 68</a></span>
+<span class="commentBoxLinks"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_d"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=44614&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></span>
+	</div>
+</div>
+
+	<div class="commentBoxForm" id="commentControlBox">
+<div></div>
+	<div class="commentBox">
+		<small>
+		<b>The Fine Print:</b> The following comments are owned by whoever posted them.  We are not responsible for them in any way.
+		</small>
+<noscript><br><small>Without JavaScript enabled, you might want to
+use <a href="//use.perl.org/comments.pl?sid=44614&amp;threshold=0&amp;commentsort=0&amp;mode=thread&amp;no_d2=1">the classic discussion system</a> instead.  If you <a href="//use.perl.org/login.pl">login</a>, you can remember this preference.
+</small></noscript>
+	</div>
+	</div>
+	
+		<div id="d2out" class="horizontal">
+		<div id="d2act" class="hide">
+		<div class="loki" id="gods">
+		<div class="block">
+			<div class="title">
+
+				<h4>
+				
+					<span class="h-inline">
+					<a href="//use.perl.org/~masak/journal/40232" title="Back to Article - The ghost of Algol 68">The ghost of Algol 68</a></span>
+					<span class="titlecount"><a href="//use.perl.org/~masak/journal/40232#topcomment" title="Back to Top Comment - The ghost of Algol 68"><span id="titlecountnum">10</span>&nbsp;Comments</a></span>
+				
+		<span class="ccw-header-links"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_b"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=44614&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></span>
+		<span id="d2toggle" title="Toggle window location" onclick="D2.toggleDisplayOptions()" class="close">/</span>
+				</h4>
+			</div>
+		</div>
+<script type="text/javascript">
+gCommentControlWidget = null;
+
+YAHOO.slashdot.ThresholdApp = function() {
+  return {
+    init: function() {
+      gCommentControlWidget = new YAHOO.slashdot.ThresholdWidget('X');
+      gCommentControlWidget.setTHT(D2.user_threshold(), D2.user_highlightthresh());
+      D2.updateTotals();
+    }
+  };
+}();
+
+YAHOO.util.Event.addListener(window, "load", YAHOO.slashdot.ThresholdApp.init);
+</script>
+		<div id="bones">
+      <div id="ccw">
+        <div id="ccw-body" class="ccw-core">
+          <div id="ccw-panel-container" class="ccw-core">
+            <div id="ccw-full-panel" class="ccw-panel">
+              <div class="ccw-panel-border"></div>
+              <div id="ccw-full-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-full-count-text" class="ccw-count-text"><span id="currentFull"></span><span id="ccw-full-phrase">&nbsp;Full</span></span>
+              </div>
+            </div>
+            <div id="ccw-abbr-panel" class="ccw-panel">
+              <div class="ccw-panel-border"></div>
+              <div id="ccw-abbr-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-abbr-count-text" class="ccw-count-text"><span id="currentOneline"></span><span id="ccw-abbr-phrase">&nbsp;Abbreviated</span></span>
+              </div>
+            </div>
+            <div id="ccw-hide-panel" class="ccw-panel">
+              <div id="ccw-hide-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-hide-count-text" class="ccw-count-text"><span id="currentHidden"></span><span id="ccw-hide-phrase">&nbsp;Hidden</span></span>
+              </div>
+            </div>
+          </div>
+    
+          <div id="ccw-control" class="ccw-core">
+            <div id="ccw-centering-rail" class="ccw-core">
+              <div id="ccw-hide-bar-pos" class="ccw-core-pos">
+                <div id="ccw-hide-bar" class="ccw-bar">
+                  <div id="ccw-hide-bar-tab" class="ccw-bar-tab"></div>
+                  <div id="ccw-hide-bar-upzone" class="ccw-upzone" onclick="gCommentControlWidget.stepTHT(HIDE_BAR, +1)"></div>
+                  <div id="ccw-hide-bar-downzone" class="ccw-downzone" onclick="gCommentControlWidget.stepTHT(HIDE_BAR, -1)"></div>
+                </div>
+              </div>
+              <div id="ccw-abbr-bar-pos" class="ccw-core-pos">
+                <div id="ccw-abbr-bar" class="ccw-bar">
+                  <div id="ccw-abbr-bar-tab" class="ccw-bar-tab"></div>
+                  <div id="ccw-abbr-bar-upzone" class="ccw-upzone" onclick="gCommentControlWidget.stepTHT(ABBR_BAR, +1)"></div>
+                  <div id="ccw-abbr-bar-downzone" class="ccw-downzone" onclick="gCommentControlWidget.stepTHT(ABBR_BAR, -1)"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+		<div class="commentControlFooter"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_c"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=44614&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a><div id="login_cover" style="display:none" onclick="hide_login_box()"></div>
+<div id="login_box" style="display:none">
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			Please Log In to Continue<a href="#" onclick="hide_login_box(); return false" class="close" title="Close this box"><img id="login_box_close" src="//images.use.perl.org/sic_close.png" alt="Close"></a>
+			
+		</h3>
+	</div>
+</div>
+<div id="login_box_content">
+<form action="//use.perl.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//use.perl.org/comments.pl?sid=44614">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//use.perl.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+</div></div>
+<script type="text/javascript">logged_in = 0</script></div>
+		<div id="commentControlBoxStatus" class="hide"><b>Loading... please wait.</b></div>
+	</div>
+</div>
+		</div>
+	
+</div>
+<a name="topcomment"></a>
+
+<!-- end template: ID 159, printCommentsMain;misc;default -->
+
+
+
+<!-- start template: ID 157, printCommComments;misc;default -->
+
+<script src="//images.use.perl.org/comments.js?T_2_5_0_235" type="text/javascript"></script>
+	<script type="text/javascript">
+<!--
+	D2.d2_keybindings_disable()[191] = 1;
+	window.onscroll = D2.d2act;
+	D2.boxStatus(1);
+D2.comments({ 71762: { uid: 6289, pid: 71760, subject: "Re: ... not happy ...", read: 0, points: 1, kids: [  ], opid: 71760 }, 71781: { uid: 47, pid: 0, read: 0, points: 2, kids: [  ], opid: 0 }, 71786: { uid: 5147, pid: 71766, subject: "Re:On Go", read: 0, points: 1, kids: [  ], opid: 71766 }, 71764: { uid: 983, pid: 71761, subject: "Re:The Audacity of Change", read: 0, points: 1, kids: [  ], opid: 71761 }, 71760: { uid: 5805, pid: 0, read: 0, points: 1, kids: [ 71762 ], opid: 0 }, 71759: { uid: 983, pid: 0, read: 0, points: 1, kids: [ 71761 ], opid: 0 }, 71761: { uid: 5147, pid: 71759, subject: "Re:The Audacity of Change", read: 0, points: 1, kids: [ 71764 ], opid: 71759 }, 71766: { uid: 2125, pid: 0, read: 0, points: 2, kids: [ 71785, 71786 ], opid: 0 }, 71763: { uid: 464, pid: 0, read: 0, points: 1, kids: [  ], opid: 0 }, 71785: { uid: 6289, pid: 71766, subject: "Re:On Go", read: 0, points: 1, kids: [  ], opid: 71766 } });
+
+D2.thresh_totals({6:{6:{1:10,3:0,2:0}},4:{6:{1:10,3:0,2:0},4:{1:10,3:0,2:0},5:{1:10,3:0,2:0}},1:{6:{1:0,3:0,2:10},4:{1:0,3:0,2:10},1:{1:0,3:10,2:0},3:{1:0,3:2,2:8},2:{1:0,3:5,2:5},5:{1:0,3:0,2:10}},3:{6:{1:10,3:0,2:0},4:{1:10,3:0,2:0},3:{1:10,3:0,2:0},5:{1:10,3:0,2:0}},0:{6:{1:0,3:0,2:10},4:{1:0,3:0,2:10},1:{1:0,3:10,2:0},3:{1:0,3:2,2:8},0:{1:0,3:10,2:0},2:{1:0,3:5,2:5},5:{1:0,3:0,2:10}},2:{6:{1:8,3:0,2:2},4:{1:8,3:0,2:2},3:{1:8,3:2,2:0},2:{1:8,3:2,2:0},5:{1:8,3:0,2:2}},5:{6:{1:10,3:0,2:0},5:{1:10,3:0,2:0}},"-1":{6:{1:0,3:0,2:10},4:{1:0,3:0,2:10},1:{1:0,3:10,2:0},3:{1:0,3:2,2:8},0:{1:0,3:10,2:0},2:{1:0,3:5,2:5},5:{1:0,3:0,2:10},"-1":{1:0,3:10,2:0}}});
+
+D2.root_comment(0);
+D2.root_comments([71759,71760,71763,71766,71781]);
+D2.root_comments_hash({71781:1,71759:1,71766:1,71763:1,71760:1});
+
+D2.d2_comment_order(0);
+D2.user_uid(7);
+D2.user_is_anon(1);
+D2.user_is_admin(0);
+D2.user_is_subscriber(0);
+D2.user_threshold(0);
+D2.user_highlightthresh(4);
+D2.user_d2asp(0);
+
+D2.discussion_id(44614);
+
+D2.d2_seen('71759,1,1,1,1,1,2,15,4,1');
+D2.more_comments_num(0);
+
+
+//-->
+	</script>
+
+
+
+
+	
+	
+	
+	
+		<ul id="commentlisting" class="d2">
+			<li id="tree_71759" class="comment">
+<div id="comment_status_71759" class="commentstatus"></div>
+<div id="comment_71759" class="oneline">
+
+	<div id="comment_top_71759" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71759" name="comment_link_71759" href="//use.perl.org/comments.pl?sid=44614&amp;cid=71759" onclick="return D2.setFocusComment(71759)">The Audacity of Change</a>
+			
+			<span id="comment_score_71759" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71759); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~chromatic/">chromatic (983)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71759"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71759"><p>Many of those criticisms could apply to many revisions of many languages.  (I can think of one popular exception.)</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71759"></div>
+
+</div>
+
+
+<div id="replyto_71759"></div>
+
+<ul id="group_71759">
+	<li id="hiddens_71759" class="hide"></li>
+</ul><ul id="commtree_71759"><li id="tree_71761" class="comment">
+<div id="comment_status_71761" class="commentstatus"></div>
+<div id="comment_71761" class="oneline">
+
+	<div id="comment_top_71761" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71761" name="comment_link_71761" href="//use.perl.org/comments.pl?sid=44614&amp;cid=71761" onclick="return D2.setFocusComment(71761)">Re:</a>
+			
+			<span id="comment_score_71761" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71761); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~Aristotle/">Aristotle (5147)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71761"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71761"><p>Was that jab really necessary now, chromatic?<nobr> <wbr></nobr><tt>:-)</tt> </p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71761"></div>
+
+</div>
+
+
+<div id="replyto_71761"></div>
+
+<ul id="group_71761">
+	<li id="hiddens_71761" class="hide"></li>
+</ul><ul id="commtree_71761"><li id="tree_71764" class="comment">
+<div id="comment_status_71764" class="commentstatus"></div>
+<div id="comment_71764" class="oneline">
+
+	<div id="comment_top_71764" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71764" name="comment_link_71764" href="//use.perl.org/comments.pl?sid=44614&amp;cid=71764" onclick="return D2.setFocusComment(71764)">Re:</a>
+			
+			<span id="comment_score_71764" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71764); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~chromatic/">chromatic (983)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71764"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71764"><p>Naming the particular language I had in mind would make it unnecessary!  As it is, everyone has to guess.  (It's not Python 3.)</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71764"></div>
+
+</div>
+
+
+<div id="replyto_71764"></div>
+
+<ul id="group_71764">
+	<li id="hiddens_71764" class="hide"></li>
+</ul></li></ul></li></ul></li><li id="tree_71760" class="comment">
+<div id="comment_status_71760" class="commentstatus"></div>
+<div id="comment_71760" class="oneline">
+
+	<div id="comment_top_71760" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71760" name="comment_link_71760" href="//use.perl.org/comments.pl?sid=44614&amp;cid=71760" onclick="return D2.setFocusComment(71760)"> ... not happy ...</a>
+			
+			<span id="comment_score_71760" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71760); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~thickas/">thickas (5805)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71760"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71760">an accusation of being Algol 68 is almost as perjorative as being PL-1 like or Ada like.<p>
+It is not in any way complimentary.</p><p>
+Alogol 68 is not in any way remembered fondly by people wishing to write code partly because even if you like the ideas there were so few implementations that it was higly unlikely they would run.</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71760"></div>
+
+</div>
+
+
+<div id="replyto_71760"></div>
+
+<ul id="group_71760">
+	<li id="hiddens_71760" class="hide"></li>
+</ul><ul id="commtree_71760"><li id="tree_71762" class="comment">
+<div id="comment_status_71762" class="commentstatus"></div>
+<div id="comment_71762" class="oneline">
+
+	<div id="comment_top_71762" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71762" name="comment_link_71762" href="//use.perl.org/comments.pl?sid=44614&amp;cid=71762" onclick="return D2.setFocusComment(71762)">Re:</a>
+			
+			<span id="comment_score_71762" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71762); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~masak/">masak (6289)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71762"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71762"><p><div class="quote"><p>an accusation of being Algol 68 is almost as perjorative as being PL-1 like or Ada like.</p></div><p><div class="quote"><p>It is not in any way complimentary.</p></div><p>Thanks for letting me know.</p><p>I didn't write the post because I thought Algol 68 was an admirable or ideal language. I wrote it because some of the sentences in the Wikipedia article felt like they could have been pulled from a Wikipedia article about Perl 6. There wasn't really any other value judgement involved. I have next to zero knowledge about the legacy of Algol 68.</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71762"></div>
+
+</div>
+
+
+<div id="replyto_71762"></div>
+
+<ul id="group_71762">
+	<li id="hiddens_71762" class="hide"></li>
+</ul></li></ul></li><li id="tree_71763" class="comment">
+<div id="comment_status_71763" class="commentstatus"></div>
+<div id="comment_71763" class="oneline">
+
+	<div id="comment_top_71763" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71763" name="comment_link_71763" href="//use.perl.org/comments.pl?sid=44614&amp;cid=71763" onclick="return D2.setFocusComment(71763)">Perl '67</a>
+			
+			<span id="comment_score_71763" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71763); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~Dominus/">Dominus (464)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71763"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71763"><p>I had a similar experience about fifteen years ago.  I was reading a description of a late-sixties-era programming language and thought "wow, this sounds just like Perl".
+
+</p><p>Here is the description:</p><blockquote><div><p>PERL (Practical Extraction and Report Language) is a programming language developed with the intention of combining features of commercial languages (such as COBOL) and scientific languages (such as ALGOL). Commercial applications with their emphasis on efficient handling of large volumes of data have led to the de<span class="substr"> </span></p></div></blockquote></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71763"></div>
+
+</div>
+
+
+<div id="replyto_71763"></div>
+
+<ul id="group_71763">
+	<li id="hiddens_71763" class="hide"></li>
+</ul></li><li id="tree_71766" class="comment">
+<div id="comment_status_71766" class="commentstatus"></div>
+<div id="comment_71766" class="oneline">
+
+	<div id="comment_top_71766" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71766" name="comment_link_71766" href="//use.perl.org/comments.pl?sid=44614&amp;cid=71766" onclick="return D2.setFocusComment(71766)">On Go</a>
+			
+			<span id="comment_score_71766" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71766); return false">Score:2</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~rafael/">rafael (2125)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71766"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71766"><p>About language comparisons, I strongly recommend reading</p><p><a href="http://www.cowlark.com/2009-11-15-go/" title="cowlark.com">http://www.cowlark.com/2009-11-15-go/</a> [cowlark.com]</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71766"></div>
+
+</div>
+
+
+<div id="replyto_71766"></div>
+
+<ul id="group_71766">
+	<li id="hiddens_71766" class="hide"></li>
+</ul><ul id="commtree_71766"><li id="tree_71785" class="comment">
+<div id="comment_status_71785" class="commentstatus"></div>
+<div id="comment_71785" class="oneline">
+
+	<div id="comment_top_71785" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71785" name="comment_link_71785" href="//use.perl.org/comments.pl?sid=44614&amp;cid=71785" onclick="return D2.setFocusComment(71785)">Re:</a>
+			
+			<span id="comment_score_71785" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71785); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~masak/">masak (6289)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71785"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71785"><p>Heh. I was already reading that when you wrote the comment.<nobr> <wbr></nobr>:)</p><p>The author says a lot of the things in the concluding sections than I did in my post. I recommend the whole text to anyone interested.</p><p>Right now I'm reading <a href="http://vestein.arb-phys.uni-dortmund.de/~wb/RR/tanenbaum.pdf" title="uni-dortmund.de" rel="nofollow">Tanenbaum's introduction</a> [uni-dortmund.de] to Algol 68. It's also pretty good.</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71785"></div>
+
+</div>
+
+
+<div id="replyto_71785"></div>
+
+<ul id="group_71785">
+	<li id="hiddens_71785" class="hide"></li>
+</ul></li><li id="tree_71786" class="comment">
+<div id="comment_status_71786" class="commentstatus"></div>
+<div id="comment_71786" class="oneline">
+
+	<div id="comment_top_71786" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71786" name="comment_link_71786" href="//use.perl.org/comments.pl?sid=44614&amp;cid=71786" onclick="return D2.setFocusComment(71786)">Re:</a>
+			
+			<span id="comment_score_71786" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71786); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~Aristotle/">Aristotle (5147)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71786"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71786"><p>I had a discussion about that article with a knowledgeable friend who was not at all impressed&#8230; though unfortunately I don&#8217;t remember much of what he said.</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71786"></div>
+
+</div>
+
+
+<div id="replyto_71786"></div>
+
+<ul id="group_71786">
+	<li id="hiddens_71786" class="hide"></li>
+</ul></li></ul></li><li id="tree_71781" class="comment">
+<div id="comment_status_71781" class="commentstatus"></div>
+<div id="comment_71781" class="oneline">
+
+	<div id="comment_top_71781" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71781" name="comment_link_71781" href="//use.perl.org/comments.pl?sid=44614&amp;cid=71781" onclick="return D2.setFocusComment(71781)">Not surprising /bin/sh looks like Algol-68</a>
+			
+			<span id="comment_score_71781" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71781); return false">Score:2</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~merlyn/">merlyn (47)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71781"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71781">Steve Bourne (Bourne Shell) was one of the authors of Algol 68.  You should see the source code!  It's all ALGOLIZED!</div>
+		
+		<div id="comment_sig_71781" class="sig">--<br><ul> <li>Randal L. Schwartz</li> <li>Stonehenge</li> </ul></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71781"></div>
+
+</div>
+
+
+<div id="replyto_71781"></div>
+
+<ul id="group_71781">
+	<li id="hiddens_71781" class="hide"></li>
+</ul></li>
+			<li id="roothiddens" class="hide"></li>
+		</ul>
+	
+	
+	
+	
+
+
+<div id="replyto_0"></div>
+
+
+<div id="discussion_buttons">
+
+
+<span class="nbutton"><p><b><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_a" class="hide">Get More Comments</span></a></b></p></span>
+
+
+
+<span class="nbutton"><p><b><a href="//use.perl.org/comments.pl?sid=44614&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></b></p></span>
+
+
+
+
+
+
+
+</div>
+
+
+
+	<script type="text/javascript">
+<!--
+		D2.currents()['hidden']   = 0;
+		D2.currents()['full']     = 0;
+		D2.currents()['oneline']  = 10;
+		// D2.currents_total(10);
+
+		D2.abbrev_comments({71763:546});
+		D2.noshow_comments([]);
+		D2.pieces_comments([71759,71761,71764,71760,71762,71763,71766,71785,71786,71781]);
+		D2.init_hiddens([]);
+
+		D2.finishLoading();
+
+
+		if (D2.thresh_totals()[6][6][1] == 0) {
+			D2.replyTo(0, 1);
+		}
+
+
+//-->
+	</script>
+
+<!-- end template: ID 157, printCommComments;misc;default -->
+
+
+
+<!-- start template: ID 112, footer;misc;default -->
+
+</div>
+                </div>
+                <div id="footer">
+			<div class="download">
+                                <!-- START DOWNLOAD PERL -->
+                                <!-- Perl Mongers, Inc.  web@perlmongers.org -->
+                                <a href="http://www.cpan.org/ports/index.html"><img src="http://www.perl.org/Images/download_perl.gif" width="102" height="42" alt="Download Perl Now!"></a>
+                                <!-- END DOWNLOAD PERL -->
+                        </div>	
+			<div class="sitelogo">
+				<a href="//use.perl.org/">
+					<img src="http://images.use.perl.org/topics/useperl.gif" alt="useperl">
+				</a>
+			</div>
+                        <em>
+				&nbsp; &nbsp; &gt; This made me wonder, suddenly: can telnet be written in perl?<BR>
+&nbsp; &nbsp; Of course it can be written in Perl.&nbsp; Now if you'd said nroff,<BR>
+&nbsp; &nbsp; that would be more challenging...&nbsp;  --Larry Wall
+			</em>
+		</div>
+		<div class="copyright">
+			Stories, comments, journals, and other submissions on use Perl; are Copyright 1998-2006, their respective owners.
+		</div>
+		<div class="btmnav">
+			<ul>
+	<li class="begin">
+		<a href="//use.perl.org/faq.shtml">FAQ</a>
+	</li>
+	<li>
+		<a href="//use.perl.org/about.shtml">About</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/submit.pl">Submit Story</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/search.pl">Older Stories</a>
+        </li>
+        <li>	
+		<a href="//use.perl.org/topics.shtml">Topics</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/pollBooth.pl">Polls</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/journal.pl">Journals</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/authors.pl">Authors</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/modulelist/">New Modules</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/users.pl?op=edithome">Preferences</a>
+
+        </li>
+</ul>
+		</div>
+        </div>
+<div id="modal_cover" style="display:none" onclick="hide_modal_box()"></div>
+<div id="modal_box" style="display:none">
+        <div class="generaltitle" >
+                <div class="title"><h3><span id="preference_title"></span> <a href="#" onclick="hide_modal_box(); return false"><img src="//images.use.perl.org/sic_close.png" alt="Close"></a></h3></div>
+        </div>
+        <div id="modal_box_content"></div>
+</div>
+
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		_uacct = "UA-32013-15";
+		urchinTracker();
+	</script>
+
+</body>
+</html>
+
+<!-- end template: ID 112, footer;misc;default -->
+

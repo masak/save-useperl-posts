@@ -1,0 +1,1175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="shortcut icon" href="//use.perl.org/favicon.ico">
+
+<title>Journal of masak (6289)</title>
+
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/base.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/comments.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/useperl.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="print" href="//images.use.perl.org/print.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="handheld" href="//images.use.perl.org/handheld.css?T_2_5_0_235">
+
+<script src="//images.use.perl.org/jquery/jquery-1.2.6.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/jquery/jquery.metadata.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/slash.util.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/jquery/jquery.slashdot.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/yahoo.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/dom.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/event.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/dragdrop.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/animation.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/calendar.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/sd_calendar.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/slash.article-info.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/tag-ui.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/common.js?T_2_5_0_235" type="text/javascript"></script>
+
+<!-- start template: ID 121, header;misc;default -->
+
+<link rel="top"       title="All the Perl that's Practical to Extract and Report" href="//use.perl.org/" >
+<link rel="search"    title="Search use Perl" href="//use.perl.org/search.pl">
+<link rel="author"    title="masak" href="//use.perl.org/~masak/">
+<link rel="alternate" title="masak's Journal RSS" href="http://use.perl.org/~masak/journal/rss" type="application/rss+xml">
+<link rel="alternate" title="masak's Friends' Journals RSS" href="http://use.perl.org/~masak/journal/friends/rss" type="application/rss+xml">
+<link rel="alternate" title="Most Recent Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="Most Active Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;type=count&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="Most Befriended Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;type=friends&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="use Perl RSS" href="//use.perl.org/index.rss" type="application/rss+xml">
+</head>
+<body class="useperlorg">
+<div id="top_parent"></div>
+
+<div id="jump">
+	<a href="#main-articles">Stories</a>
+	<br>
+	<a href="#blocks">Slash Boxes</a>
+	<br>
+	<a href="#comments">Comments</a>
+</div>
+<div class="ad1">
+
+</div>
+<div id="frame">
+
+<!-- UsePerl Ad Start -->
+<div class="ad1"><!-- ad position 1 -->
+<div id="fad1" style="text-align:center">
+<!-- DoubleClick Ad Tag 1 -->
+<script type="text/javascript">
+	dfp_ord=Math.random()*10000000000000000;
+	dfp_tile = 1;
+
+	document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/ostg.useperl/mainpage_p1_leader;pg=index;logged_in=0;tile='+dfp_tile+';ord='+dfp_ord+'?"><\/script>');
+	dfp_tile++;
+</script>
+</div>
+<!-- End DoubleClick Ad Tag 1 --></div>
+<!-- UsePerl Ad End -->
+
+	<div id="topnav">
+		<div id="logo">
+			<h1>
+				<a href="//use.perl.org">use Perl</a>
+			</h1>
+		</div>
+                <div class="search">
+			<form method="get" action="//use.perl.org/search.pl">
+				<fieldset>
+					<legend></legend>
+					<label>Search <strong>use Perl</strong></label>
+					<input type="text" name="query" value="" size="20">
+					<input type="submit" value="Go" class="button">
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<div id="slogan">
+		<h2>
+			All the Perl that's Practical to Extract and Report
+		</h2>
+	</div>
+	<div id="journalnav">
+		<div id="links">
+			
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="navigation-title">
+		<h4>
+			Navigation
+		</h4>
+	</div>
+	<div class="content" id="navigation-content">
+		<ul>
+	<li class="begin">
+		<a href="//use.perl.org/faq.shtml">FAQ</a>
+	</li>
+	<li>
+		<a href="//use.perl.org/about.shtml">About</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/submit.pl">Submit Story</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/search.pl">Older Stories</a>
+        </li>
+        <li>	
+		<a href="//use.perl.org/topics.shtml">Topics</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/pollBooth.pl">Polls</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/journal.pl">Journals</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/authors.pl">Authors</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/modulelist/">New Modules</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/users.pl?op=edithome">Preferences</a>
+
+        </li>
+</ul>
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+		</div>
+	</div>
+	<div id="contents">
+		
+		<div id="journal">
+
+<!-- end template: ID 121, header;misc;default -->
+
+
+
+<!-- start template: ID 55, journalhead;journal;default -->
+
+<div id="slashboxes">
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="userlogin-title">
+		<h4>
+			use Perl Log In
+		</h4>
+	</div>
+	<div class="content" id="userlogin-content">
+		
+			<form action="//use.perl.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//use.perl.org/">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//use.perl.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+		
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="user-info-title">
+		<h4>
+			masak (6289)
+		</h4>
+	</div>
+	<div class="content" id="user-info-content">
+		<a href="//use.perl.org/~masak/">masak</a> <br>&nbsp;&nbsp;(email not shown publicly)<br><a href="http://masak.org/carl" rel="nofollow">http://masak.org/carl</a><br><hr>Been programming Perl since 2001. Found Perl 6 somewhere around 2004, and fell in love. Now developing November (a Perl 6 wiki), Druid (a Perl 6 board game), pls (a Perl 6 project installer), GGE (a regex engine), and Yapsi (a Perl 6 implementation). Heavy user of and irregular committer to Rakudo.
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+</div>
+<div id="users-blocks">
+
+
+<!-- start template: ID 376, tabbedmenu;misc;default -->
+
+
+
+<!-- end template: ID 376, tabbedmenu;misc;default -->
+
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			<a href="//use.perl.org/~masak/journal/">Journal</a> of <a href="//use.perl.org/~masak/">masak</a> (6289)
+			
+		</h3>
+	</div>
+</div>
+
+
+<div id="usermenu">
+<ul class="menu">
+<li><span class="begin"><a href="//use.perl.org/~masak/" class="begin">Info</a></span></li><li class="selected"><b><a href="//use.perl.org/~masak/journal/">Journal</a></b></li><li><a href="//use.perl.org/~masak/firehose/">Firehose</a></li><li><a href="//use.perl.org/~masak/friends/">Friends</a></li><li><a href="//use.perl.org/~masak/fans/">Fans</a></li><li><a href="//use.perl.org/~masak/foes/">Foes</a></li><li><a href="//use.perl.org/~masak/freaks/">Freaks</a></li><li><a href="//use.perl.org/~masak/tags/">Tags</a></li><li><a href="//use.perl.org/~masak/bookmarks/" class="end">Bookmarks</a></li>
+</ul>
+</div><div class="generalbody">
+
+<!-- start template: ID 376, tabbedmenu;misc;default -->
+
+<ul class="menu">
+<li><span class="begin"><a href="//use.perl.org/journal.pl?op=top" class="begin">Top&nbsp;10</a></span></li><li><a href="//use.perl.org/journal.pl?op=friends" class="end">Friend's&nbsp;Journals</a></li>
+</ul>
+
+<!-- end template: ID 376, tabbedmenu;misc;default -->
+
+<!-- end template: ID 55, journalhead;journal;default -->
+
+
+
+<!-- start template: ID 65, slashdot;journal;default -->
+
+<div id="journalslashdot">
+    
+	<div class="journaldate">Thursday July 15, 2010</div>
+	
+	<div class="details">12:13 PM</div>
+	<div class="title">
+		<h3>Phasers are a blast: FIRST and LAST</h3>
+	</div>
+	<div class="adminoptions">
+		[
+
+			<a href="//use.perl.org/~masak/journal/40447">#40447</a>
+		]
+	</div>
+
+	<div class="intro"><p>I started thinking about the <code>FIRST</code> and <code>LAST</code> phasers the other day, thanks to moritz++. My attention was on how to implement them in Yapsi, and my conclusions were mostly SIC, but they can be converted to Perl 6 for public view.</p><p>For those who haven't kept up with the latest Perl 6 terminology, "phasers" are what we call those all-caps blocks which fire at different <em>phases</em> during program execution. Perl 5's <code>perldoc perlmod</code> simply calls them "specially named code blocks", but in Perl 6 it's been decided to call them "phasers".</p><p>So much for phasers. What do the <code>FIRST</code> and <code>LAST</code> phasers do? They don't exist in Perl 5. S04 describes them thus:</p><p> <code>
+FIRST&nbsp;{...}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;loop&nbsp;initialization&nbsp;time,&nbsp;before&nbsp;any&nbsp;ENTER<br>
+&nbsp;LAST&nbsp;{...}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;loop&nbsp;termination&nbsp;time,&nbsp;after&nbsp;any&nbsp;LEAVE<br>
+</code> </p><p>(There's a <code>NEXT</code> phasers too, which I'm not going to tackle today. The <code>ENTER</code> and <code>LEAVE</code> phasers are what they sound like; they trigger at block entrance and exit, respectively.)</p><p>Here's some code using these.</p><p> <code>
+my&nbsp;@a&nbsp;=&nbsp;1,&nbsp;2,&nbsp;3;<br>
+for&nbsp;@a&nbsp;-&gt;&nbsp;$item&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;FIRST&nbsp;{&nbsp;say&nbsp;"OH&nbsp;HAI"&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say&nbsp;$item;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;LAST&nbsp;{&nbsp;say&nbsp;"LOL&nbsp;DONE"&nbsp;}<br>
+}<br>
+</code> </p><p>The code, when run, should print the following:</p><p> <code>
+OH&nbsp;HAI<br>
+1<br>
+2<br>
+3<br>
+LOL&nbsp;DONE<br>
+</code> </p><p>(At the time of writing, no Perl 6 implementation implements the <code>FIRST</code> and <code>LAST</code> phasers yet.)</p><p>The goal of this post is <em>transforming</em> the phasers into code using more primitive constructs, but which still produces the above results. Oh, and it should work not only in this case, but in general.</p><p>Here's a first attempt. (Phaser-ful code to the left, rewritten code to the right.) It doesn't work.</p><p> <code>
+my&nbsp;@a&nbsp;=&nbsp;1,&nbsp;2,&nbsp;3;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my&nbsp;@a&nbsp;=&nbsp;1,&nbsp;2,&nbsp;3;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say&nbsp;"OH&nbsp;HAI";<br>
+for&nbsp;@a&nbsp;-&gt;&nbsp;$item&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;@a&nbsp;-&gt;&nbsp;$item&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;FIRST&nbsp;{&nbsp;say&nbsp;"OH&nbsp;HAI"&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say&nbsp;$item;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say&nbsp;$item;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;LAST&nbsp;{&nbsp;say&nbsp;"LOL&nbsp;DONE"&nbsp;}<br>
+}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say&nbsp;"LOL&nbsp;DONE";<br>
+</code> </p><p>More exactly, it does produce the desired output, but it doesn't work in general; it fails when <code>@a</code> is empty:</p><p> <code>
+my&nbsp;@a;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my&nbsp;@a;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say&nbsp;"OH&nbsp;HAI";<br>
+for&nbsp;@a&nbsp;-&gt;&nbsp;$item&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;@a&nbsp;-&gt;&nbsp;$item&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;FIRST&nbsp;{&nbsp;say&nbsp;"OH&nbsp;HAI"&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say&nbsp;$item;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say&nbsp;$item;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;LAST&nbsp;{&nbsp;say&nbsp;"LOL&nbsp;DONE"&nbsp;}<br>
+}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say&nbsp;"LOL&nbsp;DONE";<br>
+</code> </p><p>This code would still produce <code>"OH HAI\nLOL DONE\n"</code>, which is wrong, because there is no first and last iteration for the empty <code>@a</code> array.</p><p>Ok, we say. No worries; a bit more ad hoc, but we can detect for emptiness. No problem.</p><p> <code>
+my&nbsp;@a;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my&nbsp;@a;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my&nbsp;$HAS_ELEMS&nbsp;=&nbsp;?@a;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;$HAS_ELEMS&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say&nbsp;"OH&nbsp;HAI";<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+for&nbsp;@a&nbsp;-&gt;&nbsp;$item&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;@a&nbsp;-&gt;&nbsp;$item&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;FIRST&nbsp;{&nbsp;say&nbsp;"OH&nbsp;HAI"&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say&nbsp;$item;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say&nbsp;$item;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;LAST&nbsp;{&nbsp;say&nbsp;"LOL&nbsp;DONE"&nbsp;}<br>
+}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;$HAS_ELEMS&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say&nbsp;"LOL&nbsp;DONE";<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+</code> </p><p>That works for an empty list, but it fails to work when the <code>FIRST</code> block accesses variables that only exist within the <code>for</code> loop:</p><p> <code>
+my&nbsp;@a&nbsp;=&nbsp;1,&nbsp;2,&nbsp;3;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my&nbsp;@a&nbsp;=&nbsp;1,&nbsp;2,&nbsp;3;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my&nbsp;$HAS_ELEMS&nbsp;=&nbsp;?@a;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;$HAS_ELEMS&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$x&nbsp;#&nbsp;BZZT&nbsp;PARSE&nbsp;ERROR<br>
+for&nbsp;@a&nbsp;-&gt;&nbsp;$item&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;my&nbsp;$x;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;FIRST&nbsp;{&nbsp;$x&nbsp;=&nbsp;42&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say&nbsp;$item,&nbsp;$x;<br>
+}<br>
+</code> </p><p>So. Back to the drawing-board. Two seemingly opposing forces constrain our problem: we need to put the rewritten <code>FIRST</code> block <em>outside</em> the <code>for</code> loop, because we only want it to execute once; but we also need to put it <em>inside</em> the <code>for</code> loop, so that it can have access to the same lexical environment. Is there a compromise somewhere in there?</p><p>Yes. We put the <code>FIRST</code> block inside the <code>for</code> loop, but then we keep track of whether we've already executed it once, with a special variable hidden in the surrounding scope:</p><p> <code>
+my&nbsp;@a&nbsp;=&nbsp;1,&nbsp;2,&nbsp;3;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my&nbsp;@a&nbsp;=&nbsp;1,&nbsp;2,&nbsp;3;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my&nbsp;$FIRST_PHASER_HAS_RUN&nbsp;=&nbsp;False;<br>
+for&nbsp;@a&nbsp;-&gt;&nbsp;$item&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;@a&nbsp;-&gt;&nbsp;$item&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;my&nbsp;$x;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my&nbsp;$x;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unless&nbsp;$FIRST_PHASER_HAS_RUN&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;FIRST&nbsp;{&nbsp;$x&nbsp;=&nbsp;42&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$x&nbsp;=&nbsp;42;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$FIRST_PHASER_HAS_RUN&nbsp;=&nbsp;True;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say&nbsp;$item,&nbsp;$x;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say&nbsp;$item,&nbsp;$x;<br>
+}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+</code> </p><p>Now it all works. This is the general way to make the <code>FIRST</code> behave according to spec. In the presence of several loops within the same block, one can re-use the same variable for all of the loops, just resetting it before each one. Explicitly setting to <code>False</code> even the first time is quite important, in case someone ever implements the <code>goto</code> statement.</p><p>With the <code>LAST</code> phaser, we encounter exactly the same dilemma as with the <code>FIRST</code> loop. The <code>LAST</code> phaser has to be both inside and outside the block; inside because it has to have access to the loop block's variables, and outside because... well, because in general one doesn't know which iteration was the last one until it has already run.</p><p>At one point I had the idea to put the <code>LAST</code> block at the end of the loop block, checking the loop condition just before the placement of the <code>LAST</code> block, possibly saving it somewhere so it doesn't have to be re-evaluated. But the sad truth there's no realistic way to evaluate the loop condition from within the loop block; what if the expression contains a variable which is shadowed by another variable inside the loop block? There's just no way to make that fly.</p><p>The whole situation with the <code>LAST</code> block really looks hopeless... until one remembers about closures:</p><p> <code>
+my&nbsp;@a&nbsp;=&nbsp;1,&nbsp;2,&nbsp;3;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my&nbsp;@a&nbsp;=&nbsp;1,&nbsp;2,&nbsp;3;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my&nbsp;$LAST_PHASER;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my&nbsp;$LOOP_HAS_RUN&nbsp;=&nbsp;False;<br>
+for&nbsp;@a&nbsp;-&gt;&nbsp;$item&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;@a&nbsp;-&gt;&nbsp;$item&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;my&nbsp;$x&nbsp;=&nbsp;"LOL&nbsp;DONE";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my&nbsp;$x&nbsp;=&nbsp;"LOL&nbsp;DONE";<br>
+&nbsp;&nbsp;&nbsp;&nbsp;LAST&nbsp;{&nbsp;say&nbsp;$x&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$LAST_PHASER&nbsp;=&nbsp;{&nbsp;say&nbsp;$x&nbsp;};<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$LOOP_HAS_RUN&nbsp;=&nbsp;True;<br>
+}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;$LOOP_HAS_RUN&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$LAST_PHASER();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+</code> </p><p>So in every iteration, we save away a closure <em>just in case</em> that particular iteration turns out to be the last one. Then we execute the last value assigned to the closure, provided the loop ever run. Sneaky, huh?</p><p>So that works in the general case. Of course, a clever optimizer which can detect with certainty that the loop will run at least once and that neither phaser uses loop-specific lexicals is perfectly entitled to rewrite the <code>FIRST</code> and <code>LAST</code> phasers to our first attempt. But the above rewritings work in the general case.</p><p>In explaining this to a colleague, a case of possible confusion involving the <code>FIRST</code> phaser was uncovered:</p><p> <code>
+for&nbsp;1,&nbsp;2,&nbsp;3&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;my&nbsp;$x&nbsp;=&nbsp;42;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;FIRST&nbsp;{&nbsp;say&nbsp;$x&nbsp;}<br>
+}<br>
+</code> </p><p>One might perhaps expect this code to print <code>"42\n"</code>, but in fact it prints <code>"Any()"</code>. The reason is simple: whereas the lexical <code>$x</code> is reachable throughout the whole <code>for</code> loop, the <em>assignment</em> of <code>42</code> to it won't occur until <em>after</em> the <code>FIRST</code> block has executed. That's what <code>FIRST</code> blocks do, they execute first. Nevertheless, some people might expect assignments to be treated specially in some way, not counting as "real code" or whatever. But they are, and thus that's the result. In general, reading from freshly declared lexical variables in a <code>FIRST</code> block won't do you much good.</p><p>Lastly, there's this wording in S04:</p><div class="quote"><p> <code>FIRST</code>, <code>NEXT</code>, and <code>LAST</code> are meaningful only within the lexical scope of a loop, and may occur only at the top level of such a loop block.</p></div><p>I read that as saying that these kinds of blocks should be <em>illegal</em> if they are found in a block which isn't a loop block. STD.pm6 doesn't enforce this yet; it probably should.</p></div>
+	
+    
+
+	<div class="journalpage">
+		
+		<br>
+		<a href="//use.perl.org/journal.pl?op=list&amp;uid=6289" class="all">List all Journal entries</a>
+	</div>
+</div>
+
+<!-- end template: ID 65, slashdot;journal;default -->
+
+</div></div>
+
+<!-- start template: ID 159, printCommentsMain;misc;default -->
+
+<a name="acomments"></a>
+<div class="commentwrap" id="commentwrap">
+
+<div class="commentBox" style="font-size: 120%">
+	<div>
+<span class="escape-link"><a href="//use.perl.org/~masak/journal/40447" title="Back to Article - Phasers are a blast: FIRST and LAST">Phasers are a blast: FIRST and LAST</a></span>
+<span class="commentBoxLinks"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_d"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=44965&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></span>
+	</div>
+</div>
+
+	<div class="commentBoxForm" id="commentControlBox">
+<div></div>
+	<div class="commentBox">
+		<small>
+		<b>The Fine Print:</b> The following comments are owned by whoever posted them.  We are not responsible for them in any way.
+		</small>
+<noscript><br><small>Without JavaScript enabled, you might want to
+use <a href="//use.perl.org/comments.pl?sid=44965&amp;threshold=0&amp;commentsort=0&amp;mode=thread&amp;no_d2=1">the classic discussion system</a> instead.  If you <a href="//use.perl.org/login.pl">login</a>, you can remember this preference.
+</small></noscript>
+	</div>
+	</div>
+	
+		<div id="d2out" class="horizontal">
+		<div id="d2act" class="hide">
+		<div class="loki" id="gods">
+		<div class="block">
+			<div class="title">
+
+				<h4>
+				
+					<span class="h-inline">
+					<a href="//use.perl.org/~masak/journal/40447" title="Back to Article - Phasers are a blast: FIRST and LAST">Phasers are a blast: FIRST and LAST</a></span>
+					<span class="titlecount"><a href="//use.perl.org/~masak/journal/40447#topcomment" title="Back to Top Comment - Phasers are a blast: FIRST and LAST"><span id="titlecountnum">13</span>&nbsp;Comments</a></span>
+				
+		<span class="ccw-header-links"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_b"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=44965&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></span>
+		<span id="d2toggle" title="Toggle window location" onclick="D2.toggleDisplayOptions()" class="close">/</span>
+				</h4>
+			</div>
+		</div>
+<script type="text/javascript">
+gCommentControlWidget = null;
+
+YAHOO.slashdot.ThresholdApp = function() {
+  return {
+    init: function() {
+      gCommentControlWidget = new YAHOO.slashdot.ThresholdWidget('X');
+      gCommentControlWidget.setTHT(D2.user_threshold(), D2.user_highlightthresh());
+      D2.updateTotals();
+    }
+  };
+}();
+
+YAHOO.util.Event.addListener(window, "load", YAHOO.slashdot.ThresholdApp.init);
+</script>
+		<div id="bones">
+      <div id="ccw">
+        <div id="ccw-body" class="ccw-core">
+          <div id="ccw-panel-container" class="ccw-core">
+            <div id="ccw-full-panel" class="ccw-panel">
+              <div class="ccw-panel-border"></div>
+              <div id="ccw-full-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-full-count-text" class="ccw-count-text"><span id="currentFull"></span><span id="ccw-full-phrase">&nbsp;Full</span></span>
+              </div>
+            </div>
+            <div id="ccw-abbr-panel" class="ccw-panel">
+              <div class="ccw-panel-border"></div>
+              <div id="ccw-abbr-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-abbr-count-text" class="ccw-count-text"><span id="currentOneline"></span><span id="ccw-abbr-phrase">&nbsp;Abbreviated</span></span>
+              </div>
+            </div>
+            <div id="ccw-hide-panel" class="ccw-panel">
+              <div id="ccw-hide-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-hide-count-text" class="ccw-count-text"><span id="currentHidden"></span><span id="ccw-hide-phrase">&nbsp;Hidden</span></span>
+              </div>
+            </div>
+          </div>
+    
+          <div id="ccw-control" class="ccw-core">
+            <div id="ccw-centering-rail" class="ccw-core">
+              <div id="ccw-hide-bar-pos" class="ccw-core-pos">
+                <div id="ccw-hide-bar" class="ccw-bar">
+                  <div id="ccw-hide-bar-tab" class="ccw-bar-tab"></div>
+                  <div id="ccw-hide-bar-upzone" class="ccw-upzone" onclick="gCommentControlWidget.stepTHT(HIDE_BAR, +1)"></div>
+                  <div id="ccw-hide-bar-downzone" class="ccw-downzone" onclick="gCommentControlWidget.stepTHT(HIDE_BAR, -1)"></div>
+                </div>
+              </div>
+              <div id="ccw-abbr-bar-pos" class="ccw-core-pos">
+                <div id="ccw-abbr-bar" class="ccw-bar">
+                  <div id="ccw-abbr-bar-tab" class="ccw-bar-tab"></div>
+                  <div id="ccw-abbr-bar-upzone" class="ccw-upzone" onclick="gCommentControlWidget.stepTHT(ABBR_BAR, +1)"></div>
+                  <div id="ccw-abbr-bar-downzone" class="ccw-downzone" onclick="gCommentControlWidget.stepTHT(ABBR_BAR, -1)"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+		<div class="commentControlFooter"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_c"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=44965&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a><div id="login_cover" style="display:none" onclick="hide_login_box()"></div>
+<div id="login_box" style="display:none">
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			Please Log In to Continue<a href="#" onclick="hide_login_box(); return false" class="close" title="Close this box"><img id="login_box_close" src="//images.use.perl.org/sic_close.png" alt="Close"></a>
+			
+		</h3>
+	</div>
+</div>
+<div id="login_box_content">
+<form action="//use.perl.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//use.perl.org/comments.pl?sid=44965">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//use.perl.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+</div></div>
+<script type="text/javascript">logged_in = 0</script></div>
+		<div id="commentControlBoxStatus" class="hide"><b>Loading... please wait.</b></div>
+	</div>
+</div>
+		</div>
+	
+</div>
+<a name="topcomment"></a>
+
+<!-- end template: ID 159, printCommentsMain;misc;default -->
+
+
+
+<!-- start template: ID 157, printCommComments;misc;default -->
+
+<script src="//images.use.perl.org/comments.js?T_2_5_0_235" type="text/javascript"></script>
+	<script type="text/javascript">
+<!--
+	D2.d2_keybindings_disable()[191] = 1;
+	window.onscroll = D2.d2act;
+	D2.boxStatus(1);
+D2.comments({ 72176: { uid: 5147, pid: 72172, subject: "Re:do FIRST not BEFORE", read: 0, points: 1, kids: [ 72177 ], opid: 72172 }, 72165: { uid: 276, pid: 0, read: 0, points: 2, kids: [ 72166 ], opid: 0 }, 72169: { uid: 9722, pid: 72168, subject: "Re:do FIRST not BEFORE", read: 0, points: 1, kids: [ 72171 ], opid: 72168 }, 72172: { uid: 841, pid: 72170, subject: "Re:do FIRST not BEFORE", read: 0, points: 1, kids: [ 72174, 72176 ], opid: 72170 }, 72166: { uid: 6289, pid: 72165, subject: "Re:minor nit", read: 0, points: 1, kids: [  ], opid: 72165 }, 72171: { uid: 6289, pid: 72169, subject: "Re:do FIRST not BEFORE", read: 0, points: 1, kids: [  ], opid: 72169 }, 72177: { uid: 5147, pid: 72176, subject: "Re:do FIRST not BEFORE", read: 0, points: 1, kids: [  ], opid: 72176 }, 72170: { uid: 6289, pid: 72168, subject: "Re:do FIRST not BEFORE", read: 0, points: 1, kids: [ 72172 ], opid: 72168 }, 72173: { uid: 9543, pid: 0, read: 0, points: 1, kids: [ 72175 ], opid: 0 }, 72167: { uid: 9722, pid: 0, read: 0, points: 1, kids: [  ], opid: 0 }, 72174: { uid: 6289, pid: 72172, subject: "Re:do FIRST not BEFORE", read: 0, points: 1, kids: [  ], opid: 72172 }, 72175: { uid: 6289, pid: 72173, subject: "Re:teach for a new trick", read: 0, points: 1, kids: [  ], opid: 72173 }, 72168: { uid: 841, pid: 0, read: 0, points: 1, kids: [ 72169, 72170 ], opid: 0 } });
+
+D2.thresh_totals({6:{6:{1:13,3:0,2:0}},4:{6:{1:13,3:0,2:0},4:{1:13,3:0,2:0},5:{1:13,3:0,2:0}},1:{6:{1:0,3:0,2:13},4:{1:0,3:0,2:13},1:{1:0,3:13,2:0},3:{1:0,3:1,2:12},2:{1:0,3:4,2:9},5:{1:0,3:0,2:13}},3:{6:{1:13,3:0,2:0},4:{1:13,3:0,2:0},3:{1:13,3:0,2:0},5:{1:13,3:0,2:0}},0:{6:{1:0,3:0,2:13},4:{1:0,3:0,2:13},1:{1:0,3:13,2:0},3:{1:0,3:1,2:12},0:{1:0,3:13,2:0},2:{1:0,3:4,2:9},5:{1:0,3:0,2:13}},2:{6:{1:12,3:0,2:1},4:{1:12,3:0,2:1},3:{1:12,3:1,2:0},2:{1:12,3:1,2:0},5:{1:12,3:0,2:1}},5:{6:{1:13,3:0,2:0},5:{1:13,3:0,2:0}},"-1":{6:{1:0,3:0,2:13},4:{1:0,3:0,2:13},1:{1:0,3:13,2:0},3:{1:0,3:1,2:12},0:{1:0,3:13,2:0},2:{1:0,3:4,2:9},5:{1:0,3:0,2:13},"-1":{1:0,3:13,2:0}}});
+
+D2.root_comment(0);
+D2.root_comments([72165,72167,72168,72173]);
+D2.root_comments_hash({72173:1,72165:1,72167:1,72168:1});
+
+D2.d2_comment_order(0);
+D2.user_uid(7);
+D2.user_is_anon(1);
+D2.user_is_admin(0);
+D2.user_is_subscriber(0);
+D2.user_threshold(0);
+D2.user_highlightthresh(4);
+D2.user_d2asp(0);
+
+D2.discussion_id(44965);
+
+D2.d2_seen('72165,1,1,1,1,1,1,1,1,1,1,1,1');
+D2.more_comments_num(0);
+
+
+//-->
+	</script>
+
+
+
+
+	
+	
+	
+	
+		<ul id="commentlisting" class="d2">
+			<li id="tree_72165" class="comment">
+<div id="comment_status_72165" class="commentstatus"></div>
+<div id="comment_72165" class="oneline">
+
+	<div id="comment_top_72165" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72165" name="comment_link_72165" href="//use.perl.org/comments.pl?sid=44965&amp;cid=72165" onclick="return D2.setFocusComment(72165)">minor nit</a>
+			
+			<span id="comment_score_72165" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72165); return false">Score:2</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~jmm/">jmm (276)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72165"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72165"><tt>You don't need a separate boolean to handle LAST - if the loop never ran, then there has never been an assignment of the LAST sub, so: if it is defined call it.</tt></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72165"></div>
+
+</div>
+
+
+<div id="replyto_72165"></div>
+
+<ul id="group_72165">
+	<li id="hiddens_72165" class="hide"></li>
+</ul><ul id="commtree_72165"><li id="tree_72166" class="comment">
+<div id="comment_status_72166" class="commentstatus"></div>
+<div id="comment_72166" class="oneline">
+
+	<div id="comment_top_72166" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72166" name="comment_link_72166" href="//use.perl.org/comments.pl?sid=44965&amp;cid=72166" onclick="return D2.setFocusComment(72166)">Re:</a>
+			
+			<span id="comment_score_72166" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72166); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~masak/">masak (6289)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72166"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72166"><p>You are, of course, completely correct. <span class="substr"> </span><a href="http://irclog.perlgeek.de/perl6/2010-07-09#i_2535391" title="perlgeek.de" rel="nofollow">Moritz pointed this out as well</a> [perlgeek.de]. Not sure why I left the boolean in anyway. Esthetics, maybe. Or perhaps just absent-mindedness. I also considered defining it as <code>{;}</code> before the loop, and then running it afterwards no matter what. Saves us an <code>if</code> statement.</p><p>Of course, implementing Perl 6 on top of Perl 6 means I'm pretty much screwed speed-wise no matter how many micro-optimizations I find. I'm left having to optimizing for other things, such as getting all the cool phas</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72166"></div>
+
+</div>
+
+
+<div id="replyto_72166"></div>
+
+<ul id="group_72166">
+	<li id="hiddens_72166" class="hide"></li>
+</ul></li></ul></li><li id="tree_72167" class="comment">
+<div id="comment_status_72167" class="commentstatus"></div>
+<div id="comment_72167" class="oneline">
+
+	<div id="comment_top_72167" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72167" name="comment_link_72167" href="//use.perl.org/comments.pl?sid=44965&amp;cid=72167" onclick="return D2.setFocusComment(72167)">Name of Phasers</a>
+			
+			<span id="comment_score_72167" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72167); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~Lasse/">Lasse (9722)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72167"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72167">Hi Carl,
+I do not know if this is the right forum for this.
+I like the phasers, they are really programmer friendly as many other novel Perl6 constructs. But I find the name of the phasers a bit missleading. FIRST and LAST are executed BEFORE and AFTER the first resp last iteration of the loop and is not directly associated with the logic of a loop iteration.
+Long time ago (in 360 assembler macros) I did similar loop constructs and used the words INITIALIZE, TERMINATE and NEXT and used Booleans FIRST and LA</div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72167"></div>
+
+</div>
+
+
+<div id="replyto_72167"></div>
+
+<ul id="group_72167">
+	<li id="hiddens_72167" class="hide"></li>
+</ul></li><li id="tree_72168" class="comment">
+<div id="comment_status_72168" class="commentstatus"></div>
+<div id="comment_72168" class="oneline">
+
+	<div id="comment_top_72168" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72168" name="comment_link_72168" href="//use.perl.org/comments.pl?sid=44965&amp;cid=72168" onclick="return D2.setFocusComment(72168)">do FIRST not BEFORE</a>
+			
+			<span id="comment_score_72168" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72168); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~salva/">salva (841)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72168"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72168">Executing FIRST before anything in the loop makes it pretty uninteresting. It would be more useful if it were run conditionally but on its place.
+
+<p>About implementing it, how about maintaining a loop iteration counter in some internal variable as $?I.
+
+</p><p>The same applies for LAST, but how do you know you are running the last iteration until after the loop check has failed?</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72168"></div>
+
+</div>
+
+
+<div id="replyto_72168"></div>
+
+<ul id="group_72168">
+	<li id="hiddens_72168" class="hide"></li>
+</ul><ul id="commtree_72168"><li id="tree_72169" class="comment">
+<div id="comment_status_72169" class="commentstatus"></div>
+<div id="comment_72169" class="oneline">
+
+	<div id="comment_top_72169" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72169" name="comment_link_72169" href="//use.perl.org/comments.pl?sid=44965&amp;cid=72169" onclick="return D2.setFocusComment(72169)">Re:</a>
+			
+			<span id="comment_score_72169" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72169); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~Lasse/">Lasse (9722)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72169"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72169">Hi Salva,
+I assume your post was to me, it made me look at SO4 abouth phasers WOW that's a lot. I done it again, talk/write first without thinking. My construct were more of documentary purpose and to tie code together. And since I did it mostly for myself I didn't have to take care of every edge case e.g. when an empty loop mattered I did the check in the 'phasers'. As for setting LAST just be one step ahead, it's not a big deal for finit resources. I had good use for my construct, but that was not even a</div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72169"></div>
+
+</div>
+
+
+<div id="replyto_72169"></div>
+
+<ul id="group_72169">
+	<li id="hiddens_72169" class="hide"></li>
+</ul><ul id="commtree_72169"><li id="tree_72171" class="comment">
+<div id="comment_status_72171" class="commentstatus"></div>
+<div id="comment_72171" class="oneline">
+
+	<div id="comment_top_72171" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72171" name="comment_link_72171" href="//use.perl.org/comments.pl?sid=44965&amp;cid=72171" onclick="return D2.setFocusComment(72171)">Re:</a>
+			
+			<span id="comment_score_72171" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72171); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~masak/">masak (6289)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72171"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72171"><p><div class="quote"><p> Next time I have opinions about Perl6 I read the specs first.</p></div><p>Ka-ching! You've just earned 100 experience points, and may proceed to the next level of Perl 6.<nobr> <wbr></nobr>:)</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72171"></div>
+
+</div>
+
+
+<div id="replyto_72171"></div>
+
+<ul id="group_72171">
+	<li id="hiddens_72171" class="hide"></li>
+</ul></li></ul></li><li id="tree_72170" class="comment">
+<div id="comment_status_72170" class="commentstatus"></div>
+<div id="comment_72170" class="oneline">
+
+	<div id="comment_top_72170" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72170" name="comment_link_72170" href="//use.perl.org/comments.pl?sid=44965&amp;cid=72170" onclick="return D2.setFocusComment(72170)">Re:</a>
+			
+			<span id="comment_score_72170" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72170); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~masak/">masak (6289)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72170"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72170"><p><div class="quote"><p>Executing FIRST before anything in the loop makes it pretty uninteresting. It would be more useful if it were run conditionally but on its place.</p></div><p>...and that, to be clear, is how it's spec'd to work, and how I actually end up implementing it in the post.</p><p><div class="quote"><p>The same applies for LAST, but how do you know you are running the last iteration until after the loop check has failed?</p></div><p>Also addressed in the blog post in whose comment thread you are commenting.<nobr> <wbr></nobr>:)</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72170"></div>
+
+</div>
+
+
+<div id="replyto_72170"></div>
+
+<ul id="group_72170">
+	<li id="hiddens_72170" class="hide"></li>
+</ul><ul id="commtree_72170"><li id="tree_72172" class="comment">
+<div id="comment_status_72172" class="commentstatus"></div>
+<div id="comment_72172" class="oneline">
+
+	<div id="comment_top_72172" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72172" name="comment_link_72172" href="//use.perl.org/comments.pl?sid=44965&amp;cid=72172" onclick="return D2.setFocusComment(72172)">Re:</a>
+			
+			<span id="comment_score_72172" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72172); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~salva/">salva (841)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72172"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72172">It seems I have not explained my opinion clearly, let me illustrate it with some code:
+
+<p> <code>
+for 1..3 {
+  say "enter";
+  FIRST { say "first run" }
+  LAST { say "last run" }
+  say "leave"
+}
+</code>
+
+</p><p>I would consider FIRST and LAST to be interesting if that code printed <code>enter, first run, leave, enter, leave, enter, last run, leave</code>.</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72172"></div>
+
+</div>
+
+
+<div id="replyto_72172"></div>
+
+<ul id="group_72172">
+	<li id="hiddens_72172" class="hide"></li>
+</ul><ul id="commtree_72172"><li id="tree_72174" class="comment">
+<div id="comment_status_72174" class="commentstatus"></div>
+<div id="comment_72174" class="oneline">
+
+	<div id="comment_top_72174" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72174" name="comment_link_72174" href="//use.perl.org/comments.pl?sid=44965&amp;cid=72174" onclick="return D2.setFocusComment(72174)">Re:</a>
+			
+			<span id="comment_score_72174" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72174); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~masak/">masak (6289)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72174"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72174"><p>Then what you want is probably not a phaser. Happily, the "create this exact behavior with a home-made module" option is still available as a way out.</p><p>A simple way to do what you want without any syntax modifications to the language would be to iterate over<nobr> <wbr></nobr><code>.kv</code> of the list, and then check the<nobr> <wbr></nobr><code>.value</code> part in <code>if</code> statements in the loop block.</p><p>In general, it's not possible to know which iteration will become the last one until it's already finished. It <em>is</em> possible in your example, with a finite, statically intros<span class="substr"> </span></p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72174"></div>
+
+</div>
+
+
+<div id="replyto_72174"></div>
+
+<ul id="group_72174">
+	<li id="hiddens_72174" class="hide"></li>
+</ul></li><li id="tree_72176" class="comment">
+<div id="comment_status_72176" class="commentstatus"></div>
+<div id="comment_72176" class="oneline">
+
+	<div id="comment_top_72176" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72176" name="comment_link_72176" href="//use.perl.org/comments.pl?sid=44965&amp;cid=72176" onclick="return D2.setFocusComment(72176)">Re:</a>
+			
+			<span id="comment_score_72176" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72176); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~Aristotle/">Aristotle (5147)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72176"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72176"><blockquote><div><p> <tt>for 1..3 {<br>&nbsp; &nbsp; my $first; FIRST { $first = 1 }<br>&nbsp; &nbsp; my&nbsp; $last;&nbsp; LAST {&nbsp; $last = 1 }<br> <br>&nbsp; &nbsp; say "enter";<br>&nbsp; &nbsp; if $first { say "first run" }<br>&nbsp; &nbsp; if $last&nbsp; { say "last run" }<br>&nbsp; &nbsp; say "leave"<br>}</tt></p></div> </blockquote></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72176"></div>
+
+</div>
+
+
+<div id="replyto_72176"></div>
+
+<ul id="group_72176">
+	<li id="hiddens_72176" class="hide"></li>
+</ul><ul id="commtree_72176"><li id="tree_72177" class="comment">
+<div id="comment_status_72177" class="commentstatus"></div>
+<div id="comment_72177" class="oneline">
+
+	<div id="comment_top_72177" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72177" name="comment_link_72177" href="//use.perl.org/comments.pl?sid=44965&amp;cid=72177" onclick="return D2.setFocusComment(72177)">Re:</a>
+			
+			<span id="comment_score_72177" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72177); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~Aristotle/">Aristotle (5147)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72177"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72177"><p>Oops. That won&#8217;t work for <code>LAST</code>, though it does for <code>FIRST</code>. Hmm.</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72177"></div>
+
+</div>
+
+
+<div id="replyto_72177"></div>
+
+<ul id="group_72177">
+	<li id="hiddens_72177" class="hide"></li>
+</ul></li></ul></li></ul></li></ul></li></ul></li><li id="tree_72173" class="comment">
+<div id="comment_status_72173" class="commentstatus"></div>
+<div id="comment_72173" class="oneline">
+
+	<div id="comment_top_72173" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72173" name="comment_link_72173" href="//use.perl.org/comments.pl?sid=44965&amp;cid=72173" onclick="return D2.setFocusComment(72173)">teach for a new trick</a>
+			
+			<span id="comment_score_72173" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72173); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~gfldex/">gfldex (9543)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72173"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72173"><tt>If you asume that any block got FIRST and LAST but by default those fellows are empty function calls, you could move the condition to call FIRST and/or LAST out of the pointy block and into for.<br><span class="substr"> </span> <br>The only condition you have left then would be if the list is empty. "for" has to check that anyway (at some point) so you don't really add anything.<br> <br>I don't really like to have $LOOP_HAS_RUN = True; any time you call the pointy block.<br> <br>I tried to implement it in javascript and ended up with the following.<br> <br>window.super_f</tt></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72173"></div>
+
+</div>
+
+
+<div id="replyto_72173"></div>
+
+<ul id="group_72173">
+	<li id="hiddens_72173" class="hide"></li>
+</ul><ul id="commtree_72173"><li id="tree_72175" class="comment">
+<div id="comment_status_72175" class="commentstatus"></div>
+<div id="comment_72175" class="oneline">
+
+	<div id="comment_top_72175" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_72175" name="comment_link_72175" href="//use.perl.org/comments.pl?sid=44965&amp;cid=72175" onclick="return D2.setFocusComment(72175)">Re:</a>
+			
+			<span id="comment_score_72175" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 72175); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~masak/">masak (6289)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_72175"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_72175"><p>Your solution works fine when the <code>FIRST</code> and <code>LAST</code> does not access any lexical variables specific to the loop block. <code>$a</code> in your Perl 6 code at the end is such a variable. Sending <code>$code_first</code> and <code>$code_last</code> in as unrelated closures doesn't give those closures access to <code>$a</code>.</p><p>For a solution that does work for these cases, please re-read the blog post.<nobr> <wbr></nobr>:)</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_72175"></div>
+
+</div>
+
+
+<div id="replyto_72175"></div>
+
+<ul id="group_72175">
+	<li id="hiddens_72175" class="hide"></li>
+</ul></li></ul></li>
+			<li id="roothiddens" class="hide"></li>
+		</ul>
+	
+	
+	
+	
+
+
+<div id="replyto_0"></div>
+
+
+<div id="discussion_buttons">
+
+
+<span class="nbutton"><p><b><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_a" class="hide">Get More Comments</span></a></b></p></span>
+
+
+
+<span class="nbutton"><p><b><a href="//use.perl.org/comments.pl?sid=44965&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></b></p></span>
+
+
+
+
+
+
+
+</div>
+
+
+
+	<script type="text/javascript">
+<!--
+		D2.currents()['hidden']   = 0;
+		D2.currents()['full']     = 0;
+		D2.currents()['oneline']  = 13;
+		// D2.currents_total(13);
+
+		D2.abbrev_comments({72169:511,72166:43,72173:202,72174:613,72167:512});
+		D2.noshow_comments([]);
+		D2.pieces_comments([72165,72166,72167,72168,72169,72171,72170,72172,72174,72176,72177,72173,72175]);
+		D2.init_hiddens([]);
+
+		D2.finishLoading();
+
+
+		if (D2.thresh_totals()[6][6][1] == 0) {
+			D2.replyTo(0, 1);
+		}
+
+
+//-->
+	</script>
+
+<!-- end template: ID 157, printCommComments;misc;default -->
+
+
+
+<!-- start template: ID 112, footer;misc;default -->
+
+</div>
+                </div>
+                <div id="footer">
+			<div class="download">
+                                <!-- START DOWNLOAD PERL -->
+                                <!-- Perl Mongers, Inc.  web@perlmongers.org -->
+                                <a href="http://www.cpan.org/ports/index.html"><img src="http://www.perl.org/Images/download_perl.gif" width="102" height="42" alt="Download Perl Now!"></a>
+                                <!-- END DOWNLOAD PERL -->
+                        </div>	
+			<div class="sitelogo">
+				<a href="//use.perl.org/">
+					<img src="http://images.use.perl.org/topics/useperl.gif" alt="useperl">
+				</a>
+			</div>
+                        <em>
+				&nbsp; &nbsp; &gt; This made me wonder, suddenly: can telnet be written in perl?<BR>
+&nbsp; &nbsp; Of course it can be written in Perl.&nbsp; Now if you'd said nroff,<BR>
+&nbsp; &nbsp; that would be more challenging...&nbsp;  --Larry Wall
+			</em>
+		</div>
+		<div class="copyright">
+			Stories, comments, journals, and other submissions on use Perl; are Copyright 1998-2006, their respective owners.
+		</div>
+		<div class="btmnav">
+			<ul>
+	<li class="begin">
+		<a href="//use.perl.org/faq.shtml">FAQ</a>
+	</li>
+	<li>
+		<a href="//use.perl.org/about.shtml">About</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/submit.pl">Submit Story</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/search.pl">Older Stories</a>
+        </li>
+        <li>	
+		<a href="//use.perl.org/topics.shtml">Topics</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/pollBooth.pl">Polls</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/journal.pl">Journals</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/authors.pl">Authors</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/modulelist/">New Modules</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/users.pl?op=edithome">Preferences</a>
+
+        </li>
+</ul>
+		</div>
+        </div>
+<div id="modal_cover" style="display:none" onclick="hide_modal_box()"></div>
+<div id="modal_box" style="display:none">
+        <div class="generaltitle" >
+                <div class="title"><h3><span id="preference_title"></span> <a href="#" onclick="hide_modal_box(); return false"><img src="//images.use.perl.org/sic_close.png" alt="Close"></a></h3></div>
+        </div>
+        <div id="modal_box_content"></div>
+</div>
+
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		_uacct = "UA-32013-15";
+		urchinTracker();
+	</script>
+
+</body>
+</html>
+
+<!-- end template: ID 112, footer;misc;default -->
+

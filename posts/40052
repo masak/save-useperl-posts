@@ -1,0 +1,951 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="shortcut icon" href="//use.perl.org/favicon.ico">
+
+<title>Journal of masak (6289)</title>
+
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/base.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/comments.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/useperl.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="print" href="//images.use.perl.org/print.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="handheld" href="//images.use.perl.org/handheld.css?T_2_5_0_235">
+
+<script src="//images.use.perl.org/jquery/jquery-1.2.6.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/jquery/jquery.metadata.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/slash.util.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/jquery/jquery.slashdot.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/yahoo.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/dom.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/event.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/dragdrop.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/animation.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/calendar.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/sd_calendar.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/slash.article-info.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/tag-ui.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/common.js?T_2_5_0_235" type="text/javascript"></script>
+
+<!-- start template: ID 121, header;misc;default -->
+
+<link rel="top"       title="All the Perl that's Practical to Extract and Report" href="//use.perl.org/" >
+<link rel="search"    title="Search use Perl" href="//use.perl.org/search.pl">
+<link rel="author"    title="masak" href="//use.perl.org/~masak/">
+<link rel="alternate" title="masak's Journal RSS" href="http://use.perl.org/~masak/journal/rss" type="application/rss+xml">
+<link rel="alternate" title="masak's Friends' Journals RSS" href="http://use.perl.org/~masak/journal/friends/rss" type="application/rss+xml">
+<link rel="alternate" title="Most Recent Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="Most Active Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;type=count&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="Most Befriended Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;type=friends&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="use Perl RSS" href="//use.perl.org/index.rss" type="application/rss+xml">
+</head>
+<body class="useperlorg">
+<div id="top_parent"></div>
+
+<div id="jump">
+	<a href="#main-articles">Stories</a>
+	<br>
+	<a href="#blocks">Slash Boxes</a>
+	<br>
+	<a href="#comments">Comments</a>
+</div>
+<div class="ad1">
+
+</div>
+<div id="frame">
+
+<!-- UsePerl Ad Start -->
+<div class="ad1"><!-- ad position 1 -->
+<div id="fad1" style="text-align:center">
+<!-- DoubleClick Ad Tag 1 -->
+<script type="text/javascript">
+	dfp_ord=Math.random()*10000000000000000;
+	dfp_tile = 1;
+
+	document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/ostg.useperl/mainpage_p1_leader;pg=index;logged_in=0;tile='+dfp_tile+';ord='+dfp_ord+'?"><\/script>');
+	dfp_tile++;
+</script>
+</div>
+<!-- End DoubleClick Ad Tag 1 --></div>
+<!-- UsePerl Ad End -->
+
+	<div id="topnav">
+		<div id="logo">
+			<h1>
+				<a href="//use.perl.org">use Perl</a>
+			</h1>
+		</div>
+                <div class="search">
+			<form method="get" action="//use.perl.org/search.pl">
+				<fieldset>
+					<legend></legend>
+					<label>Search <strong>use Perl</strong></label>
+					<input type="text" name="query" value="" size="20">
+					<input type="submit" value="Go" class="button">
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<div id="slogan">
+		<h2>
+			All the Perl that's Practical to Extract and Report
+		</h2>
+	</div>
+	<div id="journalnav">
+		<div id="links">
+			
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="navigation-title">
+		<h4>
+			Navigation
+		</h4>
+	</div>
+	<div class="content" id="navigation-content">
+		<ul>
+	<li class="begin">
+		<a href="//use.perl.org/faq.shtml">FAQ</a>
+	</li>
+	<li>
+		<a href="//use.perl.org/about.shtml">About</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/submit.pl">Submit Story</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/search.pl">Older Stories</a>
+        </li>
+        <li>	
+		<a href="//use.perl.org/topics.shtml">Topics</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/pollBooth.pl">Polls</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/journal.pl">Journals</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/authors.pl">Authors</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/modulelist/">New Modules</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/users.pl?op=edithome">Preferences</a>
+
+        </li>
+</ul>
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+		</div>
+	</div>
+	<div id="contents">
+		
+		<div id="journal">
+
+<!-- end template: ID 121, header;misc;default -->
+
+
+
+<!-- start template: ID 55, journalhead;journal;default -->
+
+<div id="slashboxes">
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="userlogin-title">
+		<h4>
+			use Perl Log In
+		</h4>
+	</div>
+	<div class="content" id="userlogin-content">
+		
+			<form action="//use.perl.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//use.perl.org/">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//use.perl.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+		
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="user-info-title">
+		<h4>
+			masak (6289)
+		</h4>
+	</div>
+	<div class="content" id="user-info-content">
+		<a href="//use.perl.org/~masak/">masak</a> <br>&nbsp;&nbsp;(email not shown publicly)<br><a href="http://masak.org/carl" rel="nofollow">http://masak.org/carl</a><br><hr>Been programming Perl since 2001. Found Perl 6 somewhere around 2004, and fell in love. Now developing November (a Perl 6 wiki), Druid (a Perl 6 board game), pls (a Perl 6 project installer), GGE (a regex engine), and Yapsi (a Perl 6 implementation). Heavy user of and irregular committer to Rakudo.
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+</div>
+<div id="users-blocks">
+
+
+<!-- start template: ID 376, tabbedmenu;misc;default -->
+
+
+
+<!-- end template: ID 376, tabbedmenu;misc;default -->
+
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			<a href="//use.perl.org/~masak/journal/">Journal</a> of <a href="//use.perl.org/~masak/">masak</a> (6289)
+			
+		</h3>
+	</div>
+</div>
+
+
+<div id="usermenu">
+<ul class="menu">
+<li><span class="begin"><a href="//use.perl.org/~masak/" class="begin">Info</a></span></li><li class="selected"><b><a href="//use.perl.org/~masak/journal/">Journal</a></b></li><li><a href="//use.perl.org/~masak/firehose/">Firehose</a></li><li><a href="//use.perl.org/~masak/friends/">Friends</a></li><li><a href="//use.perl.org/~masak/fans/">Fans</a></li><li><a href="//use.perl.org/~masak/foes/">Foes</a></li><li><a href="//use.perl.org/~masak/freaks/">Freaks</a></li><li><a href="//use.perl.org/~masak/tags/">Tags</a></li><li><a href="//use.perl.org/~masak/bookmarks/" class="end">Bookmarks</a></li>
+</ul>
+</div><div class="generalbody">
+
+<!-- start template: ID 376, tabbedmenu;misc;default -->
+
+<ul class="menu">
+<li><span class="begin"><a href="//use.perl.org/journal.pl?op=top" class="begin">Top&nbsp;10</a></span></li><li><a href="//use.perl.org/journal.pl?op=friends" class="end">Friend's&nbsp;Journals</a></li>
+</ul>
+
+<!-- end template: ID 376, tabbedmenu;misc;default -->
+
+<!-- end template: ID 55, journalhead;journal;default -->
+
+
+
+<!-- start template: ID 65, slashdot;journal;default -->
+
+<div id="journalslashdot">
+    
+	<div class="journaldate">Sunday December 27, 2009</div>
+	
+	<div class="details">02:39 PM</div>
+	<div class="title">
+		<h3>Notation, and the 'business case' for Perl 6</h3>
+	</div>
+	<div class="adminoptions">
+		[
+
+			<a href="//use.perl.org/~masak/journal/40052">#40052</a>
+		]
+	</div>
+
+	<div class="intro"><p>A few days before Christmas, I was sitting in the car with my father. I decided to try to explain why I'm spending time doing Perl 6.</p><p>I compared the evolution of programming languages with the evolution of mathematical notation. In maths, it was <a href="http://en.wikipedia.org/wiki/Linguistic_relativity" rel="nofollow">tricky to imagine</a> the concept of <a href="http://en.wikipedia.org/wiki/Zero#Early_history" rel="nofollow">zero</a> before it was formalized down to a number; the idea of derivatives was tossed around in vague forms before <a href="http://en.wikipedia.org/wiki/Derivative" rel="nofollow">Newton and Leibniz</a> made notations for it; we slowly but surely got a standard way of saying <a href="http://en.wikipedia.org/wiki/Equals_sign" rel="nofollow">"is equal to"</a>. And so on.</p><p>I was just about to connect this back to how each new programming language can be seen as a contribution to an ongoing, open debate about notation within the programming world, one that has only been going on in earnest for half a century or so. But I never got that far, because my father interrupted me and asked what the <a href="http://en.wikipedia.org/wiki/Business_case" rel="nofollow">business case</a> is for Perl 6.</p><p>I was half stumped, half amused by this interjection. I didn't have a good answer for him, besides trying to explain FOSS and the fact that we're not developing Perl 6 with the expectation that someone will buy it from us. But I still felt he had a point; so, earlier today, I took the question to <code>#perl6</code>, and got a set of good <a href="http://irclog.perlgeek.de/perl6/2009-12-27#i_1871329" rel="nofollow">replies and musings</a> by Su-Shee++, moritz++, vorner++ and mdxi++. If you have time, do read it.</p><p>I'll have to give the 'business case' train-of-thought a lot more time to mature before I can say anything coherent about it myself. But I'd like to say a bit more about notations.</p><p>Perl 6 isn't truly revolutionary in a lot of respects. It's mostly lots and lots of minor improvements. (The exception being, I think, things surrounding grammars. Those are truly revolutionary.)</p><p>What Perl 6 does do, is provide a 'strangely consistent' notation where a lot of thoughts, with practice, are easy to express. This is very much in the Perl spirit, and the main reason (according to me) to still call Perl 6 a language in the Perl family.</p><p>The notational convenience really consists of a thousand little things, but here are a few haphazardly chosen examples:</p><ul>
+  <li>The prefix symbols <code>?</code>, <code>+</code> and <code>~</code> have been co-opted to signify conversion to the 'contexts' <code>Bool</code>, <code>Num</code> and <code>Str</code>, respectively. This parallels their use in binary (infix) operators specific to those contexts, such as <code>+</code>, <code>~</code>, <code>?&amp;</code>, <code>+&amp;</code>, and <code>~&amp;</code> </li><li>The three short and common verbs <code>is</code>, <code>has</code> and <code>does</code> all do useful work in the OO system. Not only that, but they are a good fit for what they do, and summarize both established and modern OO research.</li><li>Some syntactic/semantic features are re-used where you least expect it, reducing the total number of independent components in the language. The left-hand side of a list assignment uses the same signature mechanism as do routines. (I.e. the <code>(Bool $a, Int $b, Str $c)</code> in <code>my <strong>(Bool $a, Int $b, Str $c)</strong> = True, 42, 'foo';</code> is the same kind of beast as in <code>sub foo<strong>(Bool $a, Int $b, Str $c)</strong> {<nobr> <wbr></nobr>... }</code>.) Smartmatching with <code>~~</code> is implicitly re-used in <code>when</code> expressions, and the <code>given</code>/<code>when</code> construct is re-used as the <code>CATCH</code> exception handling mechanism. And so on.</li></ul><p>It's things like these that I think make Perl 6 a convenient, attractive notation for thinking about programming. Seeing that notation come alive, and seeing people use it in cool new ways for amazing ends, is the main reason I spend time helping with Perl 6.</p></div>
+	
+    
+
+	<div class="journalpage">
+		
+		<br>
+		<a href="//use.perl.org/journal.pl?op=list&amp;uid=6289" class="all">List all Journal entries</a>
+	</div>
+</div>
+
+<!-- end template: ID 65, slashdot;journal;default -->
+
+</div></div>
+
+<!-- start template: ID 159, printCommentsMain;misc;default -->
+
+<a name="acomments"></a>
+<div class="commentwrap" id="commentwrap">
+
+<div class="commentBox" style="font-size: 120%">
+	<div>
+<span class="escape-link"><a href="//use.perl.org/~masak/journal/40052" title="Back to Article - Notation, and the 'business case' for Perl 6">Notation, and the 'business case' for Perl 6</a></span>
+<span class="commentBoxLinks"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_d"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=44345&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></span>
+	</div>
+</div>
+
+	<div class="commentBoxForm" id="commentControlBox">
+<div></div>
+	<div class="commentBox">
+		<small>
+		<b>The Fine Print:</b> The following comments are owned by whoever posted them.  We are not responsible for them in any way.
+		</small>
+<noscript><br><small>Without JavaScript enabled, you might want to
+use <a href="//use.perl.org/comments.pl?sid=44345&amp;threshold=0&amp;commentsort=0&amp;mode=thread&amp;no_d2=1">the classic discussion system</a> instead.  If you <a href="//use.perl.org/login.pl">login</a>, you can remember this preference.
+</small></noscript>
+	</div>
+	</div>
+	
+		<div id="d2out" class="horizontal">
+		<div id="d2act" class="hide">
+		<div class="loki" id="gods">
+		<div class="block">
+			<div class="title">
+
+				<h4>
+				
+					<span class="h-inline">
+					<a href="//use.perl.org/~masak/journal/40052" title="Back to Article - Notation, and the 'business case' for Perl 6">Notation, and the 'business case' for Perl 6</a></span>
+					<span class="titlecount"><a href="//use.perl.org/~masak/journal/40052#topcomment" title="Back to Top Comment - Notation, and the 'business case' for Perl 6"><span id="titlecountnum">9</span>&nbsp;Comments</a></span>
+				
+		<span class="ccw-header-links"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_b"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=44345&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></span>
+		<span id="d2toggle" title="Toggle window location" onclick="D2.toggleDisplayOptions()" class="close">/</span>
+				</h4>
+			</div>
+		</div>
+<script type="text/javascript">
+gCommentControlWidget = null;
+
+YAHOO.slashdot.ThresholdApp = function() {
+  return {
+    init: function() {
+      gCommentControlWidget = new YAHOO.slashdot.ThresholdWidget('X');
+      gCommentControlWidget.setTHT(D2.user_threshold(), D2.user_highlightthresh());
+      D2.updateTotals();
+    }
+  };
+}();
+
+YAHOO.util.Event.addListener(window, "load", YAHOO.slashdot.ThresholdApp.init);
+</script>
+		<div id="bones">
+      <div id="ccw">
+        <div id="ccw-body" class="ccw-core">
+          <div id="ccw-panel-container" class="ccw-core">
+            <div id="ccw-full-panel" class="ccw-panel">
+              <div class="ccw-panel-border"></div>
+              <div id="ccw-full-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-full-count-text" class="ccw-count-text"><span id="currentFull"></span><span id="ccw-full-phrase">&nbsp;Full</span></span>
+              </div>
+            </div>
+            <div id="ccw-abbr-panel" class="ccw-panel">
+              <div class="ccw-panel-border"></div>
+              <div id="ccw-abbr-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-abbr-count-text" class="ccw-count-text"><span id="currentOneline"></span><span id="ccw-abbr-phrase">&nbsp;Abbreviated</span></span>
+              </div>
+            </div>
+            <div id="ccw-hide-panel" class="ccw-panel">
+              <div id="ccw-hide-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-hide-count-text" class="ccw-count-text"><span id="currentHidden"></span><span id="ccw-hide-phrase">&nbsp;Hidden</span></span>
+              </div>
+            </div>
+          </div>
+    
+          <div id="ccw-control" class="ccw-core">
+            <div id="ccw-centering-rail" class="ccw-core">
+              <div id="ccw-hide-bar-pos" class="ccw-core-pos">
+                <div id="ccw-hide-bar" class="ccw-bar">
+                  <div id="ccw-hide-bar-tab" class="ccw-bar-tab"></div>
+                  <div id="ccw-hide-bar-upzone" class="ccw-upzone" onclick="gCommentControlWidget.stepTHT(HIDE_BAR, +1)"></div>
+                  <div id="ccw-hide-bar-downzone" class="ccw-downzone" onclick="gCommentControlWidget.stepTHT(HIDE_BAR, -1)"></div>
+                </div>
+              </div>
+              <div id="ccw-abbr-bar-pos" class="ccw-core-pos">
+                <div id="ccw-abbr-bar" class="ccw-bar">
+                  <div id="ccw-abbr-bar-tab" class="ccw-bar-tab"></div>
+                  <div id="ccw-abbr-bar-upzone" class="ccw-upzone" onclick="gCommentControlWidget.stepTHT(ABBR_BAR, +1)"></div>
+                  <div id="ccw-abbr-bar-downzone" class="ccw-downzone" onclick="gCommentControlWidget.stepTHT(ABBR_BAR, -1)"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+		<div class="commentControlFooter"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_c"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=44345&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a><div id="login_cover" style="display:none" onclick="hide_login_box()"></div>
+<div id="login_box" style="display:none">
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			Please Log In to Continue<a href="#" onclick="hide_login_box(); return false" class="close" title="Close this box"><img id="login_box_close" src="//images.use.perl.org/sic_close.png" alt="Close"></a>
+			
+		</h3>
+	</div>
+</div>
+<div id="login_box_content">
+<form action="//use.perl.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//use.perl.org/comments.pl?sid=44345">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//use.perl.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+</div></div>
+<script type="text/javascript">logged_in = 0</script></div>
+		<div id="commentControlBoxStatus" class="hide"><b>Loading... please wait.</b></div>
+	</div>
+</div>
+		</div>
+	
+</div>
+<a name="topcomment"></a>
+
+<!-- end template: ID 159, printCommentsMain;misc;default -->
+
+
+
+<!-- start template: ID 157, printCommComments;misc;default -->
+
+<script src="//images.use.perl.org/comments.js?T_2_5_0_235" type="text/javascript"></script>
+	<script type="text/javascript">
+<!--
+	D2.d2_keybindings_disable()[191] = 1;
+	window.onscroll = D2.d2act;
+	D2.boxStatus(1);
+D2.comments({ 71449: { uid: 5805, pid: 0, read: 0, points: 1, kids: [ 71450 ], opid: 0 }, 71445: { uid: 6289, pid: 71444, subject: "Re:what might be your case", read: 0, points: 1, kids: [ 71446 ], opid: 71444 }, 71446: { uid: 9543, pid: 71445, subject: "Re:what might be your case", read: 0, points: 1, kids: [  ], opid: 71445 }, 71452: { uid: 9378, pid: 0, read: 0, points: 1, kids: [ 71455 ], opid: 0 }, 71455: { uid: 983, pid: 71452, subject: "Re:More is better, less is more.", read: 0, points: 1, kids: [  ], opid: 71452 }, 71447: { uid: 5147, pid: 71444, subject: "Re:what might be your case", read: 0, points: 1, kids: [  ], opid: 71444 }, 71444: { uid: 9543, pid: 0, read: 0, points: 1, kids: [ 71445, 71447 ], opid: 0 }, 71443: { uid: 8994, pid: 0, read: 0, points: 1, kids: [  ], opid: 0 }, 71450: { uid: 5805, pid: 71449, subject: "Re:uuh ?", read: 0, points: 1, kids: [  ], opid: 71449 } });
+
+D2.thresh_totals({6:{6:{1:9,3:0,2:0}},4:{6:{1:9,3:0,2:0},4:{1:9,3:0,2:0},5:{1:9,3:0,2:0}},1:{6:{1:0,3:0,2:9},4:{1:0,3:0,2:9},1:{1:0,3:9,2:0},3:{1:0,3:0,2:9},2:{1:0,3:4,2:5},5:{1:0,3:0,2:9}},3:{6:{1:9,3:0,2:0},4:{1:9,3:0,2:0},3:{1:9,3:0,2:0},5:{1:9,3:0,2:0}},0:{6:{1:0,3:0,2:9},4:{1:0,3:0,2:9},1:{1:0,3:9,2:0},3:{1:0,3:0,2:9},0:{1:0,3:9,2:0},2:{1:0,3:4,2:5},5:{1:0,3:0,2:9}},2:{6:{1:9,3:0,2:0},4:{1:9,3:0,2:0},3:{1:9,3:0,2:0},2:{1:9,3:0,2:0},5:{1:9,3:0,2:0}},5:{6:{1:9,3:0,2:0},5:{1:9,3:0,2:0}},"-1":{6:{1:0,3:0,2:9},4:{1:0,3:0,2:9},1:{1:0,3:9,2:0},3:{1:0,3:0,2:9},0:{1:0,3:9,2:0},2:{1:0,3:4,2:5},5:{1:0,3:0,2:9},"-1":{1:0,3:9,2:0}}});
+
+D2.root_comment(0);
+D2.root_comments([71443,71444,71449,71452]);
+D2.root_comments_hash({71449:1,71444:1,71443:1,71452:1});
+
+D2.d2_comment_order(0);
+D2.user_uid(7);
+D2.user_is_anon(1);
+D2.user_is_admin(0);
+D2.user_is_subscriber(0);
+D2.user_threshold(0);
+D2.user_highlightthresh(4);
+D2.user_d2asp(0);
+
+D2.discussion_id(44345);
+
+D2.d2_seen('71443,1,1,1,1,2,1,2,3');
+D2.more_comments_num(0);
+
+
+//-->
+	</script>
+
+
+
+
+	
+	
+	
+	
+		<ul id="commentlisting" class="d2">
+			<li id="tree_71443" class="comment">
+<div id="comment_status_71443" class="commentstatus"></div>
+<div id="comment_71443" class="oneline">
+
+	<div id="comment_top_71443" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71443" name="comment_link_71443" href="//use.perl.org/comments.pl?sid=44345&amp;cid=71443" onclick="return D2.setFocusComment(71443)">My case</a>
+			
+			<span id="comment_score_71443" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71443); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~colomon/">colomon (8994)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71443"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71443">I've used Perl professionally since 1995 or so.  I saw someone (Damian maybe?) give a presentation on Perl 6 back in 2004 (I think) and was instantly hooked -- it was just obviously better than Perl 5 on a number of issues important to me.  So I'm pitching in to help get a Perl 6 compiler to the point where I can start using it everywhere I use Perl!
+
+
+But also, it is a great pleasure to work on a system with good tests and where small changes can accomplish useful things.  My $work all too frequently invol</div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71443"></div>
+
+</div>
+
+
+<div id="replyto_71443"></div>
+
+<ul id="group_71443">
+	<li id="hiddens_71443" class="hide"></li>
+</ul></li><li id="tree_71444" class="comment">
+<div id="comment_status_71444" class="commentstatus"></div>
+<div id="comment_71444" class="oneline">
+
+	<div id="comment_top_71444" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71444" name="comment_link_71444" href="//use.perl.org/comments.pl?sid=44345&amp;cid=71444" onclick="return D2.setFocusComment(71444)">what might be your case</a>
+			
+			<span id="comment_score_71444" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71444); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~gfldex/">gfldex (9543)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71444"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71444">A good physical analogy of programming languages are bridges. Getting over a river without getting wet can save your health (getting sick is pricy and ppl that use terms like business plan hate pricy). In bridge-terms providing Perl (awesome) 6 free of charge is like making tools to make bridges available to anybody who likes building bridges. Ofc, you could just build the bridge yourself and therefore could keep Perl (awesome) 6 all to yourself. But with the free as in beer thingy and a bit of time you mig</div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71444"></div>
+
+</div>
+
+
+<div id="replyto_71444"></div>
+
+<ul id="group_71444">
+	<li id="hiddens_71444" class="hide"></li>
+</ul><ul id="commtree_71444"><li id="tree_71445" class="comment">
+<div id="comment_status_71445" class="commentstatus"></div>
+<div id="comment_71445" class="oneline">
+
+	<div id="comment_top_71445" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71445" name="comment_link_71445" href="//use.perl.org/comments.pl?sid=44345&amp;cid=71445" onclick="return D2.setFocusComment(71445)">Re:</a>
+			
+			<span id="comment_score_71445" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71445); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~masak/">masak (6289)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71445"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71445"><p><div class="quote"><p>A good physical analogy of programming languages are bridges. Getting over a river without getting wet can save your health (getting sick is pricy and ppl that use terms like business plan hate pricy). In bridge-terms providing Perl (awesome) 6 free of charge is like making tools to make bridges available to anybody who likes building bridges. Ofc, you could just build the bridge yourself and therefore could keep Perl (awesome) 6 all to yourself. But with the free as in beer thingy and a bit of time you might end up being able to cross _all_ rivers because you give power to the (slightly strange) ppl.</p></div><p>Hm. But I imagine bridge-building tools <em>aren't</em> free of charge, so I'm not sure if the analogy helps me. It tells me more about how building programs is <em>not</em> like building bridges...</p><p><div class="quote"><p>This explanation might suit your dad who is of cause worried about your financial situation.</p></div><p>I'm going to read that as 'mindful of' rather than 'worried about', because the latter sounds like you know something about my financial situation (or my father) that I don't.<nobr> <wbr></nobr>:)</p><p><div class="quote"><p>And as many stories-for-parents it's complete and utter cow poo.</p></div><p>Hm. That ('complete and utter cow poo') would be a step down from what I was aiming for: to put what I'm doing in terms that he can understand <em>without</em> dis<span class="substr"> </span></p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71445"></div>
+
+</div>
+
+
+<div id="replyto_71445"></div>
+
+<ul id="group_71445">
+	<li id="hiddens_71445" class="hide"></li>
+</ul><ul id="commtree_71445"><li id="tree_71446" class="comment">
+<div id="comment_status_71446" class="commentstatus"></div>
+<div id="comment_71446" class="oneline">
+
+	<div id="comment_top_71446" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71446" name="comment_link_71446" href="//use.perl.org/comments.pl?sid=44345&amp;cid=71446" onclick="return D2.setFocusComment(71446)">Re:</a>
+			
+			<span id="comment_score_71446" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71446); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~gfldex/">gfldex (9543)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71446"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71446"><p><div class="quote"><p>Hm. But I imagine bridge-building tools <em>aren't</em> free of charge, so I'm not sure if the analogy helps me. It tells me more about how building programs is <em>not</em> like building bridges...</p></div><p>If we put the same amount of afford into bridge building tools then we did invest into information transportation tools (think of all the miners that minded all the copper that was used to make the cables that where needed to power the routers that make it possible that you can read my words right now) it might get possible to provide bridge building tools by everybody to everyone who is willing to play 15 EUR per month.</p><p><div class="quote"><p>I'm going to read that as 'mindful of' rather than 'worried about', because the latter sounds like you know something about my financial situation (or my father) that I don't.<nobr> <wbr></nobr>:)</p></div><p>Do you have children of your own? If you do and you are not in the constant state of mil<span class="substr"> </span></p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71446"></div>
+
+</div>
+
+
+<div id="replyto_71446"></div>
+
+<ul id="group_71446">
+	<li id="hiddens_71446" class="hide"></li>
+</ul></li></ul></li><li id="tree_71447" class="comment">
+<div id="comment_status_71447" class="commentstatus"></div>
+<div id="comment_71447" class="oneline">
+
+	<div id="comment_top_71447" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71447" name="comment_link_71447" href="//use.perl.org/comments.pl?sid=44345&amp;cid=71447" onclick="return D2.setFocusComment(71447)">Re:</a>
+			
+			<span id="comment_score_71447" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71447); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~Aristotle/">Aristotle (5147)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71447"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71447"><p>I would say that Perl&#160;6 is itself a bridge.</p><p>If you put a bridge across a river in the right place, even if that spot was previously deserted, you&#8217;ll suddenly get a lot of people passing through. And with them, you get opportunities &#8211; lots of different opportunities, small and big. You don&#8217;t know what they will be when you build the bridge, but they <em>will</em> happen.</p><p>You are enabling serendipity.</p><p>In some sense Perl&#160;6 is a classic Microsoft strategy &#8211; it&#8217;s a platform play.</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71447"></div>
+
+</div>
+
+
+<div id="replyto_71447"></div>
+
+<ul id="group_71447">
+	<li id="hiddens_71447" class="hide"></li>
+</ul></li></ul></li><li id="tree_71449" class="comment">
+<div id="comment_status_71449" class="commentstatus"></div>
+<div id="comment_71449" class="oneline">
+
+	<div id="comment_top_71449" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71449" name="comment_link_71449" href="//use.perl.org/comments.pl?sid=44345&amp;cid=71449" onclick="return D2.setFocusComment(71449)">uuh ?</a>
+			
+			<span id="comment_score_71449" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71449); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~thickas/">thickas (5805)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71449"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71449">Perhaps I am even more retarded than usual, but I think mazak senior's question was perfectly reasonable and the meta-answer pretty obvious.<p>
+The 'business case' for something is a demonstration than spending whatever it costs to do something, is less than the 'benefit' gained by doing it. It usually quantifies costs and benefits in $ terms since most decision makers are responsible for the cost of their activities and just about anyone understands partial orders in the cash domain.</p><p>
+The business case for Per<span class="substr"> </span></p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71449"></div>
+
+</div>
+
+
+<div id="replyto_71449"></div>
+
+<ul id="group_71449">
+	<li id="hiddens_71449" class="hide"></li>
+</ul><ul id="commtree_71449"><li id="tree_71450" class="comment">
+<div id="comment_status_71450" class="commentstatus"></div>
+<div id="comment_71450" class="oneline">
+
+	<div id="comment_top_71450" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71450" name="comment_link_71450" href="//use.perl.org/comments.pl?sid=44345&amp;cid=71450" onclick="return D2.setFocusComment(71450)">Re:</a>
+			
+			<span id="comment_score_71450" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71450); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~thickas/">thickas (5805)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71450"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71450">tsk tsk ! s/mazak/masak/g ; <b>sorry</b> <p>
+
+Notational superiority is a quantifiable benefit. As well as your excellent examples, you could also add that adequate expression of a problem is an important step in both understanding the problem and solving it (see <a href="http://en.wikipedia.org/wiki/How_to_Solve_It" title="wikipedia.org" rel="nofollow">http://en.wikipedia.org/wiki/How_to_Solve_It</a> [wikipedia.org]).
+
+</p><p>
+Cheers !</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71450"></div>
+
+</div>
+
+
+<div id="replyto_71450"></div>
+
+<ul id="group_71450">
+	<li id="hiddens_71450" class="hide"></li>
+</ul></li></ul></li><li id="tree_71452" class="comment">
+<div id="comment_status_71452" class="commentstatus"></div>
+<div id="comment_71452" class="oneline">
+
+	<div id="comment_top_71452" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71452" name="comment_link_71452" href="//use.perl.org/comments.pl?sid=44345&amp;cid=71452" onclick="return D2.setFocusComment(71452)">More is better, less is more.</a>
+			
+			<span id="comment_score_71452" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71452); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~finanalyst/">finanalyst (9378)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71452"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71452">Perl6 almost certainly will dominate the professional software environment within a few years of the first practical implementation. The business case for using perl6 as the primary development language in a business or software house are as follows:
+<ol>
+<li> Perl6 is inherently parallel. Junctions (and other innovative language contructs) offer programmers an intellectually easy method for writing programs with parallelism. Multiple cores already are required to increase computer performance, so languages that of<span class="substr"> </span></li></ol></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71452"></div>
+
+</div>
+
+
+<div id="replyto_71452"></div>
+
+<ul id="group_71452">
+	<li id="hiddens_71452" class="hide"></li>
+</ul><ul id="commtree_71452"><li id="tree_71455" class="comment">
+<div id="comment_status_71455" class="commentstatus"></div>
+<div id="comment_71455" class="oneline">
+
+	<div id="comment_top_71455" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71455" name="comment_link_71455" href="//use.perl.org/comments.pl?sid=44345&amp;cid=71455" onclick="return D2.setFocusComment(71455)">Re:</a>
+			
+			<span id="comment_score_71455" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71455); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~chromatic/">chromatic (983)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71455"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71455"><blockquote><div><p> <em>If [Perl 6] software is too slow, it will be impractical.</em><span class="substr"> </span> </p></div></blockquote><p>That's too simplistic.  Plenty of projects do just fine with languages and runtimes and environments considered "too slow" for other projects.</p><blockquote><div><p> <em>A language without an IDE and visual debuggers cannot be considered modern or effective.</em> </p></div></blockquote><p>That's too simplistic too, depending on your definition of "modern" and "effective".  I never use the Perl 5 debugger and I wouldn't likely use it if I had an IDE with a visual debugger.  I believe I can write very effect</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71455"></div>
+
+</div>
+
+
+<div id="replyto_71455"></div>
+
+<ul id="group_71455">
+	<li id="hiddens_71455" class="hide"></li>
+</ul></li></ul></li>
+			<li id="roothiddens" class="hide"></li>
+		</ul>
+	
+	
+	
+	
+
+
+<div id="replyto_0"></div>
+
+
+<div id="discussion_buttons">
+
+
+<span class="nbutton"><p><b><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_a" class="hide">Get More Comments</span></a></b></p></span>
+
+
+
+<span class="nbutton"><p><b><a href="//use.perl.org/comments.pl?sid=44345&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></b></p></span>
+
+
+
+
+
+
+
+</div>
+
+
+
+	<script type="text/javascript">
+<!--
+		D2.currents()['hidden']   = 0;
+		D2.currents()['full']     = 0;
+		D2.currents()['oneline']  = 9;
+		// D2.currents_total(9);
+
+		D2.abbrev_comments({71449:522,71446:986,71445:1443,71452:520,71455:87,71444:512,71443:512});
+		D2.noshow_comments([]);
+		D2.pieces_comments([71443,71444,71445,71446,71447,71449,71450,71452,71455]);
+		D2.init_hiddens([]);
+
+		D2.finishLoading();
+
+
+		if (D2.thresh_totals()[6][6][1] == 0) {
+			D2.replyTo(0, 1);
+		}
+
+
+//-->
+	</script>
+
+<!-- end template: ID 157, printCommComments;misc;default -->
+
+
+
+<!-- start template: ID 112, footer;misc;default -->
+
+</div>
+                </div>
+                <div id="footer">
+			<div class="download">
+                                <!-- START DOWNLOAD PERL -->
+                                <!-- Perl Mongers, Inc.  web@perlmongers.org -->
+                                <a href="http://www.cpan.org/ports/index.html"><img src="http://www.perl.org/Images/download_perl.gif" width="102" height="42" alt="Download Perl Now!"></a>
+                                <!-- END DOWNLOAD PERL -->
+                        </div>	
+			<div class="sitelogo">
+				<a href="//use.perl.org/">
+					<img src="http://images.use.perl.org/topics/useperl.gif" alt="useperl">
+				</a>
+			</div>
+                        <em>
+				&nbsp; &nbsp; &gt; This made me wonder, suddenly: can telnet be written in perl?<BR>
+&nbsp; &nbsp; Of course it can be written in Perl.&nbsp; Now if you'd said nroff,<BR>
+&nbsp; &nbsp; that would be more challenging...&nbsp;  --Larry Wall
+			</em>
+		</div>
+		<div class="copyright">
+			Stories, comments, journals, and other submissions on use Perl; are Copyright 1998-2006, their respective owners.
+		</div>
+		<div class="btmnav">
+			<ul>
+	<li class="begin">
+		<a href="//use.perl.org/faq.shtml">FAQ</a>
+	</li>
+	<li>
+		<a href="//use.perl.org/about.shtml">About</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/submit.pl">Submit Story</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/search.pl">Older Stories</a>
+        </li>
+        <li>	
+		<a href="//use.perl.org/topics.shtml">Topics</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/pollBooth.pl">Polls</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/journal.pl">Journals</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/authors.pl">Authors</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/modulelist/">New Modules</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/users.pl?op=edithome">Preferences</a>
+
+        </li>
+</ul>
+		</div>
+        </div>
+<div id="modal_cover" style="display:none" onclick="hide_modal_box()"></div>
+<div id="modal_box" style="display:none">
+        <div class="generaltitle" >
+                <div class="title"><h3><span id="preference_title"></span> <a href="#" onclick="hide_modal_box(); return false"><img src="//images.use.perl.org/sic_close.png" alt="Close"></a></h3></div>
+        </div>
+        <div id="modal_box_content"></div>
+</div>
+
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		_uacct = "UA-32013-15";
+		urchinTracker();
+	</script>
+
+</body>
+</html>
+
+<!-- end template: ID 112, footer;misc;default -->
+

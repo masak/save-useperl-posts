@@ -1,0 +1,938 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="shortcut icon" href="//use.perl.org/favicon.ico">
+
+<title>Journal of masak (6289)</title>
+
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/base.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/comments.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.use.perl.org/useperl.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="print" href="//images.use.perl.org/print.css?T_2_5_0_235">
+<link rel="stylesheet" type="text/css" media="handheld" href="//images.use.perl.org/handheld.css?T_2_5_0_235">
+
+<script src="//images.use.perl.org/jquery/jquery-1.2.6.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/jquery/jquery.metadata.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/slash.util.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/jquery/jquery.slashdot.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/yahoo.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/dom.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/event.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/dragdrop.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/animation.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/yui/calendar.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/sd_calendar.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/slash.article-info.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/tag-ui.js?T_2_5_0_235" type="text/javascript"></script>
+<script src="//images.use.perl.org/common.js?T_2_5_0_235" type="text/javascript"></script>
+
+<!-- start template: ID 121, header;misc;default -->
+
+<link rel="top"       title="All the Perl that's Practical to Extract and Report" href="//use.perl.org/" >
+<link rel="search"    title="Search use Perl" href="//use.perl.org/search.pl">
+<link rel="author"    title="masak" href="//use.perl.org/~masak/">
+<link rel="alternate" title="masak's Journal RSS" href="http://use.perl.org/~masak/journal/rss" type="application/rss+xml">
+<link rel="alternate" title="masak's Friends' Journals RSS" href="http://use.perl.org/~masak/journal/friends/rss" type="application/rss+xml">
+<link rel="alternate" title="Most Recent Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="Most Active Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;type=count&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="Most Befriended Journals RSS" href="//use.perl.org/journal.pl?op=top&amp;type=friends&amp;content_type=rss" type="application/rss+xml">
+<link rel="alternate" title="use Perl RSS" href="//use.perl.org/index.rss" type="application/rss+xml">
+</head>
+<body class="useperlorg">
+<div id="top_parent"></div>
+
+<div id="jump">
+	<a href="#main-articles">Stories</a>
+	<br>
+	<a href="#blocks">Slash Boxes</a>
+	<br>
+	<a href="#comments">Comments</a>
+</div>
+<div class="ad1">
+
+</div>
+<div id="frame">
+
+<!-- UsePerl Ad Start -->
+<div class="ad1"><!-- ad position 1 -->
+<div id="fad1" style="text-align:center">
+<!-- DoubleClick Ad Tag 1 -->
+<script type="text/javascript">
+	dfp_ord=Math.random()*10000000000000000;
+	dfp_tile = 1;
+
+	document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/ostg.useperl/mainpage_p1_leader;pg=index;logged_in=0;tile='+dfp_tile+';ord='+dfp_ord+'?"><\/script>');
+	dfp_tile++;
+</script>
+</div>
+<!-- End DoubleClick Ad Tag 1 --></div>
+<!-- UsePerl Ad End -->
+
+	<div id="topnav">
+		<div id="logo">
+			<h1>
+				<a href="//use.perl.org">use Perl</a>
+			</h1>
+		</div>
+                <div class="search">
+			<form method="get" action="//use.perl.org/search.pl">
+				<fieldset>
+					<legend></legend>
+					<label>Search <strong>use Perl</strong></label>
+					<input type="text" name="query" value="" size="20">
+					<input type="submit" value="Go" class="button">
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<div id="slogan">
+		<h2>
+			All the Perl that's Practical to Extract and Report
+		</h2>
+	</div>
+	<div id="journalnav">
+		<div id="links">
+			
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="navigation-title">
+		<h4>
+			Navigation
+		</h4>
+	</div>
+	<div class="content" id="navigation-content">
+		<ul>
+	<li class="begin">
+		<a href="//use.perl.org/faq.shtml">FAQ</a>
+	</li>
+	<li>
+		<a href="//use.perl.org/about.shtml">About</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/submit.pl">Submit Story</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/search.pl">Older Stories</a>
+        </li>
+        <li>	
+		<a href="//use.perl.org/topics.shtml">Topics</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/pollBooth.pl">Polls</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/journal.pl">Journals</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/authors.pl">Authors</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/modulelist/">New Modules</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/users.pl?op=edithome">Preferences</a>
+
+        </li>
+</ul>
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+		</div>
+	</div>
+	<div id="contents">
+		
+		<div id="journal">
+
+<!-- end template: ID 121, header;misc;default -->
+
+
+
+<!-- start template: ID 55, journalhead;journal;default -->
+
+<div id="slashboxes">
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="userlogin-title">
+		<h4>
+			use Perl Log In
+		</h4>
+	</div>
+	<div class="content" id="userlogin-content">
+		
+			<form action="//use.perl.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//use.perl.org/">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//use.perl.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+		
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+
+<!-- start template: ID 474, sidebox;misc;default -->
+
+<div class="block">
+	<div class="title" id="user-info-title">
+		<h4>
+			masak (6289)
+		</h4>
+	</div>
+	<div class="content" id="user-info-content">
+		<a href="//use.perl.org/~masak/">masak</a> <br>&nbsp;&nbsp;(email not shown publicly)<br><a href="http://masak.org/carl" rel="nofollow">http://masak.org/carl</a><br><hr>Been programming Perl since 2001. Found Perl 6 somewhere around 2004, and fell in love. Now developing November (a Perl 6 wiki), Druid (a Perl 6 board game), pls (a Perl 6 project installer), GGE (a regex engine), and Yapsi (a Perl 6 implementation). Heavy user of and irregular committer to Rakudo.
+	</div>
+</div>
+
+<!-- end template: ID 474, sidebox;misc;default -->
+
+
+</div>
+<div id="users-blocks">
+
+
+<!-- start template: ID 376, tabbedmenu;misc;default -->
+
+
+
+<!-- end template: ID 376, tabbedmenu;misc;default -->
+
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			<a href="//use.perl.org/~masak/journal/">Journal</a> of <a href="//use.perl.org/~masak/">masak</a> (6289)
+			
+		</h3>
+	</div>
+</div>
+
+
+<div id="usermenu">
+<ul class="menu">
+<li><span class="begin"><a href="//use.perl.org/~masak/" class="begin">Info</a></span></li><li class="selected"><b><a href="//use.perl.org/~masak/journal/">Journal</a></b></li><li><a href="//use.perl.org/~masak/firehose/">Firehose</a></li><li><a href="//use.perl.org/~masak/friends/">Friends</a></li><li><a href="//use.perl.org/~masak/fans/">Fans</a></li><li><a href="//use.perl.org/~masak/foes/">Foes</a></li><li><a href="//use.perl.org/~masak/freaks/">Freaks</a></li><li><a href="//use.perl.org/~masak/tags/">Tags</a></li><li><a href="//use.perl.org/~masak/bookmarks/" class="end">Bookmarks</a></li>
+</ul>
+</div><div class="generalbody">
+
+<!-- start template: ID 376, tabbedmenu;misc;default -->
+
+<ul class="menu">
+<li><span class="begin"><a href="//use.perl.org/journal.pl?op=top" class="begin">Top&nbsp;10</a></span></li><li><a href="//use.perl.org/journal.pl?op=friends" class="end">Friend's&nbsp;Journals</a></li>
+</ul>
+
+<!-- end template: ID 376, tabbedmenu;misc;default -->
+
+<!-- end template: ID 55, journalhead;journal;default -->
+
+
+
+<!-- start template: ID 65, slashdot;journal;default -->
+
+<div id="journalslashdot">
+    
+	<div class="journaldate">Thursday April 22, 2010</div>
+	
+	<div class="details">09:31 AM</div>
+	<div class="title">
+		<h3>I can haz constant?</h3>
+	</div>
+	<div class="adminoptions">
+		[
+
+			<a href="//use.perl.org/~masak/journal/40321">#40321</a>
+		]
+	</div>
+
+	<div class="intro"><p>Let's try this format. Mixing #perl6 IRC logs with more detailed explanations, sort of like a movie and a commentator track.</p><p> <code>
+&lt;masak&gt; over lunch, since I'm so into scoping of different kinds right now, we got to talking about class-bound variables again. my colleague jonalv, whose home language is Java, thought that it was a shocking omission not to have class-based variables.<br>
+&lt;masak&gt; I explained how 'my' and 'our' didn't do what was intended, since lexpads and packages are orthogonal to OO inheritance.
+</code> </p><p>"Orthogonal" is quickly becoming one of my favourite terms in language design. It doesn't mean "at an angle of ninety degrees", but rather "along independent dimensional axes", that is, "not having anything to do with one another".</p><p>The two things that are orthogonal here are ordinary variable scoping on the one hand, and (method) inheritance on the other. In particular, a deriving class typically isn't lexically nested inside its base class, nor is it a subpackage of it, not even in the case of <code>A::B</code> deriving from <code>A</code>. (Unless they're nested in code, but in the general case they aren't.)</p><p> <code>
+&lt;masak&gt; when I talked about 'state' variables, he was a bit mollified and admitted that the need wasn't as great for class-bound variables.<br>
+&lt;masak&gt; and when I explained about the non-need for class-level methods due to type objects, I had almost convinced myself that we don't need class/static variables<nobr> <wbr></nobr>:)<br>
+&lt;masak&gt; but one use case that I can see is something akin to a constant defined in a class, which ought to be reachable from all its methods and the methods in derived classes.
+</code> </p><p>When I learned about <code>static</code> fields in Java, even the examples were contrived. They looked much like this:</p><p> <code>
+class Car {<nobr> <wbr></nobr>// this is Java code<br>
+&nbsp;&nbsp;&nbsp;&nbsp;static long cars_produced = 0;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public Car() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++cars_produced;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+</code> </p><p>Here's where Perl 6's <code>state</code> initializer feels a <em>little</em> bit like Java's <code>static</code> scope declarator.</p><p> <code>
+class Car { # this is Perl 6 code<br>
+&nbsp;&nbsp;&nbsp;&nbsp;submethod BUILD() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;state $cars-produced = 0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++$cars-produced;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+</code> </p><p>In both pieces of code above, the variable counting all the cars ever produced since the beginning of the program will begin at 0 and increase by one every time we construct a new car.</p><p>However, the visibility is different. In Perl 6, the variable is only visible inside the <code>BUILD</code> submethod. If we want all methods to see it, we'll have to move it out to the larger class scope. (And then we don't need <code>state</code>, because the class block is only run once. We can use <code>my</code> to tie it to the lexical class block, or <code>our</code> to tie it to the class package. In the latter case, it can be referred to from the outside as <code>Car::cars-produced</code>.)</p><p>But that <em>still</em> doesn't give us the inheritance that we like to associate with classes. The Java code would keep ticking up cars even if we derived a <code>RollsRoyce</code> class from <code>Car</code>, as long as we called <code>super()</code> from within the <code>RollsRoyce</code> constructor. The Perl 6 code will behave the same (and automatically) since we put our initialization in the <code>Car.BUILD</code> submethod, which would get called by <code>RollsRoyce.BUILDALL</code>. But in Perl 6, we can only <em>see</em> the variable when inside <code>Car</code>, not when inside <code>RollsRoyce</code>. Java doesn't have this issue.</p><p>Excuse the crappy non-real-life example. &#21704;&#21704; But two more realistic use cases bring us back to the IRC discussion in question.</p><p>The first is one or more constants that a class might want to share with its deriving classes. That feels pretty natural. The second is enums, which are basically constants packaged in a convenient form.</p><p>I like throwing out items for discussion like this on #perl6. You never know who will pick them up, but I usually learn something from them, and sometimes the spec even gets improved as a result. This time, TimToady replied:</p><p> <code>
+&lt;TimToady&gt; std: has constant $.pi = 3;<br>
+&lt;p6eval&gt; std 30419: OUTPUT&#171;ok 00:01 110m&#9252;&#187;<br>
+&lt;jnthn&gt; o.O<br>
+&lt;TimToady&gt; masak++ was conjecturing class-based constants, but it already falls out<br>
+&lt;TimToady&gt; in fact, that was one of the reasons the constant declarator moved from being a scope_declarator to being a type-declarator, so we could use it in arbitrary scopes
+</code> </p><p>Well, that does take care of the constants use case. Nice! You use <code>has</code> and twigils to get you the inheritance behaviour. Why didn't I think of that?</p><p>Here's why I think it's extra nice: rather than make this an issue of scoping and visibility, the <code>has constant</code> construct makes it an issue of <em>immutability</em>. Given this information, the compiler is free to optimize as much as it can, but (unlike Java) we never had any need to invent a "class level" scope, where static things are stored. That aligns with the rest of Perl 6; we don't have 'static methods' either, for example &#8212; but you can achieve much the same things through other means.</p><p> <code>
+&lt;masak&gt; TimToady: 'has constant' still makes me happy. what's my best solution if I want to do something similar with an enum? (i.e. share it between a class and all its descendants.) enum is also a type declarator, but the name doesn't have a twigil...<br>
+[...]<br>
+&lt;TimToady&gt; masak: testing a patch for 'has enum $.meth &lt;foo bar&gt;'<br>
+&lt;masak&gt; TimToady: \o/
+</code> </p><p>I love it when existing parts of the design just melt together into something even more useful than the sum of its constituent parts. The fact that I can be part of that process makes the work on Perl 6 feel much less like work and much more like an adventure.</p><p>So now, I can haz constant! And enums! I expect they will come in handy, especially since I will be on the lookout for possible uses for them.</p><p>As for class-based <em>variables</em>, Perl 6 still doesn't have them. I don't see a similarly good way to add them to the language. On the other hand, I also don't have a better use case for them than that crappy <code>Car</code> example.</p></div>
+	
+    
+
+	<div class="journalpage">
+		
+		<br>
+		<a href="//use.perl.org/journal.pl?op=list&amp;uid=6289" class="all">List all Journal entries</a>
+	</div>
+</div>
+
+<!-- end template: ID 65, slashdot;journal;default -->
+
+</div></div>
+
+<!-- start template: ID 159, printCommentsMain;misc;default -->
+
+<a name="acomments"></a>
+<div class="commentwrap" id="commentwrap">
+
+<div class="commentBox" style="font-size: 120%">
+	<div>
+<span class="escape-link"><a href="//use.perl.org/~masak/journal/40321" title="Back to Article - I can haz constant?">I can haz constant?</a></span>
+<span class="commentBoxLinks"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_d"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=44764&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></span>
+	</div>
+</div>
+
+	<div class="commentBoxForm" id="commentControlBox">
+<div></div>
+	<div class="commentBox">
+		<small>
+		<b>The Fine Print:</b> The following comments are owned by whoever posted them.  We are not responsible for them in any way.
+		</small>
+<noscript><br><small>Without JavaScript enabled, you might want to
+use <a href="//use.perl.org/comments.pl?sid=44764&amp;threshold=0&amp;commentsort=0&amp;mode=thread&amp;no_d2=1">the classic discussion system</a> instead.  If you <a href="//use.perl.org/login.pl">login</a>, you can remember this preference.
+</small></noscript>
+	</div>
+	</div>
+	
+		<div id="d2out" class="horizontal">
+		<div id="d2act" class="hide">
+		<div class="loki" id="gods">
+		<div class="block">
+			<div class="title">
+
+				<h4>
+				
+					<span class="h-inline">
+					<a href="//use.perl.org/~masak/journal/40321" title="Back to Article - I can haz constant?">I can haz constant?</a></span>
+					<span class="titlecount"><a href="//use.perl.org/~masak/journal/40321#topcomment" title="Back to Top Comment - I can haz constant?"><span id="titlecountnum">8</span>&nbsp;Comments</a></span>
+				
+		<span class="ccw-header-links"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_b"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=44764&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></span>
+		<span id="d2toggle" title="Toggle window location" onclick="D2.toggleDisplayOptions()" class="close">/</span>
+				</h4>
+			</div>
+		</div>
+<script type="text/javascript">
+gCommentControlWidget = null;
+
+YAHOO.slashdot.ThresholdApp = function() {
+  return {
+    init: function() {
+      gCommentControlWidget = new YAHOO.slashdot.ThresholdWidget('X');
+      gCommentControlWidget.setTHT(D2.user_threshold(), D2.user_highlightthresh());
+      D2.updateTotals();
+    }
+  };
+}();
+
+YAHOO.util.Event.addListener(window, "load", YAHOO.slashdot.ThresholdApp.init);
+</script>
+		<div id="bones">
+      <div id="ccw">
+        <div id="ccw-body" class="ccw-core">
+          <div id="ccw-panel-container" class="ccw-core">
+            <div id="ccw-full-panel" class="ccw-panel">
+              <div class="ccw-panel-border"></div>
+              <div id="ccw-full-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-full-count-text" class="ccw-count-text"><span id="currentFull"></span><span id="ccw-full-phrase">&nbsp;Full</span></span>
+              </div>
+            </div>
+            <div id="ccw-abbr-panel" class="ccw-panel">
+              <div class="ccw-panel-border"></div>
+              <div id="ccw-abbr-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-abbr-count-text" class="ccw-count-text"><span id="currentOneline"></span><span id="ccw-abbr-phrase">&nbsp;Abbreviated</span></span>
+              </div>
+            </div>
+            <div id="ccw-hide-panel" class="ccw-panel">
+              <div id="ccw-hide-count-pos" class="ccw-core-pos ccw-count-pos">
+                <span id="ccw-hide-count-text" class="ccw-count-text"><span id="currentHidden"></span><span id="ccw-hide-phrase">&nbsp;Hidden</span></span>
+              </div>
+            </div>
+          </div>
+    
+          <div id="ccw-control" class="ccw-core">
+            <div id="ccw-centering-rail" class="ccw-core">
+              <div id="ccw-hide-bar-pos" class="ccw-core-pos">
+                <div id="ccw-hide-bar" class="ccw-bar">
+                  <div id="ccw-hide-bar-tab" class="ccw-bar-tab"></div>
+                  <div id="ccw-hide-bar-upzone" class="ccw-upzone" onclick="gCommentControlWidget.stepTHT(HIDE_BAR, +1)"></div>
+                  <div id="ccw-hide-bar-downzone" class="ccw-downzone" onclick="gCommentControlWidget.stepTHT(HIDE_BAR, -1)"></div>
+                </div>
+              </div>
+              <div id="ccw-abbr-bar-pos" class="ccw-core-pos">
+                <div id="ccw-abbr-bar" class="ccw-bar">
+                  <div id="ccw-abbr-bar-tab" class="ccw-bar-tab"></div>
+                  <div id="ccw-abbr-bar-upzone" class="ccw-upzone" onclick="gCommentControlWidget.stepTHT(ABBR_BAR, +1)"></div>
+                  <div id="ccw-abbr-bar-downzone" class="ccw-downzone" onclick="gCommentControlWidget.stepTHT(ABBR_BAR, -1)"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+		<div class="commentControlFooter"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_c"></span> More</a> |
+
+	<a href="//use.perl.org/login.pl" onclick="show_login_box(); return false">Login</a>
+
+
+
+	| <a href="//use.perl.org/comments.pl?sid=44764&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a><div id="login_cover" style="display:none" onclick="hide_login_box()"></div>
+<div id="login_box" style="display:none">
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			Please Log In to Continue<a href="#" onclick="hide_login_box(); return false" class="close" title="Close this box"><img id="login_box_close" src="//images.use.perl.org/sic_close.png" alt="Close"></a>
+			
+		</h3>
+	</div>
+</div>
+<div id="login_box_content">
+<form action="//use.perl.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//use.perl.org/comments.pl?sid=44764">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//use.perl.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+</div></div>
+<script type="text/javascript">logged_in = 0</script></div>
+		<div id="commentControlBoxStatus" class="hide"><b>Loading... please wait.</b></div>
+	</div>
+</div>
+		</div>
+	
+</div>
+<a name="topcomment"></a>
+
+<!-- end template: ID 159, printCommentsMain;misc;default -->
+
+
+
+<!-- start template: ID 157, printCommComments;misc;default -->
+
+<script src="//images.use.perl.org/comments.js?T_2_5_0_235" type="text/javascript"></script>
+	<script type="text/javascript">
+<!--
+	D2.d2_keybindings_disable()[191] = 1;
+	window.onscroll = D2.d2act;
+	D2.boxStatus(1);
+D2.comments({ 71910: { uid: 6289, pid: 71909, subject: "Re:object refcounting", read: 0, points: 1, kids: [ 71911 ], opid: 71909 }, 71928: { uid: 6747, pid: 71927, subject: "Re:How about this?", read: 0, points: 1, kids: [  ], opid: 71927 }, 71926: { uid: 6747, pid: 0, read: 0, points: 1, kids: [ 71927 ], opid: 0 }, 71909: { uid: 9133, pid: 0, read: 0, points: 1, kids: [ 71910 ], opid: 0 }, 71911: { uid: 9133, pid: 71910, subject: "Re:object refcounting", read: 0, points: 1, kids: [  ], opid: 71910 }, 71927: { uid: 6289, pid: 71926, subject: "Re:How about this?", read: 0, points: 1, kids: [ 71928 ], opid: 71926 }, 71970: { uid: 6289, pid: 0, read: 0, points: 1, kids: [  ], opid: 0 }, 71997: { uid: 6289, pid: 0, read: 0, points: 1, kids: [  ], opid: 0 } });
+
+D2.thresh_totals({6:{6:{1:8,3:0,2:0}},4:{6:{1:8,3:0,2:0},4:{1:8,3:0,2:0},5:{1:8,3:0,2:0}},1:{6:{1:0,3:0,2:8},4:{1:0,3:0,2:8},1:{1:0,3:8,2:0},3:{1:0,3:0,2:8},2:{1:0,3:4,2:4},5:{1:0,3:0,2:8}},3:{6:{1:8,3:0,2:0},4:{1:8,3:0,2:0},3:{1:8,3:0,2:0},5:{1:8,3:0,2:0}},0:{6:{1:0,3:0,2:8},4:{1:0,3:0,2:8},1:{1:0,3:8,2:0},3:{1:0,3:0,2:8},0:{1:0,3:8,2:0},2:{1:0,3:4,2:4},5:{1:0,3:0,2:8}},2:{6:{1:8,3:0,2:0},4:{1:8,3:0,2:0},3:{1:8,3:0,2:0},2:{1:8,3:0,2:0},5:{1:8,3:0,2:0}},5:{6:{1:8,3:0,2:0},5:{1:8,3:0,2:0}},"-1":{6:{1:0,3:0,2:8},4:{1:0,3:0,2:8},1:{1:0,3:8,2:0},3:{1:0,3:0,2:8},0:{1:0,3:8,2:0},2:{1:0,3:4,2:4},5:{1:0,3:0,2:8},"-1":{1:0,3:8,2:0}}});
+
+D2.root_comment(0);
+D2.root_comments([71909,71926,71970,71997]);
+D2.root_comments_hash({71926:1,71909:1,71970:1,71997:1});
+
+D2.d2_comment_order(0);
+D2.user_uid(7);
+D2.user_is_anon(1);
+D2.user_is_admin(0);
+D2.user_is_subscriber(0);
+D2.user_threshold(0);
+D2.user_highlightthresh(4);
+D2.user_d2asp(0);
+
+D2.discussion_id(44764);
+
+D2.d2_seen('71909,1,1,15,1,1,42,27');
+D2.more_comments_num(0);
+
+
+//-->
+	</script>
+
+
+
+
+	
+	
+	
+	
+		<ul id="commentlisting" class="d2">
+			<li id="tree_71909" class="comment">
+<div id="comment_status_71909" class="commentstatus"></div>
+<div id="comment_71909" class="oneline">
+
+	<div id="comment_top_71909" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71909" name="comment_link_71909" href="//use.perl.org/comments.pl?sid=44764&amp;cid=71909" onclick="return D2.setFocusComment(71909)">object refcounting</a>
+			
+			<span id="comment_score_71909" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71909); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~gilleain/">gilleain (9133)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71909"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71909"><tt>The only real (non car-based<nobr> <wbr></nobr>:) example I can remember seeing for static class variables is reference counting:<br><span class="substr"> </span> <br>public class MyBaseObject {<br> <br>&nbsp; &nbsp; public static int REFCOUNT;<br> <br>&nbsp; &nbsp; public MyBaseObject() {<br>&nbsp; &nbsp; &nbsp; &nbsp; REFCOUNT++;<br>&nbsp; &nbsp; }<br>}<br> <br>public class DerivedObject extends MyBaseObject {<br> <br>&nbsp; &nbsp; public DerivedObject() {<br>&nbsp; &nbsp; &nbsp; &nbsp; super();<br>&nbsp; &nbsp; }<br> <br>&nbsp; &nbsp; public static void main(String[] args) {<br>&nbsp; &nbsp; &nbsp; &nbsp; for (int i = 0 ; i</tt></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71909"></div>
+
+</div>
+
+
+<div id="replyto_71909"></div>
+
+<ul id="group_71909">
+	<li id="hiddens_71909" class="hide"></li>
+</ul><ul id="commtree_71909"><li id="tree_71910" class="comment">
+<div id="comment_status_71910" class="commentstatus"></div>
+<div id="comment_71910" class="oneline">
+
+	<div id="comment_top_71910" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71910" name="comment_link_71910" href="//use.perl.org/comments.pl?sid=44764&amp;cid=71910" onclick="return D2.setFocusComment(71910)">Re:</a>
+			
+			<span id="comment_score_71910" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71910); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~masak/">masak (6289)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71910"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71910"><p>In other words, my <code>Car</code> example, but without the <code>Car</code>.<nobr> <wbr></nobr>:)</p><p>Is it common to want to implement reference counting in this way? What's the use case?</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71910"></div>
+
+</div>
+
+
+<div id="replyto_71910"></div>
+
+<ul id="group_71910">
+	<li id="hiddens_71910" class="hide"></li>
+</ul><ul id="commtree_71910"><li id="tree_71911" class="comment">
+<div id="comment_status_71911" class="commentstatus"></div>
+<div id="comment_71911" class="oneline">
+
+	<div id="comment_top_71911" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71911" name="comment_link_71911" href="//use.perl.org/comments.pl?sid=44764&amp;cid=71911" onclick="return D2.setFocusComment(71911)">Re:</a>
+			
+			<span id="comment_score_71911" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71911); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~gilleain/">gilleain (9133)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71911"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71911"><tt>Doh. Yes, I didn't think that through really, did I?<br><span class="substr"> </span> <br>I have never used static class variables in Java. They seem like a subtle disaster waiting to happen. Also I try (where possible) to program without side-effects.<br> <br>Moreover, Java doesn't have proper destructors, so you can't decrease the count in any reasonable way.<br> <br>Is there perhaps a more reasonable use case for a kind of object-level namespace? It would be horrible in practice, but something like public static HashMap MyBaseObject.OBJECT_VARIABLES...<br> <br>Sounds</tt></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71911"></div>
+
+</div>
+
+
+<div id="replyto_71911"></div>
+
+<ul id="group_71911">
+	<li id="hiddens_71911" class="hide"></li>
+</ul></li></ul></li></ul></li><li id="tree_71926" class="comment">
+<div id="comment_status_71926" class="commentstatus"></div>
+<div id="comment_71926" class="oneline">
+
+	<div id="comment_top_71926" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71926" name="comment_link_71926" href="//use.perl.org/comments.pl?sid=44764&amp;cid=71926" onclick="return D2.setFocusComment(71926)">How about this?</a>
+			
+			<span id="comment_score_71926" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71926); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~spinclad/">spinclad (6747)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71926"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71926"><blockquote><div><p> <tt>class Car { # this is Perl 6 code<br>&nbsp; &nbsp; my $cars-produced = 0;<br>&nbsp; &nbsp; has $.cars-produced<nobr> <wbr></nobr>:= $cars-produced;<br> <br>&nbsp; &nbsp; submethod BUILD() {<br>&nbsp; &nbsp; &nbsp; &nbsp; ++$cars-produced;<br>&nbsp; &nbsp; }<br>}</tt><span class="substr"> </span> </p></div></blockquote><p>So you have a shared counter, an alias of it per instance (which seems redundant, but makes it work*... perhaps by some means one could persuade the compiler to compile it away, as it's constant as a reference), and accessors for inheriting.</p><p>Rakudo doesn't like the 'has $.x<nobr> <wbr></nobr>:= $y' construct (ye</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71926"></div>
+
+</div>
+
+
+<div id="replyto_71926"></div>
+
+<ul id="group_71926">
+	<li id="hiddens_71926" class="hide"></li>
+</ul><ul id="commtree_71926"><li id="tree_71927" class="comment">
+<div id="comment_status_71927" class="commentstatus"></div>
+<div id="comment_71927" class="oneline">
+
+	<div id="comment_top_71927" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71927" name="comment_link_71927" href="//use.perl.org/comments.pl?sid=44764&amp;cid=71927" onclick="return D2.setFocusComment(71927)">Re:</a>
+			
+			<span id="comment_score_71927" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71927); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~masak/">masak (6289)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71927"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71927"><p>I was reminded by TimToady that something very much like this is already possible <code>class Car { my $.cars-produced = 0; #`[...] }</code>. It's spec'd and everything, in S12:731. Hope that helps.<nobr> <wbr></nobr>:)</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71927"></div>
+
+</div>
+
+
+<div id="replyto_71927"></div>
+
+<ul id="group_71927">
+	<li id="hiddens_71927" class="hide"></li>
+</ul><ul id="commtree_71927"><li id="tree_71928" class="comment">
+<div id="comment_status_71928" class="commentstatus"></div>
+<div id="comment_71928" class="oneline">
+
+	<div id="comment_top_71928" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71928" name="comment_link_71928" href="//use.perl.org/comments.pl?sid=44764&amp;cid=71928" onclick="return D2.setFocusComment(71928)">Re:</a>
+			
+			<span id="comment_score_71928" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71928); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~spinclad/">spinclad (6747)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71928"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71928"><p>Oh, yes, that's exactly the thing.</p><p>I think <code>has $.x<nobr> <wbr></nobr>:= $y</code> would have its uses, too; i'll poke around (in spec, code, #perl6) to see what might block/enable it.</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71928"></div>
+
+</div>
+
+
+<div id="replyto_71928"></div>
+
+<ul id="group_71928">
+	<li id="hiddens_71928" class="hide"></li>
+</ul></li></ul></li></ul></li><li id="tree_71970" class="comment">
+<div id="comment_status_71970" class="commentstatus"></div>
+<div id="comment_71970" class="oneline">
+
+	<div id="comment_top_71970" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71970" name="comment_link_71970" href="//use.perl.org/comments.pl?sid=44764&amp;cid=71970" onclick="return D2.setFocusComment(71970)">Gilad Bracha doesn't like static state</a>
+			
+			<span id="comment_score_71970" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71970); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~masak/">masak (6289)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71970"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71970"><p>I found this interesting post where <a href="http://gbracha.blogspot.com/2008/02/cutting-out-static.html" title="blogspot.com" rel="nofollow">Gilad Bracha rants about static state</a> [blogspot.com] in objects. Makes me think Perl 6, for all the static state it hasn't, maybe has a bit too much anyway.<nobr> <wbr></nobr>:)</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71970"></div>
+
+</div>
+
+
+<div id="replyto_71970"></div>
+
+<ul id="group_71970">
+	<li id="hiddens_71970" class="hide"></li>
+</ul></li><li id="tree_71997" class="comment">
+<div id="comment_status_71997" class="commentstatus"></div>
+<div id="comment_71997" class="oneline">
+
+	<div id="comment_top_71997" class="commentTop newcomment">
+		<div class="title">
+			
+			<h4><a id="comment_link_71997" name="comment_link_71997" href="//use.perl.org/comments.pl?sid=44764&amp;cid=71997" onclick="return D2.setFocusComment(71997)">And an mjd post</a>
+			
+			<span id="comment_score_71997" class="score">(<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 71997); return false">Score:1</a>)</span></h4>
+		</div>
+		<div class="details">
+			by
+			<a href="//use.perl.org/~masak/">masak (6289)</a>
+			
+			
+			<span class="otherdetails" id="comment_otherdetails_71997"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_71997"><p>I keep finding other blog posts about static state. <a href="http://blog.plover.com/prs/objects.html" title="plover.com" rel="nofollow">This post</a> [plover.com] by Mark Dominus warns against keeping object information outside of the object. He does so in an almost embarrassingly reasonable way. Though he doesn't mention static state, he does argue against global state, of which static state is merely a milder version.</p></div>
+		
+	
+	</div>
+	<div class="commentSub" id="comment_sub_71997"></div>
+
+</div>
+
+
+<div id="replyto_71997"></div>
+
+<ul id="group_71997">
+	<li id="hiddens_71997" class="hide"></li>
+</ul></li>
+			<li id="roothiddens" class="hide"></li>
+		</ul>
+	
+	
+	
+	
+
+
+<div id="replyto_0"></div>
+
+
+<div id="discussion_buttons">
+
+
+<span class="nbutton"><p><b><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_a" class="hide">Get More Comments</span></a></b></p></span>
+
+
+
+<span class="nbutton"><p><b><a href="//use.perl.org/comments.pl?sid=44764&amp;op=reply&amp;threshold=0&amp;commentsort=0&amp;mode=thread" onclick="D2.replyTo(0); return false;">Reply</a></b></p></span>
+
+
+
+
+
+
+
+</div>
+
+
+
+	<script type="text/javascript">
+<!--
+		D2.currents()['hidden']   = 0;
+		D2.currents()['full']     = 0;
+		D2.currents()['oneline']  = 8;
+		// D2.currents_total(8);
+
+		D2.abbrev_comments({71926:292,71911:60,71909:137});
+		D2.noshow_comments([]);
+		D2.pieces_comments([71909,71910,71911,71926,71927,71928,71970,71997]);
+		D2.init_hiddens([]);
+
+		D2.finishLoading();
+
+
+		if (D2.thresh_totals()[6][6][1] == 0) {
+			D2.replyTo(0, 1);
+		}
+
+
+//-->
+	</script>
+
+<!-- end template: ID 157, printCommComments;misc;default -->
+
+
+
+<!-- start template: ID 112, footer;misc;default -->
+
+</div>
+                </div>
+                <div id="footer">
+			<div class="download">
+                                <!-- START DOWNLOAD PERL -->
+                                <!-- Perl Mongers, Inc.  web@perlmongers.org -->
+                                <a href="http://www.cpan.org/ports/index.html"><img src="http://www.perl.org/Images/download_perl.gif" width="102" height="42" alt="Download Perl Now!"></a>
+                                <!-- END DOWNLOAD PERL -->
+                        </div>	
+			<div class="sitelogo">
+				<a href="//use.perl.org/">
+					<img src="http://images.use.perl.org/topics/useperl.gif" alt="useperl">
+				</a>
+			</div>
+                        <em>
+				&nbsp; &nbsp; &gt; This made me wonder, suddenly: can telnet be written in perl?<BR>
+&nbsp; &nbsp; Of course it can be written in Perl.&nbsp; Now if you'd said nroff,<BR>
+&nbsp; &nbsp; that would be more challenging...&nbsp;  --Larry Wall
+			</em>
+		</div>
+		<div class="copyright">
+			Stories, comments, journals, and other submissions on use Perl; are Copyright 1998-2006, their respective owners.
+		</div>
+		<div class="btmnav">
+			<ul>
+	<li class="begin">
+		<a href="//use.perl.org/faq.shtml">FAQ</a>
+	</li>
+	<li>
+		<a href="//use.perl.org/about.shtml">About</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/submit.pl">Submit Story</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/search.pl">Older Stories</a>
+        </li>
+        <li>	
+		<a href="//use.perl.org/topics.shtml">Topics</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/pollBooth.pl">Polls</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/journal.pl">Journals</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/authors.pl">Authors</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/modulelist/">New Modules</a>
+        </li>
+        <li>
+		<a href="//use.perl.org/users.pl?op=edithome">Preferences</a>
+
+        </li>
+</ul>
+		</div>
+        </div>
+<div id="modal_cover" style="display:none" onclick="hide_modal_box()"></div>
+<div id="modal_box" style="display:none">
+        <div class="generaltitle" >
+                <div class="title"><h3><span id="preference_title"></span> <a href="#" onclick="hide_modal_box(); return false"><img src="//images.use.perl.org/sic_close.png" alt="Close"></a></h3></div>
+        </div>
+        <div id="modal_box_content"></div>
+</div>
+
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		_uacct = "UA-32013-15";
+		urchinTracker();
+	</script>
+
+</body>
+</html>
+
+<!-- end template: ID 112, footer;misc;default -->
+

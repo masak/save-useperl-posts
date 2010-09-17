@@ -1,7 +1,7 @@
 #! /usr/bin/env perl -w
 use 5.010;
 use strict;
-use Data::Dumper;
+use YAML;
 
 sub titlify {
     my ($old_title) = @_;
@@ -80,7 +80,8 @@ sub handle_divs {
                              || $children[0]->{'name'} eq 'a')) {
             push @really_p, shift @children;
         }
-        die $children[0]->{'name'} if @children && $children[0]->{'name'} ne 'blockquote';
+        die $children[0]->{'name'} if @children
+                                      && $children[0]->{'name'} ne 'blockquote';
         unshift @children, { name => 'p', children => [@really_p] };
     }
     for my $node (@children) {
@@ -113,11 +114,13 @@ sub handle_divs {
                                 $line .= $fragment;
                             }
                             elsif ($fragment->{'name'} eq 'br') {
+                                $line =~ s/^\s*\n//;
                                 push @lines, $line;
                                 $line = '';
                             }
                         }
                         if ($line ne '') {
+                            $line =~ s/^\s*\n//;
                             push @lines, $line;
                         }
                         $result .= "    $_\n"
@@ -165,7 +168,7 @@ sub handle_divs {
                                     $result .= "<dd>" . handle_spans($dl_elem->{'children'}) .  "</dd>";
                                 }
                                 else {
-                                    die "Unknown ", $dl_elem->{'name'}, " in dl in li", Dumper($elem);
+                                    die "Unknown ", $dl_elem->{'name'}, " in dl in li", Dump($elem);
                                 }
                                 $result .= "\n";
                             }
@@ -218,7 +221,7 @@ sub handle_divs {
                     $result .= handle_divs($node->{'children'});
                 }
                 default {
-                    die "Encountered a $_, don't know how to handle", Dumper($childrenref);
+                    die "Encountered a $_, don't know how to handle", Dump($childrenref);
                 }
             }
         }
@@ -258,7 +261,7 @@ sub handle_spans {
                 default {
                     die "Found ", $node->{'name'},
                         " in handle_spans, don't know how to.\n\n\n",
-                        Dumper($childrenref);
+                        Dump($childrenref);
                 }
             }
         }
@@ -266,9 +269,12 @@ sub handle_spans {
             my $text = $node;
             $text =~ s/\s+/ /g;
             $text =~ s/&nbsp;/ /g;
+            $text =~ s/&lt;/</g;
+            $text =~ s/&gt;/>/g;
             $result .= $text;
         }
     }
+    $result =~ s/\n+$//;
     return $result;
 }
 
@@ -286,11 +292,20 @@ for my $filename (@filenames) {
     my $month = sprintf "%02d", $month_number_of{$1} || die $1;
     my $day_of_month = sprintf "%02d", $2;
     my $year = $3;
+
+    1 while shift(@lines) !~ /<div class="details">(\d\d):(\d\d) (.M)<\/div>/;
+    my $hour = sprintf "%02d", ($1 + ($3 eq 'AM' ? 0 : 12) + 6) % 24;
+    if ($hour < 6) {
+        $day_of_month++;
+    }
+    my $minute = $2;
+
     my $date = "$year-$month-$day_of_month";
+    my $timestamp = $date . "T$hour:$minute CEST";
 
     1 while shift(@lines) !~ /<h3>([^<]+)<\/h3>/;
     my $title = $1;
-    my $new_filename = 'new-structure/' . titlify($title);
+    my $new_filename = 'new-structure/' . titlify($title) . '.markdown';
 
     1 while shift(@lines) !~ /<div class="intro">(.*)/;
     my $content = $1;
@@ -313,7 +328,7 @@ for my $filename (@filenames) {
 ---
 title: $title
 author: Carl Mäsak
-date: $date
+created: $timestamp
 ---
 $content
 EOF

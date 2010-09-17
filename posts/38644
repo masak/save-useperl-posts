@@ -326,7 +326,7 @@ explain, but only serves to heighten the mystery. Whence the need to warm up a
 mock object? And must we really introduce a Unix shibboleth into an otherwise
 platform-independent test file to do it?</p><p>Beyond that, everything else looks fairly good and normal. The tests
 basically throw different inputs at the modules, and check that they get the
-right output. Perhaps a module such as <code> <a href="http://use.perl.org/~masak/journal/37976" rel="nofollow">Test::InputOutput</a> </code>
+right output. Perhaps a module such as <a href="http://use.perl.org/~masak/journal/37976" rel="nofollow"><code>Test::InputOutput</code></a>
 could alleviate some of the repetition here, but not by much, and only at the
 cost of another dependency.</p><p>I have the impression that the test coverage is actually pretty good; the 37
 tests do get to exercise much of the code written so far. Keep up the good

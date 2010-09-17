@@ -118,6 +118,9 @@ sub handle_divs {
                                 push @lines, $line;
                                 $line = '';
                             }
+                            elsif ($fragment->{'name'} eq 'a') {
+                                $line .= handle_spans([$fragment]);
+                            }
                         }
                         if ($line ne '') {
                             $line =~ s/^\s*\n//;

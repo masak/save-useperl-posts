@@ -2,17 +2,19 @@
 use 5.010;
 use strict;
 use YAML;
+use Encode;
 
-sub titlify {
+my %old2new;
+
+sub urlify {
     my ($old_title) = @_;
     my $title = $old_title;
     $title = lc($title);
-    $title =~ s/[,:'\-!"?#;]//g;
-    $title =~ s/\.(?!\w)//g;
+    $title =~ s/[,:'\-!"?#;.]//g;
     $title =~ s/ +/-/g;
     $title =~ s/\[|\]|\(|\)//g;
     die $old_title
-        if $title !~ /^[\w\-.]+$/;
+        if $title !~ /^[\w\-]+$/;
     return $title;
 }
 
@@ -39,6 +41,7 @@ sub markdownify {
             if ($stack[-1]->{'children'}[-1]{'name'} eq 'nobr') {
                 # kill with fire
                 pop @{$stack[-1]->{'children'}};
+                push @{$stack[-1]->{'children'}}, ' ';
             }
         }
         else {
@@ -65,12 +68,12 @@ sub markdownify {
     if ($content ne '') {
         push @{$dom->{'children'}}, $content;
     }
-    my $markdown = handle_divs($dom->{'children'});
+    my $markdown = handle_divs($dom->{'children'}, $filename);
     return $markdown;
 }
 
 sub handle_divs {
-    my ($childrenref) = @_;
+    my ($childrenref, $filename) = @_;
     my @children = @{$childrenref};
     my $result = '';
     if (@children && !ref $children[0]) {
@@ -84,6 +87,19 @@ sub handle_divs {
                                       && $children[0]->{'name'} ne 'blockquote';
         unshift @children, { name => 'p', children => [@really_p] };
     }
+    for my $i (1..@children-1) {
+        my ($prevnode, $node) = @children[$i - 1, $i];
+        if (ref($prevnode) && $prevnode->{'name'} eq 'div'
+            && ref($node) && $node->{'name'} eq 'div'
+            && $prevnode->{'attrs'}{'class'} eq 'quote'
+            && $node->{'attrs'}{'class'} eq 'quote') {
+
+            unshift @{$children[$i]->{'children'}},
+                    @{$children[$i-1]->{'children'}};
+            $children[$i-1] = '[[GONE]]';
+        }
+    }
+    @children = grep { $_ ne '[[GONE]]' } @children;
     for my $node (@children) {
         if (ref $node eq 'HASH') {
             given ($node->{'name'}) {
@@ -94,7 +110,9 @@ sub handle_divs {
                     if (@p_children == 1
                         && ref($p_children[0]) eq 'HASH'
                         && ($p_children[0]->{'name'} eq 'strong'
-                            || $p_children[0]->{'name'} eq 'b')) {
+                            || $p_children[0]->{'name'} eq 'b')
+                        && $p_children[0]->{'children'}[0] !~ /Update/
+                        && $filename ne 'posts/40167') {
                         $result .= '## '
                                 .  handle_spans($p_children[0]->{'children'}) 
                                 . "\n\n";
@@ -103,32 +121,51 @@ sub handle_divs {
                            && ref($p_children[0]) eq 'HASH'
                            && ($p_children[0]->{'name'} eq 'code'
                             || $p_children[0]->{'name'} eq 'tt')) {
-                        my @fragments = @{$p_children[0]->{'children'}};
-                        my $line = '';
-                        my @lines;
-                        for my $fragment (@fragments) {
-                            if (!ref $fragment) {
-                                $fragment =~ s/&nbsp;/ /g;
-                                $fragment =~ s/&lt;/</g;
-                                $fragment =~ s/&gt;/>/g;
-                                $line .= $fragment;
+                        if (grep { ref($_) && ($_->{'name'} eq 'a'
+                                               || $_->{'name'} eq 'strong'
+                                               || $_->{'name'} eq 'b')}
+                                 @{$p_children[0]->{'children'}}) {
+                            $p_children[0]->{'name'} = 'code';
+                            $p_children[0]->{'children'}
+                                = [grep { !ref($_) || $_->{'name'} ne 'br' }
+                                        @{$p_children[0]->{'children'}}];
+                            $p_children[0]->{'children'}[0]
+                                =~ s/^\n//;
+                            $result .= '<pre>';
+                            $result .= handle_verbatim($p_children[0]);
+                            $result .= '</pre>';
+                            $result .= "\n\n";
+                        }
+                        else {
+                            my @fragments = @{$p_children[0]->{'children'}};
+                            my $line = '';
+                            my @lines;
+                            for my $fragment (@fragments) {
+                                if (!ref $fragment) {
+                                    $fragment =~ s/&nbsp;/ /g;
+                                    $fragment =~ s/&lt;/</g;
+                                    $fragment =~ s/&gt;/>/g;
+                                    $fragment =~ s/&amp;/&/g;
+                                    $fragment =~ s/&#(\d+);/chr($1)/ge;
+                                    $line .= $fragment;
+                                }
+                                elsif ($fragment->{'name'} eq 'br') {
+                                    $line =~ s/^\s*\n//;
+                                    push @lines, $line;
+                                    $line = '';
+                                }
+                                elsif ($fragment->{'name'} eq 'a') {
+                                    $line .= handle_spans([$fragment]);
+                                }
                             }
-                            elsif ($fragment->{'name'} eq 'br') {
+                            if ($line ne '') {
                                 $line =~ s/^\s*\n//;
                                 push @lines, $line;
-                                $line = '';
                             }
-                            elsif ($fragment->{'name'} eq 'a') {
-                                $line .= handle_spans([$fragment]);
-                            }
+                            $result .= "    $_\n"
+                                for @lines;
+                            $result .= "\n";
                         }
-                        if ($line ne '') {
-                            $line =~ s/^\s*\n//;
-                            push @lines, $line;
-                        }
-                        $result .= "    $_\n"
-                            for @lines;
-                        $result .= "\n";
                     }
                     elsif (@p_children == 1
                            && ref($p_children[0]) eq 'HASH'
@@ -139,6 +176,12 @@ sub handle_divs {
                         else {
                             $result .= handle_spans($p_children[0]->{'children'});
                         }
+                    }
+                    elsif (@p_children == 1
+                           && $p_children[0] eq '&#10086;') {
+                        $node->{'attrs'}{'class'} = 'separator';
+                        $result .= handle_verbatim($node)
+                                .  "\n\n";
                     }
                     else {
                         $result .= handle_spans(\@p_children)
@@ -205,10 +248,10 @@ sub handle_divs {
                             }
                         }
                         elsif ($elem->{'name'} eq 'dt') {
-                            $result .= "<dt>" . handle_spans($elem->{'children'}) . "</dt>";
+                            $result .= handle_verbatim($elem);
                         }
                         elsif ($elem->{'name'} eq 'dd') {
-                            $result .= "<dd>" . handle_spans($elem->{'children'}) .  "</dd>";
+                            $result .= handle_verbatim($elem);
                         }
                         else {
                             die "Unknown ", $elem->{'name'}, " in dl";
@@ -218,10 +261,29 @@ sub handle_divs {
                     $result .= "</dl>\n\n";
                 }
                 when ('div') {
-                    $result .= handle_divs($node->{'children'});
+                    if (exists $node->{'attrs'}{'class'}
+                        && $node->{'attrs'}{'class'} eq 'quote') {
+
+                        $result .= handle_verbatim($node);
+                        $result .= "\n\n";
+                    }
+                    else {
+                        $result .= handle_divs($node->{'children'});
+                    }
                 }
                 when ('blockquote') {
-                    $result .= handle_divs($node->{'children'});
+                    if (@{$node->{'children'}} > 1
+                        && $node->{'children'}[0]{'name'} eq 'div'
+                        && @{$node->{'children'}[0]{'children'}} == 1
+                        && $node->{'children'}[0]{'children'}[0]{'name'} eq 'p'
+                        && @{$node->{'children'}[0]{'children'}[0]{'children'}} > 1
+                        && $node->{'children'}[0]{'children'}[0]{'children'}[1]{'name'} eq 'tt') {
+                        $result .= handle_divs($node->{'children'}[0]{'children'});
+                    }
+                    else {
+                        $result .= handle_verbatim($node);
+                        $result .= "\n\n";
+                    }
                 }
                 default {
                     die "Encountered a $_, don't know how to handle", Dump($childrenref);
@@ -245,7 +307,12 @@ sub handle_spans {
             next if $node->{'name'} eq 'nobr';
             given ($node->{'name'}) {
                 when ('a') {
-                    $result .= '[' . handle_spans($node->{'children'}) . '](' . $node->{'attrs'}{'href'} . ')';
+                    my $href = $node->{'attrs'}{'href'};
+                    if ($href =~ m[http://use.perl.org/~masak/journal/(\d+)]
+                        && exists $old2new{$1}) {
+                        $href = "http://strangelyconsistent.org/blog/" . $old2new{$1};
+                    }
+                    $result .= '[' . handle_spans($node->{'children'}) . '](' . $href . ')';
                 }
                 when (['em', 'i']) {
                     $result .= '*' . handle_spans($node->{'children'}) . '*';
@@ -254,9 +321,23 @@ sub handle_spans {
                     $result .= '**' . handle_spans($node->{'children'}) . '**';
                 }
                 when (['code', 'tt']) {
-                    $result .= '`'
-                            .  handle_spans($node->{'children'})
-                            .  '`';
+                    if (@{$node->{'children'}} == 3
+                        && ref $node->{'children'}[1] eq 'HASH'
+                        && $node->{'children'}[1]{'name'} eq 'a') {
+                        # Special case for inside-out <a>/<code>
+                        $result .= handle_spans([
+                            {
+                                name => 'a',
+                                attrs => { href => $node->{'children'}[1]{'attrs'}{'href'} },
+                                children => $node->{'children'}[1]{'children'}
+                            }
+                        ]);
+                    }
+                    else {
+                        $result .= '`'
+                                .  handle_spans($node->{'children'})
+                                .  '`';
+                    }
                 }
                 when ('br') {
                     $result .= "<br>\n";
@@ -274,10 +355,45 @@ sub handle_spans {
             $text =~ s/&nbsp;/ /g;
             $text =~ s/&lt;/</g;
             $text =~ s/&gt;/>/g;
+            $text =~ s/&amp;/&/g;
+            $text =~ s/&#(\d+);/chr($1)/ge;
+            $text =~ s/fix:<([^>]+)>/fix:&lt;$1&gt;/g;
             $result .= $text;
         }
     }
     $result =~ s/\n+$//;
+    return $result;
+}
+
+sub handle_verbatim {
+    my ($node) = @_;
+    my $name = $node->{'name'};
+    my %attrs = %{$node->{'attrs'}};
+    my $result = "<$name";
+    for my $attr (keys %attrs) {
+        next if $attr eq 'rel';
+        my $value = $attrs{$attr};
+        if (-1 == index($value, "'")) {
+            $result .= " $attr='$value'";
+        }
+        else {
+            $result .= qq[ $attr="$value"];
+        }
+    }
+    $result .= ">";
+    my @children = @{$node->{'children'}};
+    for my $child (@children) {
+        if (ref $child eq 'HASH') {
+            $result .= handle_verbatim($child);
+        }
+        else {
+            my $text = $child;
+            $text =~ s/_/\\_/g;
+            $text =~ s/\&nbsp;/ /g;
+            $result .= $text;
+        }
+    }
+    $result .= "</$name>";
     return $result;
 }
 
@@ -304,11 +420,15 @@ for my $filename (@filenames) {
     my $minute = $2;
 
     my $date = "$year-$month-$day_of_month";
-    my $timestamp = $date . "T$hour:$minute CEST";
+    my $offset = $month > 3 && $month < 11 ? "+02:00" : "+01:00";
+    my $timestamp = $date . "T$hour:$minute:00$offset";
 
     1 while shift(@lines) !~ /<h3>([^<]+)<\/h3>/;
     my $title = $1;
-    my $new_filename = 'new-structure/' . titlify($title) . '.markdown';
+    my $url = urlify($title);
+    $title =~ s/ -- / &#8212; /;
+    $old2new{substr($filename, index($filename, '/') + 1)} = $url;
+    my $new_filename = 'new-structure/' . $url . '.markdown';
 
     1 while shift(@lines) !~ /<div class="intro">(.*)/;
     my $content = $1;
@@ -326,11 +446,14 @@ for my $filename (@filenames) {
     die "$new_filename already exists"
         if !@ARGV && -e $new_filename;
 
+    my $author = decode("utf-8", "Carl Mäsak");
+
     open my $OUTFILE, '>', $new_filename or die $!;
+    binmode $OUTFILE, ":utf8";
     print $OUTFILE <<"EOF";
 ---
 title: $title
-author: Carl Mäsak
+author: $author
 created: $timestamp
 ---
 $content
